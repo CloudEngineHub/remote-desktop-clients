@@ -287,7 +287,7 @@ public class ConnectionGridActivity extends AppCompatActivity implements GetText
         } else {
             loadSavedConnections();
             if (showIntroText) {
-                IntroTextDialog.showIntroTextIfNecessary(this, database, Utils.isFree(this) && isStarting);
+                IntroTextDialog.showIntroTextIfNecessary(this, database, Utils.isFree(this) && isStarting, false);
             }
         }
     }
@@ -506,7 +506,7 @@ public class ConnectionGridActivity extends AppCompatActivity implements GetText
     public void toggleMasterPassword(MenuItem menuItem) {
         Log.i(TAG, "toggleMasterPassword");
         if (Utils.isFree(this)) {
-            IntroTextDialog.showIntroTextIfNecessary(this, database, true);
+            IntroTextDialog.showIntroTextIfNecessary(this, database, true, true);
         } else {
             togglingMasterPassword = true;
             if (Utils.querySharedPreferenceBoolean(this, Constants.masterPasswordEnabledTag)) {

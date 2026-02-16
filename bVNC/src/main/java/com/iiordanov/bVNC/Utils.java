@@ -362,6 +362,10 @@ public class Utils {
         return "market://details?id=" + donationPackageName;
     }
 
+    public static String getDonationOpaque() {
+        return "market://details?id=com.undatech.opaque";
+    }
+
     public static String getDonationPackageUrl(Context context) {
         String donationPackageName = getDonationPackageName(context);
         return "https://play.google.com/store/apps/details?id=" + donationPackageName;

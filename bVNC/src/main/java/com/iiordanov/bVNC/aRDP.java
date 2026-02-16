@@ -129,7 +129,7 @@ public class aRDP extends MainConfiguration {
         groupRemoteSoundType.setOnCheckedChangeListener((radioGroup, selection) -> {
             if (Utils.isFree(aRDP.this) && selection != R.id.radioRemoteSoundDisabled) {
                 setRemoteSoundTypeFromSelected(Constants.REMOTE_SOUND_DISABLED);
-                IntroTextDialog.showIntroTextIfNecessary(aRDP.this, database, true);
+                IntroTextDialog.showIntroTextIfNecessary(aRDP.this, database, true, true);
             }
         });
         checkboxEnableRecording = findViewById(R.id.checkboxEnableRecording);
@@ -316,7 +316,7 @@ public class aRDP extends MainConfiguration {
     public void toggleEnableRecording(View view) {
         CheckBox b = (CheckBox) view;
         if (Utils.isFree(this)) {
-            IntroTextDialog.showIntroTextIfNecessary(this, database, true);
+            IntroTextDialog.showIntroTextIfNecessary(this, database, true, true);
             b.setChecked(false);
         } else {
             PermissionsManager.requestPermissions(this, PermissionGroups.RECORD_AND_MODIFY_AUDIO, true);
@@ -329,7 +329,7 @@ public class aRDP extends MainConfiguration {
      */
     public void remoteSoundTypeToggled(View view) {
         if (Utils.isFree(this)) {
-            IntroTextDialog.showIntroTextIfNecessary(this, database, true);
+            IntroTextDialog.showIntroTextIfNecessary(this, database, true, true);
         }
     }
 

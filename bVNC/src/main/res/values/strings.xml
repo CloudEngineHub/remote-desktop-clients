@@ -86,12 +86,15 @@
     <string name="ssl_strict">Require common name to match cert (recommended)</string>
     <string name="usb">USB (plug in OTG cable first)</string>
 
-    <string name="ad_donate_text0">The Pro version now has support for multi-factor SSH authentication. In addition, it supports the much requested Master Password feature that prevents unauthorized use and also encrypts all connection settings including passwords and SSH keys to guard against theft. Enable it from the main Menu. If the Menu button is missing, please long-tap the running apps button for the Menu.</string>
+    <string name="ad_donate_text0">The Pro version also has support for multi-factor SSH authentication. In addition, it supports the much requested Master Password feature that prevents unauthorized use and encrypts all connection settings including passwords and SSH keys to guard against theft. Enable it from the main Menu.</string>
+    <string name="ad_donate_spice_text1a">Tap here to buy Opaque and save direct connections to Proxmox and oVirt. It also supports .vv files.</string>
+    <string name="ad_donate_spice_text1b">Tap here to buy the Pro version and just open .vv files.</string>
     <string name="ad_donate_text1">Tap here to support the project with a small donation by buying the Pro version.</string>
     <string name="ad_donate_text2">The Pro version allows you to disable this dialog and gives you access to additional features.</string>
     <string name="ad_donate_text3">If you would like to support the project further, follow the following links for links to client apps for: </string>
-    <string name="ad_donate_text_rdp">The Pro version of aRDP now supports sound redirection!</string>
-    <string name="ad_donate_text_spice"></string>
+    <string name="ad_donate_text_vnc">The Open Source project needs your support! Donate to us by buying bVNC Pro. See below for links to bVNC Pro and our other apps.</string>
+    <string name="ad_donate_text_rdp">The Open Source project needs your support! Donate to us by buying aRDP Pro, which supports sound redirection. See below for links to aRDP Pro and our other apps.</string>
+    <string name="ad_donate_text_spice">For Proxmox and oVirt connections, please donate to the project by buying Opaque or aSPICE Pro. The Free version of aSPICE only supports direct connections to KVM virtual machines. See below for links to Opaque and aSPICE Pro, as well as our other apps.</string>
 
     <string name="address_caption">VNC Server</string>
     <string name="address_caption_hint">VNC Server</string>
@@ -515,6 +518,7 @@ If you are looking for a quick performance boost, try setting the Color mode to 
     <string name="position_toolbar_last_used">Restore Toolbar Position</string>
     <string name="applies_to_new_connections_only">Applies to New Connections Only</string>
     <string name="pro_feature_mfa">It appears your server has multi-factor authentication enabled. Please support the project by purchasing the Pro version which has support for this feature. A link to the Pro version is available in the start dialog.</string>
+    <string name="pro_feature_intro">It appears you are using a Pro feature. Please support the project by purchasing the Pro version which has support for this feature. Please check the intro dialog for links to the correct app.</string>
     <string name="pro_feature_generic">It appears you are using a Pro feature. Please support the project by purchasing the Pro version which has support for this feature. A link to the Pro version is available in the start dialog.</string>
 
     <string name="rdp_address_caption_hint">RDP Server</string>
@@ -617,9 +621,6 @@ Current list of aRDP features includes:
 - Seamless remote machine resolution changes
 &lt;br&gt;
 - Full mouse support on Android 4.0+ devices, including right and middle click and scroll wheel.
-&lt;br&gt;
-&lt;br&gt;
-Planned features of aRDP include:
 &lt;br&gt;
 - A choice of color modes
 &lt;br&gt;

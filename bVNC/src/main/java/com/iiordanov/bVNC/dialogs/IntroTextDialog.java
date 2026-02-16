@@ -55,17 +55,20 @@ public class IntroTextDialog extends Dialog {
     private final Database database;
     private boolean donate = false;
 
+    private boolean proFeature = false;
+
     /**
      * @param context -- Containing dialog
      */
-    private IntroTextDialog(Activity context, PackageInfo pi, Database database) {
+    private IntroTextDialog(Activity context, PackageInfo pi, Database database, boolean proFeature) {
         super(context);
         setOwnerActivity(context);
         packageInfo = pi;
         this.database = database;
+        this.proFeature = proFeature;
     }
 
-    public static void showIntroTextIfNecessary(Activity context, Database database, boolean show) {
+    public static void showIntroTextIfNecessary(Activity context, Database database, boolean show, boolean proFeature) {
         PackageInfo pi;
         try {
             String packageName = Utils.pName(context);
@@ -77,7 +80,7 @@ public class IntroTextDialog extends Dialog {
         database.close();
         boolean newLaunchOrVersion = (mr == null || mr.getShowSplashVersion() != pi.versionCode);
         if (dialog == null && show && newLaunchOrVersion) {
-            dialog = new IntroTextDialog(context, pi, database);
+            dialog = new IntroTextDialog(context, pi, database, proFeature);
             dialog.show();
         }
     }
@@ -110,52 +113,26 @@ public class IntroTextDialog extends Dialog {
         StringBuilder sb = new StringBuilder(title);
         setTitle(sb);
         sb.delete(0, sb.length());
-        if (pkgName.contains("SPICE")) {
-            sb.append(getContext().getResources().getString(R.string.ad_donate_text_spice));
-            sb.append("<br>");
-            sb.append("<br>");
-        } else if (pkgName.contains("RDP")) {
-            sb.append(getContext().getResources().getString(R.string.ad_donate_text_rdp));
-            sb.append("<br>");
-            sb.append("<br>");
+        if (proFeature) {
+            proFeatureText(sb);
+        } else {
+            if (donate) {
+                donationIntroText(pkgName, sb);
+            }
         }
-        sb.append(getContext().getResources().getString(R.string.ad_donate_text0));
-        sb.append("<br>");
-        sb.append("<br>");
-
         if (donate) {
-            sb.append("<a href=\"");
-            sb.append(Utils.getDonationPackageLink(getContext()));
-            sb.append("\">");
-            sb.append(getContext().getResources().getString(R.string.ad_donate_text1));
-            sb.append("</a>");
-            sb.append("<br>");
-            sb.append("<br>");
-            sb.append(getContext().getResources().getString(R.string.ad_donate_text2));
-            sb.append("<br>");
-            sb.append("<br>");
-            sb.append(getContext().getResources().getString(R.string.ad_donate_text3));
-            sb.append(" <a href=\"market://details?id=com.iiordanov.bVNC\">VNC</a>");
-            sb.append(", ");
-            sb.append("<a href=\"market://details?id=com.iiordanov.aRDP\">RDP</a>");
-            sb.append(", ");
-            sb.append("<a href=\"market://details?id=com.iiordanov.aSPICE\">SPICE</a>");
-            sb.append(", ");
-            sb.append("<a href=\"market://details?id=com.undatech.opaque\">oVirt/RHEV/Proxmox</a>");
-            sb.append("<br>");
-            sb.append("<br>");
+            linksToProApps(context, sb);
+            if (!proFeature) {
+                linksToMoreApps(sb);
+            }
         }
 
-        sb.append(getContext().getResources().getString(R.string.intro_header));
-        if (Utils.isVnc(context)) {
-            sb.append(getContext().getResources().getString(R.string.intro_text));
-        } else if (Utils.isRdp(context)) {
-            sb.append(getContext().getResources().getString(R.string.rdp_intro_text));
-        } else if (Utils.isSpice(context)) {
-            sb.append(getContext().getResources().getString(R.string.spice_intro_text));
+        if (!proFeature) {
+            generalIntroText(sb, context);
         }
         sb.append("\n");
         sb.append(getContext().getResources().getString(R.string.intro_version_text));
+
         TextView introTextView = (TextView) findViewById(R.id.textIntroText);
         introTextView.setText(Html.fromHtml(sb.toString()));
         introTextView.setMovementMethod(LinkMovementMethod.getInstance());
@@ -173,6 +150,81 @@ public class IntroTextDialog extends Dialog {
              */
             buttonCloseIntroDontShow.setOnClickListener(v -> showAgain(false));
         }
+    }
+
+    private void donationIntroText(String pkgName, StringBuilder sb) {
+        if (pkgName.contains("VNC")) {
+            sb.append(getContext().getResources().getString(R.string.ad_donate_text_vnc));
+            sb.append("<br>");
+            sb.append("<br>");
+        } else if (pkgName.contains("SPICE")) {
+            sb.append(getContext().getResources().getString(R.string.ad_donate_text_spice));
+            sb.append("<br>");
+            sb.append("<br>");
+        } else if (pkgName.contains("RDP")) {
+            sb.append(getContext().getResources().getString(R.string.ad_donate_text_rdp));
+            sb.append("<br>");
+            sb.append("<br>");
+        }
+        sb.append(getContext().getResources().getString(R.string.ad_donate_text0));
+        sb.append("<br>");
+        sb.append("<br>");
+    }
+
+    private void proFeatureText(StringBuilder sb) {
+        sb.append(getContext().getResources().getString(R.string.pro_feature_intro));
+        sb.append("<br>");
+        sb.append("<br>");
+    }
+
+    private void linksToProApps(Context context, StringBuilder sb) {
+        if (Utils.isSpice(context)) {
+            sb.append("<a href=\"");
+            sb.append(Utils.getDonationOpaque();
+            sb.append("\">");
+            sb.append(getContext().getResources().getString(R.string.ad_donate_spice_text1a));
+            sb.append("</a>");
+            sb.append("<br>");
+            sb.append("<br>");
+        }
+        sb.append("<a href=\"");
+        sb.append(Utils.getDonationPackageLink(getContext()));
+        sb.append("\">");
+        if (Utils.isSpice(context)) {
+            sb.append(getContext().getResources().getString(R.string.ad_donate_spice_text1b));
+        } else {
+            sb.append(getContext().getResources().getString(R.string.ad_donate_text1));
+        }
+        sb.append("</a>");
+        sb.append("<br>");
+        sb.append("<br>");
+    }
+
+    private void generalIntroText(StringBuilder sb, Context context) {
+        sb.append(getContext().getResources().getString(R.string.intro_header));
+        if (Utils.isVnc(context)) {
+            sb.append(getContext().getResources().getString(R.string.intro_text));
+        } else if (Utils.isRdp(context)) {
+            sb.append(getContext().getResources().getString(R.string.rdp_intro_text));
+        } else if (Utils.isSpice(context)) {
+            sb.append(getContext().getResources().getString(R.string.spice_intro_text));
+        }
+    }
+
+    private void linksToMoreApps(StringBuilder sb) {
+        sb.append(getContext().getResources().getString(R.string.ad_donate_text2));
+        sb.append("<br>");
+        sb.append("<br>");
+        sb.append(getContext().getResources().getString(R.string.ad_donate_text3));
+        sb.append(" <a href=\"market://details?id=com.iiordanov.bVNC\">VNC</a>");
+        sb.append(", ");
+        sb.append("<a href=\"market://details?id=com.iiordanov.aRDP\">RDP</a>");
+        sb.append(", ");
+        sb.append("<a href=\"market://details?id=com.iiordanov.aSPICE\">SPICE</a>");
+        sb.append(", ");
+        sb.append("<a href=\"market://details?id=com.undatech.opaque\">oVirt/RHEV/Proxmox</a>");
+        sb.append("<br>");
+        sb.append("<br>");
     }
 
     /* (non-Javadoc)
