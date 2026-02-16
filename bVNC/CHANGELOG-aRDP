@@ -1,3 +1,5 @@
+v6.2.5
+- Vastly lowered bandwidth usage for Windows hosts and Gfx H264 codec
 v6.2.3
 - Launch app into separate task started via URI intent
 v6.2.2
