@@ -84,12 +84,15 @@
     <string name="ssl_strict">인증서와 일치하는 일반 이름 요청(권장)</string>
     <string name="usb">USB(먼저 OTG 케이블을 연결합니다)</string>
 
-    <string name="ad_donate_text0">Pro 버전은 다단계 인증에 지원하고 있습니다.무단 사용 방지를 위해 마스터 Password 기능도 지원하고 있습니다.또한 Password/SSH키를 포함한 모든 연결 설정이 암호화가 되어 있기 때문에 도난 방지에도 도움이됩니다.</string>
+    <string name="ad_donate_text0">Pro 버전은 다단계 SSH 인증도 지원합니다. 또한 무단 사용을 방지하고 비밀번호와 SSH 키를 포함한 모든 연결 설정을 암호화하여 도난을 방지하는 마스터 비밀번호 기능을 지원합니다. 메인 메뉴에서 활성화하세요.</string>
     <string name="ad_donate_text1">Pro 버전 구입시 소액 기부에 동의하시는 분은 여기를 눌러주세요.</string>
     <string name="ad_donate_text2">Pro 버전 사용시 이 다이얼로그는 무효로 설정 가능합니다. 또한 추가 기능에 액세스 할 수 있습니다.</string>
     <string name="ad_donate_text3">프로젝트에 대한 자세한 내용은 아래 클라이언트 애플리케이션용 링크를 참조하십시오:</string>
-    <string name="ad_donate_text_rdp">Pro 버전의 aRDP는 사운드 리다이렉션에 지원 완료!</string>
-    <string name="ad_donate_text_spice">Pro 버전의 aSPICE는 USB 리다이렉션에 지원 완료! 접속 전에 OTG 케이블을 연결하는것만으로 간단설정</string>
+    <string name="ad_donate_text_rdp">오픈소스 프로젝트에 여러분의 지원이 필요합니다! 사운드 리다이렉션을 지원하는 aRDP Pro를 구매하여 기부해 주세요. aRDP Pro 및 기타 앱 링크는 아래를 참조하세요.</string>
+    <string name="ad_donate_text_spice">Proxmox 및 oVirt 연결의 경우 Opaque 또는 aSPICE Pro를 구매하여 프로젝트를 지원해 주세요. aSPICE 무료 버전은 KVM 가상 머신에 대한 직접 연결만 지원합니다. Opaque와 aSPICE Pro 및 기타 앱 링크는 아래를 참조하세요.</string>
+    <string name="ad_donate_text_vnc">오픈소스 프로젝트에 여러분의 지원이 필요합니다! bVNC Pro를 구매하여 기부해 주세요. bVNC Pro 및 기타 앱 링크는 아래를 참조하세요.</string>
+    <string name="ad_donate_spice_text1a">여기를 눌러 Opaque를 구매하고 Proxmox 및 oVirt에 대한 직접 연결을 저장하세요. .vv 파일도 지원합니다.</string>
+    <string name="ad_donate_spice_text1b">여기를 눌러 Pro 버전을 구매하고 .vv 파일을 열 수 있습니다.</string>
     <string name="address_caption">VNC서버</string>
     <string name="address_caption_hint">VNC서버</string>
     <string name="address_caption_hint_tunneled">VNC서버</string>
@@ -475,6 +478,10 @@ bVNC의 대응 기능는 이하와 같습니다 :
     <string name="position_toolbar_last_used">Toolbar 위치 초기화</string>
     <string name="applies_to_new_connections_only">새 연결만 적용</string>
     <string name="pro_feature_mfa">서버의 다단계 인증이 활성화되어 있습니다.다단계 인증을 지원하고있는 Pro버전을 구입하십시오.Pro버전의 링크가 시작할 때 표시되는 화면에 있습니다</string>
+    <string name="pro_feature_intro">Pro 버전 기능을 사용 중인 것 같습니다. 이 기능을 지원하는 Pro 버전을 구매하여 프로젝트를 지원해 주세요. 올바른 앱 링크는 소개 대화 상자를 확인하세요.</string>
+    <string name="pro_feature_generic">Pro 버전 기능을 사용 중인 것 같습니다. 이 기능을 지원하는 Pro 버전을 구매하여 프로젝트를 지원해 주세요. Pro 버전 링크는 시작 대화 상자에서 확인할 수 있습니다.</string>
+    <string name="pro_feature_rdp">.rdp 파일을 열려고 하신 것 같습니다. 이것은 Pro 버전 기능입니다. .rdp 파일을 지원하는 aRDP Pro를 구매하여 프로젝트를 지원해 주세요. aRDP Pro 링크는 시작 대화 상자에서 확인할 수 있습니다.</string>
+    <string name="pro_feature_spice">.vv 파일을 열려고 하신 것 같습니다. 앱 내에서 Proxmox 또는 oVirt 연결을 저장하고 .vv 파일도 열고 싶다면 Opaque 구매를 고려해 주세요. .vv 파일 지원만 필요하다면 aSPICE Pro를 구매할 수 있습니다. 두 앱의 링크는 시작 대화 상자에서 확인할 수 있습니다.</string>
     <string name="rdp_address_caption_hint">RDP 서버</string>
     <string name="rdp_adv_console_mode">콘솔 모드</string>
     <string name="rdp_adv_desktop_background">데스크탑 배경을 표시</string>

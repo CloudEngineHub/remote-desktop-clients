@@ -83,12 +83,15 @@
     <string name="ssl_strict">証明書と一致する一般名を要求する（推奨）</string>
     <string name="usb">USB（最初にOTGケーブルを接続します）</string>
 
-    <string name="ad_donate_text0">Proバージョンは多要素認証に対応しています。不正使用防止の為に、マスターパスワード機能にも対応しています。また、パスワード/SSHキーを含む全ての接続設定が暗号化されているため、盗難防止にも役立ちます。メインメニューから設定を有効にできます。メニューボタンが見つからない場合、起動中のアプリボタンを長押しして下さい。</string>
+    <string name="ad_donate_text0">Pro版は多要素SSH認証にも対応しています。さらに、ご要望の多かったマスターパスワード機能に対応しており、不正使用を防止し、パスワードやSSHキーを含むすべての接続設定を暗号化して盗難から保護します。メインメニューから有効にしてください。</string>
     <string name="ad_donate_text1">Proバージョン購入で少額の寄付に同意される方は、こちらをタップして下さい。</string>
     <string name="ad_donate_text2">Proバージョンご使用時、このダイアログは無効に設定可能です。また、追加機能へのアクセスが可能です。</string>
     <string name="ad_donate_text3">プロジェクトの詳細に関しては、下記クライアントアプリ用リンクをご参照ください：</string>
-    <string name="ad_donate_text_rdp">ProバージョンのaRDPは、サウンドリダイレクションに対応済み！</string>
-    <string name="ad_donate_text_spice">ProバージョンのaSPICEは、USBリダイレクションに対応済み！接続前に、OTGケーブルを取りつけるだけの簡単設定。</string>
+    <string name="ad_donate_text_rdp">オープンソースプロジェクトにご支援をお願いします！サウンドリダイレクションに対応したaRDP Proをご購入ください。aRDP Proおよびその他のアプリへのリンクは以下をご覧ください。</string>
+    <string name="ad_donate_text_spice">ProxmoxおよびoVirtへの接続には、OpaqueまたはaSPICE Proをご購入いただき、プロジェクトをご支援ください。aSPICE無料版はKVM仮想マシンへの直接接続のみ対応しています。OpaqueとaSPICE Pro、およびその他のアプリへのリンクは以下をご覧ください。</string>
+    <string name="ad_donate_text_vnc">オープンソースプロジェクトにご支援をお願いします！bVNC Proをご購入ください。bVNC Proおよびその他のアプリへのリンクは以下をご覧ください。</string>
+    <string name="ad_donate_spice_text1a">こちらをタップしてOpaqueを購入し、ProxmoxおよびoVirtへの直接接続を保存できます。.vvファイルにも対応しています。</string>
+    <string name="ad_donate_spice_text1b">こちらをタップしてPro版を購入し、.vvファイルを開くことができます。</string>
     <string name="address_caption">VNCサーバー</string>
     <string name="address_caption_hint">VNCサーバー</string>
     <string name="address_caption_hint_tunneled">VNCサーバー</string>
@@ -494,6 +497,10 @@ bVNCの対応機能は以下の通り：
     <string name="position_toolbar_last_used">ツールバー位置の初期化</string>
     <string name="applies_to_new_connections_only">新規接続にのみ適用</string>
     <string name="pro_feature_mfa">サーバーの多要素認証が有効になっています。多要素認証に対応している、Proバージョンをご購入ください。Proバージョンのリンクは、起動時に表示される画面上にあります。</string>
+    <string name="pro_feature_intro">Pro版の機能をご利用のようです。この機能に対応したPro版をご購入いただき、プロジェクトをご支援ください。正しいアプリへのリンクは紹介ダイアログをご確認ください。</string>
+    <string name="pro_feature_generic">Pro版の機能をご利用のようです。この機能に対応したPro版をご購入いただき、プロジェクトをご支援ください。Pro版へのリンクは起動時のダイアログにあります。</string>
+    <string name="pro_feature_rdp">.rdpファイルを開こうとされたようです。これはPro版の機能です。.rdpファイルに対応したaRDP Proをご購入いただき、プロジェクトをご支援ください。aRDP Proへのリンクは起動時のダイアログにあります。</string>
+    <string name="pro_feature_spice">.vvファイルを開こうとされたようです。ProxmoxやoVirtへの接続をアプリ内に保存し、.vvファイルも開きたい場合は、Opaqueの購入をご検討ください。.vvファイルのサポートのみ必要な場合は、aSPICE Proをご利用いただけます。両アプリへのリンクは起動時のダイアログにあります。</string>
     <string name="rdp_address_caption_hint">RDPサーバー</string>
     <string name="rdp_adv_console_mode">コンソールモード</string>
     <string name="rdp_adv_desktop_background">デスクトップ背景を表示</string>

@@ -82,12 +82,15 @@
     <string name="ssl_strict">要求通用名稱與證書相符（建議）。</string>
     <string name="usb">USB（先插上OTG線）</string>
 
-    <string name="ad_donate_text0">Pro版本對應於多重要素驗證。為了防止違法使用，也對應於主密碼功能。加上為了防盜包含密碼與SSH鍵的所有連接設定都是加密的。這些都在主功能表內進行設定。如果主功能表按鈕不見，請按住在功能表上的應用按鈕。</string>
+    <string name="ad_donate_text0">Pro版本還支援多因素SSH身份驗證。此外，它支援廣受歡迎的主密碼功能，可防止未經授權的使用，並加密所有連線設定（包括密碼和SSH金鑰）以防止盜竊。請在主選單中啟用此功能。</string>
     <string name="ad_donate_text1">如果您購買Pro版本並且同意捐贈我們的話，請點選這裡。</string>
     <string name="ad_donate_text2">使用Pro版本時，可以將這個對話框設定為無效，也可以存取追加功能。</string>
     <string name="ad_donate_text3">項目的詳細請參照以下客戶端應用用鏈接：</string>
-    <string name="ad_donate_text_rdp">Pro版本的aRDP已對應聲音重定向！</string>
-    <string name="ad_donate_text_spice">Pro版本的aSPICE已對應USB重定向！只要在連接之前安裝OTG電纜就行了。</string>
+    <string name="ad_donate_text_rdp">開源專案需要您的支持！請透過購買aRDP Pro進行捐贈，該版本支援聲音重新導向。請參閱下方的aRDP Pro及我們其他應用的連結。</string>
+    <string name="ad_donate_text_spice">如需連線Proxmox和oVirt，請透過購買Opaque或aSPICE Pro來支持本專案。aSPICE免費版僅支援直接連線KVM虛擬機。請參閱下方Opaque和aSPICE Pro以及我們其他應用的連結。</string>
+    <string name="ad_donate_text_vnc">開源專案需要您的支持！請透過購買bVNC Pro進行捐贈。請參閱下方的bVNC Pro及我們其他應用的連結。</string>
+    <string name="ad_donate_spice_text1a">點選此處購買Opaque，儲存與Proxmox和oVirt的直接連線。還支援.vv檔案。</string>
+    <string name="ad_donate_spice_text1b">點選此處購買Pro版本，可開啟.vv檔案。</string>
     <string name="address_caption">VNC伺服器</string>
     <string name="address_caption_hint">VNC伺服器</string>
     <string name="address_caption_hint_tunneled">VNC伺服器</string>
@@ -477,6 +480,10 @@ bVNC對應的功能如下：
     <string name="position_toolbar_last_used">工具欄位置初始化</string>
     <string name="applies_to_new_connections_only">僅限適用到新建連接</string>
     <string name="pro_feature_mfa">看來您的伺服器已啟用多因素身份驗證。請購買支持此功能的Pro版本。在開始對話框中有Pro版本的鏈接。</string>
+    <string name="pro_feature_intro">您似乎正在使用Pro版功能。請購買支援此功能的Pro版本來支持本專案。請查看介紹對話框中正確應用的連結。</string>
+    <string name="pro_feature_generic">您似乎正在使用Pro版功能。請購買支援此功能的Pro版本來支持本專案。在開始對話框中有Pro版本的連結。</string>
+    <string name="pro_feature_rdp">您似乎嘗試開啟.rdp檔案，這是Pro版功能。請購買支援.rdp檔案的aRDP Pro來支持本專案。aRDP Pro的連結在開始對話框中。</string>
+    <string name="pro_feature_spice">您似乎嘗試開啟.vv檔案。如果您想在應用中直接儲存到Proxmox或oVirt的連線並開啟.vv檔案，請考慮購買Opaque。如果您只需要.vv檔案支援，可以購買aSPICE Pro。兩個應用的連結都在開始對話框中。</string>
     <string name="rdp_address_caption_hint">RDP伺服器</string>
     <string name="rdp_adv_console_mode">控制台模式</string>
     <string name="rdp_adv_desktop_background">顯示桌面背景</string>

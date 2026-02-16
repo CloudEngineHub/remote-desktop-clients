@@ -77,12 +77,15 @@
     <string name="ssl_strict">Requiere que el nombre común coincida con el certificado (recomendado)</string>
     <string name="usb">USB (conecte primero el cable OTG)</string>
 
-    <string name="ad_donate_text0">La versión Pro ahora tiene soporte para autenticación SSH multifactor. Además, es compatible con la muy solicitada función de contraseña maestra que evita el uso no autorizado y también encripta todas las configuraciones de conexión, incluidas las contraseñas y claves SSH para protegerse contra el robo. Habilítelo desde el menú principal. Si falta el botón Menú, mantenga presionado el botón de aplicaciones en ejecución para el Menú.</string>
+    <string name="ad_donate_text0">La versión Pro también tiene soporte para autenticación SSH multifactor. Además, es compatible con la muy solicitada función de contraseña maestra que evita el uso no autorizado y encripta todas las configuraciones de conexión, incluidas las contraseñas y claves SSH para protegerse contra el robo. Habilítelo desde el menú principal.</string>
     <string name="ad_donate_text1">Toque aquí para apoyar el proyecto con una pequeña donación comprando la versión Pro.</string>
     <string name="ad_donate_text2">La versión Pro le permite desactivar este cuadro de diálogo y le da acceso a funcionalidades adicionales.</string>
     <string name="ad_donate_text3">Si desea seguir apoyando el proyecto, siga los siguientes enlaces para acceder a las aplicaciones cliente para:</string>
-    <string name="ad_donate_text_rdp">¡La versión Pro de aRDP ahora admite la redirección de sonido!</string>
-    <string name="ad_donate_text_spice"></string>
+    <string name="ad_donate_text_rdp">¡El proyecto de código abierto necesita tu apoyo! Haz una donación comprando aRDP Pro, que soporta redirección de sonido. Consulta los enlaces a continuación para aRDP Pro y nuestras otras aplicaciones.</string>
+    <string name="ad_donate_text_spice">Para conexiones a Proxmox y oVirt, por favor dona al proyecto comprando Opaque o aSPICE Pro. La versión gratuita de aSPICE solo admite conexiones directas a máquinas virtuales KVM. Consulta los enlaces a continuación para Opaque y aSPICE Pro, así como nuestras otras aplicaciones.</string>
+    <string name="ad_donate_text_vnc">¡El proyecto de código abierto necesita tu apoyo! Haz una donación comprando bVNC Pro. Consulta los enlaces a continuación para bVNC Pro y nuestras otras aplicaciones.</string>
+    <string name="ad_donate_spice_text1a">Toca aquí para comprar Opaque y guardar conexiones directas a Proxmox y oVirt. También admite archivos .vv.</string>
+    <string name="ad_donate_spice_text1b">Toca aquí para comprar la versión Pro y simplemente abrir archivos .vv.</string>
 
     <string name="address_caption">Servidor VNC</string>
     <string name="address_caption_hint">Servidor VNC</string>
@@ -502,6 +505,10 @@ Si está buscando un aumento rápido del rendimiento, intente configurar el modo
     <string name="applies_to_new_connections_only">Se aplica solo a conexiones nuevas</string>
 
     <string name="pro_feature_mfa">Parece que su servidor tiene habilitada la autenticación multifactor. Apoye el proyecto comprando la versión Pro que tiene soporte para esta función. Un enlace a la versión Pro está disponible en el cuadro de diálogo de inicio.</string>
+    <string name="pro_feature_intro">Parece que estás usando una función Pro. Por favor apoya el proyecto comprando la versión Pro que tiene soporte para esta función. Consulta el cuadro de diálogo de introducción para enlaces a la aplicación correcta.</string>
+    <string name="pro_feature_generic">Parece que estás usando una función Pro. Por favor apoya el proyecto comprando la versión Pro que tiene soporte para esta función. Un enlace a la versión Pro está disponible en el cuadro de diálogo de inicio.</string>
+    <string name="pro_feature_rdp">Parece que intentaste abrir un archivo .rdp, que es una función Pro. Por favor apoya el proyecto comprando aRDP Pro, que admite archivos .rdp. Un enlace a la versión aRDP Pro está disponible en el cuadro de diálogo de inicio.</string>
+    <string name="pro_feature_spice">Parece que intentaste abrir un archivo .vv. Si deseas guardar conexiones a Proxmox u oVirt directamente en la aplicación y también abrir archivos .vv, considera comprar Opaque. Si solo necesitas soporte para archivos .vv, puedes obtener aSPICE Pro. Encuentra enlaces a ambas aplicaciones en el cuadro de diálogo de inicio.</string>
 
     <string name="rdp_address_caption_hint">Servidor RDP</string>
     <string name="rdp_adv_console_mode">Modo consola</string>
