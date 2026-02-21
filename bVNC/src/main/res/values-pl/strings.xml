@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="ad_donate_text0">Wersja Pro obsługuje również wieloczynnikowe uwierzytelnianie SSH. Ponadto obsługuje długo oczekiwaną funkcję hasła głównego, która zapobiega nieautoryzowanemu użyciu i szyfruje wszystkie ustawienia połączeń, w tym hasła i klucze SSH w celu ochrony przed kradzieżą. Włącz tę funkcję w menu głównym.</string>
     <string name="ad_donate_text1">Naciśnij tutaj, aby wesprzeć projekt małym datkiem i kupić wersję Pro.</string>
@@ -9,24 +9,18 @@
     <string name="ad_donate_text_spice">Do połączeń z Proxmox i oVirt prosimy o wsparcie projektu poprzez zakup Opaque lub aSPICE Pro. Darmowa wersja aSPICE obsługuje tylko bezpośrednie połączenia z maszynami wirtualnymi KVM. Linki do Opaque i aSPICE Pro oraz naszych innych aplikacji znajdziesz poniżej.</string>
     <string name="ad_donate_spice_text1a">Kliknij tutaj, aby kupić Opaque i zapisywać bezpośrednie połączenia z Proxmox i oVirt. Obsługuje również pliki .vv.</string>
     <string name="ad_donate_spice_text1b">Kliknij tutaj, aby kupić wersję Pro i otwierać pliki .vv.</string>
-
     <string name="address_caption">Serwer VNC</string>
     <string name="address_caption_hint">Serwer VNC</string>
     <string name="address_caption_hint_tunneled">Serwer VNC</string>
     <string name="address_caption_ssh">Serwer SSH</string>
     <string name="address_caption_ssh_hint">Serwer SSH</string>
-
     <string name="alt_check">Alt</string>
-
     <string name="ardp_app_name">aRDP Pro</string>
-
     <string name="arrow_down">Strzałka w dół</string>
     <string name="arrow_left">Strzałka w lewo</string>
     <string name="arrow_right">Strzałka w prawo</string>
     <string name="arrow_up">Strzałka w górę</string>
-
     <string name="aspice_app_name">aSPICE Pro</string>
-
     <string name="auto">Automatycznie</string>
     <string name="auto_x_cancel">Anuluj</string>
     <string name="auto_x_confirm">Potwierdź</string>
@@ -67,9 +61,6 @@
     <string name="auto_x_session_xfce">Xfce</string>
     <string name="auto_x_title">Konfiguruj AutoX</string>
     <string-array name="auto_x_type">
-        <!-- If adding selections, they need to be in sync with values
-        declared in VncConstants for conversion bet. selection and commands
-        to work properly. -->
         <item>\@string/auto_x_disabled_selection</item>
         <item>\@string/auto_x_xvfb</item>
         <item>\@string/auto_x_xvnc</item>
@@ -80,21 +71,14 @@
     <string name="auto_x_xdummy">Znajdź lub utwórz z Xdummy</string>
     <string name="auto_x_xvfb">Znajdź lub utwórz z Xvfb</string>
     <string name="auto_x_xvnc">Znajdź lub utwórz z Xvnc</string>
-
     <string name="button_send_text">Wyślij tekst</string>
     <string name="button_send_without_saving">Wyślij tekst/Nie zapisuj</string>
-
     <string name="bvnc_app_name">bVNC Pro</string>
-
     <string name="center_mouse">Mysz @</string>
-
     <string name="close">Zamknij</string>
-
     <string name="color_format_caption">Tryb kolorów</string>
     <string name="color_mode">Tryb kolorów</string>
-
     <string name="connect_button">Połącz</string>
-
     <string name="connection_caption">Połączenie</string>
     <string-array name="connection_type">
         <item>\@string/connection_type_vnc</item>
@@ -115,26 +99,18 @@
     <string name="connection_type_vnc_over_ssl">VNC zabezpieczone przez AnonTLS</string>
     <string name="connection_type_vnc_over_stunnel">Zabezpieczone VNC przez tunel SSL</string>
     <string name="connection_type_vnc_over_vencrypt">VNC zabezpieczone przez VeNCrypt</string>
-
     <string name="control_check">Ctrl</string>
-
     <string name="copy_list_button">Kopiuj listę</string>
-
     <string name="ctrl_alt_del">Ctrl-Alt-Delete</string>
-
     <string name="default_input_mode">Default Input Mode</string>
     <string name="delete_connection">Usuń połączenie</string>
-
     <string name="disconnect">Rozłącz</string>
-
     <string name="dpad_as_arrows">Użyj D-Pada jako strzałki i kliknięcia jako Ctrl.</string>
-
     <string name="enable_recording">Włącz nagrywanie</string>
     <string name="enable_sound">Włącz dźwięk</string>
     <string name="enter_password_auth_failed">Authentication failed. Please re-enter your credentials.</string>
     <string name="enter_text">Wyślij tekst</string>
     <string name="enter_text_title">Wprowadź tekst aby wysłać</string>
-
     <string name="error_connection_failed">Połączenie nie powiodło się.</string>
     <string name="error_connection_interrupted">Przerwano połączenie.</string>
     <string name="error_no_user_hostname">Wprowadź przynajmniej użytkownika i nazwę hosta lub adres IP.</string>
@@ -151,27 +127,17 @@
     <string name="error_vnc_authentication">Uwierzytelnienie VNC nie powiodło się. Sprawdź hasło VNC (i użytkownika jeśli wprowadziłeś).</string>
     <string name="error_vnc_unable_to_connect">"Połączenie z serwerem VNC nie powiodło się z powodu: "</string>
     <string name="error_x509_could_not_generate_signature">Nie można wygenerować sygnatury certyfikatu SHA1 lub MD5. Nie znaleziono algorytmu SHA1/MD5.</string>
-
     <string name="export_settings">Eksportuj</string>
-
     <string name="extra_keys_disable">Wyłącz dodatkowe klawisze</string>
     <string name="extra_keys_enable">Włącz dodatkowe klawisze</string>
-
     <string name="fit_to_screen">Dopasuj do ekranu</string>
-
     <string name="force">Mapa bitowa pełnoekranowa</string>
-
     <string name="freeardp_app_name">aRDP Free</string>
-
     <string name="freeaspice_app_name">aSPICE Free</string>
-
     <string name="freebvnc_app_name">bVNC Free</string>
-
     <string name="immersive_mode_disable">Wyłącz tryb pełnoekranowy</string>
-
     <string name="import_export_settings">Importuj/eksportuj ustawienia</string>
     <string name="import_settings">Importuj</string>
-
     <string name="info">Informacje</string>
     <string name="info_cert_signatures">"Informacja o certyfikacie:"</string>
     <string name="info_continue_connecting">"Kontynuuj łączenie z:"</string>
@@ -179,33 +145,22 @@
     <string name="info_progress_dialog_aborted">Połączenie przerwane!</string>
     <string name="info_progress_dialog_connecting">Łączenie…</string>
     <string name="info_update_color_model_to">"Zmiana profilu kolorów do "</string>
-
     <string name="input_mode">Input Mode</string>
-
     <string name="input_method_mouse">Kontrola wskaźnika myszy</string>
     <string name="input_method_single_handed">Tryb jednej ręki</string>
     <string name="input_method_touchpad">Symulowany touchpad</string>
-
     <string name="input_mode_help">Pomoc trybu wprowadzania</string>
     <string name="intro_close">Zamknij</string>
     <string name="intro_dont_show">Nie pokazuj więcej</string>
-
     <string name="intro_title">bVNC: Intuitive, secure VNC client</string>
-
     <string name="keep_password_button">Zachowaj</string>
     <string name="keep_screen_awake_enable">Zachowaj włączony ekran</string>
-
     <string name="keys_caption">Przyciski</string>
-
     <string name="landscape_force">Wymuś poziomą orientację</string>
-
     <string name="left_handed_mode">Tryb mańkut</string>
-
     <string name="list_caption">Lista</string>
     <string name="list_name_caption">Nazwa listy</string>
-
     <string name="main_screen_help">Pomoc z połączeniem</string>
-
     <string name="master_password_enable">Włącz główne hasło</string>
     <string name="master_password_error_failed_to_disable">Nie można wyłączyć głównego hasła. Sprawdź wolne miejsce na swoim urządzeniu i spróbuj ponownie.</string>
     <string name="master_password_error_failed_to_enable">Nie można włączyć głównego hasła. Sprawdź wolne miejsce na swoim urządzeniu i spróbuj ponownie.</string>
@@ -219,35 +174,25 @@
     <string name="master_password_set_error">Hasła nie zgadzają się, bądź ostrożny!</string>
     <string name="master_password_verify">Potwierdź główne hasło</string>
     <string name="master_password_verify_message">Wprowadź poprawne główne hasło aby kontynuować.</string>
-
     <string name="meta_key_title">Wyślij klawisze specjalne</string>
-
     <string name="new_connection">Nowe połączenie</string>
     <string name="new_list_button">Nowa lista</string>
-
     <string name="nickname_caption">Nazwa użytkownika</string>
     <string name="nickname_caption_hint">Tytuł (opcjonalnie)</string>
-
     <string name="off">Wyłącz</string>
-
     <string name="one_to_one">Jeden do jednego</string>
-
     <string name="open_doc">Dokumentacja/Wiki</string>
-
     <string name="password_caption">Autoryzacja VNC</string>
     <string name="password_caption_hint">Hasło VNC</string>
     <string name="password_caption_ssh">Autoryzacja SSH</string>
     <string name="password_hint_ssh">Hasło SSH</string>
-
     <string name="port_caption">Port VNC</string>
     <string name="port_caption_ssh">Port SSH</string>
     <string name="port_hint">Port</string>
     <string name="port_ssh_hint">Port</string>
-
     <string name="portrait_mode">Przełącz do trybu pionowego przy połączeniu</string>
     <string name="position_toolbar_last_used">Restore Toolbar Position</string>
     <string name="applies_to_new_connections_only">Dotyczy tylko nowych połączeń</string>
-
     <string name="rdp_address_caption_hint">Serwer RDP</string>
     <string name="rdp_adv_console_mode">Tryb konsolowy</string>
     <string name="rdp_adv_desktop_background">Pokazuj tło pulpitu</string>
@@ -276,16 +221,13 @@
         <item>\@string/rdp_geom_native_portrait</item>
         <item>\@string/rdp_geom_custom</item>
     </string-array>
-
     <string name="rdp_intro_title">aRDP: Intuicyjny i bezpieczny klient RDP</string>
     <string name="rdp_password_hint">Hasło RDP</string>
     <string name="rdp_server_empty">Pole serwera lub portu RDP nie może być puste. Nie można połączyć.</string>
     <string name="rdp_username_hint">Nazwa użytkownika RDP</string>
-
     <string name="remote_sound_disabled">Dźwięk wyłączony</string>
     <string name="remote_sound_on_device">Dźwięk na kliencie</string>
     <string name="remote_sound_on_server">Dźwięk na serwerze</string>
-
     <string name="repeater_button">Repeater UltraVNC</string>
     <string name="repeater_caption">WAŻNE: Jeśli używasz repeatera UltraVNC, wprowadź jego adres i port poza tym oknem. Tutaj wprowadź adres i port właściwego serwera VNC. Oddziel serwer i port VNC dwukropkiem, np. 192.168.0.100:5900.</string>
     <string name="repeater_caption_hint">Repeater UltraVNC</string>
@@ -293,34 +235,22 @@
     <string name="repeater_dialog_title">Serwer VNC przez repeater</string>
     <string name="repeater_empty_text">Bez repeatera</string>
     <string name="repeater_save">Użyj</string>
-
     <string name="right_alt_as_iso_l3_shift">R-Alt jako ISO L3 Shift (tylko VNC)</string>
-
     <string name="rotate_dpad">Obróć Bluetooth lub programowy D-Pad</string>
-
     <string name="save_as_copy">Zapisz jako kopię</string>
-
     <string name="scaling">Skalowanie</string>
     <string name="scaling_zoomable">Powiększalne</string>
-
     <string name="send_button">Wyślij</string>
     <string name="send_key_again">Wyślij klucz ponownie</string>
-
     <string name="shift_check">Shift</string>
-
     <string name="shortcut_label_vnc">Połączenie VNC</string>
     <string name="shortcut_label_rdp">Połączenie RDP</string>
     <string name="shortcut_label_spice">Połączenie SPICE</string>
-
     <string name="showkbd_label">Klawiatura</string>
-
     <string name="single_scroll">Tryb przewijania - przesuń w górę/dół aby przewinąć, unieś palec aby zatrzymać</string>
     <string name="single_zoom">Tryb powiększania - przesuń w górę/dół, aby powiększyć/zmniejszyć, unieś palec aby zatrzymać</string>
-
     <string name="snap_one_to_one">Przeskalowano rozmiar do 1:1</string>
-
     <string name="special_keys">Wyślij klucze</string>
-
     <string name="spice_address_caption_hint">Serwer SPICE</string>
     <string name="spice_button_import_ca">Importuj CA</string>
     <string name="spice_ca_cert_path_hint">Ścieżka do pliku urzędu certyfikacji</string>
@@ -336,14 +266,11 @@
     <string name="spice_server_empty">Pole serwera SPICE nie może być puste. Nie można połączyć.</string>
     <string name="spice_tls_port_hint">Port TLS</string>
     <string name="spice_username_hint">Nazwa użytkownika SPICE</string>
-
     <string name="ssh_passphrase_hint">Hasło SSH</string>
     <string name="ssh_pubkey_button">Zarządzaj kluczami</string>
     <string name="ssh_use_pubkey">Użyj klucza</string>
     <string name="ssh_x11vnc_customize">Skonfiguruj AutoX</string>
-
     <string name="super_check">Świetnie</string>
-
     <string name="tap_disable">Wyłącz</string>
     <string name="tap_enable">Włącz</string>
     <string name="toggle_keyboard">Toggle Keyboard</string>
@@ -351,12 +278,9 @@
     <string name="username_hint_optional">Nazwa użytkownika VNC (opcjonalna)</string>
     <string name="username_hint_ssh">Nazwa użytkownika SSH</string>
     <string name="username_hint_vencrypt">Nazwa użytkownika VNC</string>
-
     <string name="verification_code">Kod weryfikacyjny</string>
     <string name="verification_code_message">Przepisz kod weryfikacyjny uwierzytelniania wielopoziomowego</string>
-
     <string name="view_only">Tryb tylko do odczytu</string>
-
     <string-array name="vnc_geometry">
         <item>@string/rdp_geom_disabled</item>
         <item>@string/rdp_geom_automatic</item>
@@ -364,50 +288,48 @@
         <item>@string/rdp_geom_native_portrait</item>
         <item>@string/rdp_geom_custom</item>
     </string-array>
-
     <string name="vnc_server_empty">Pole serwera lub portu VNC jest puste. Nie można połączyć.</string>
     <string name="pro_feature_mfa">Wygląda na to, że Twój serwer ma włączone uwierzytelnianie wieloczynnikowe. Prosimy o wsparcie projektu poprzez zakup wersji Pro, która obsługuje tę funkcję. Link do wersji Pro jest dostępny w oknie startowym.</string>
     <string name="pro_feature_intro">Wygląda na to, że używasz funkcji Pro. Prosimy o wsparcie projektu poprzez zakup wersji Pro, która obsługuje tę funkcję. Sprawdź okno wprowadzające, aby znaleźć linki do odpowiedniej aplikacji.</string>
     <string name="pro_feature_generic">Wygląda na to, że używasz funkcji Pro. Prosimy o wsparcie projektu poprzez zakup wersji Pro, która obsługuje tę funkcję. Link do wersji Pro jest dostępny w oknie startowym.</string>
     <string name="pro_feature_rdp">Wygląda na to, że próbujesz otworzyć plik .rdp, co jest funkcją Pro. Prosimy o wsparcie projektu poprzez zakup aRDP Pro, które obsługuje pliki .rdp. Link do aRDP Pro jest dostępny w oknie startowym.</string>
     <string name="pro_feature_spice">Wygląda na to, że próbujesz otworzyć plik .vv. Jeśli chcesz zapisywać połączenia z Proxmox lub oVirt bezpośrednio w aplikacji i otwierać pliki .vv, rozważ zakup Opaque. Jeśli potrzebujesz tylko obsługi plików .vv, możesz kupić aSPICE Pro. Linki do obu aplikacji znajdziesz w oknie startowym.</string>
-
     <string name="info_cert_signatures_identical">\n\nMożesz upewnić się, że informacje są zgodne z certyfikatem serwera, aby zapobiec atakowi typu man-in-the-middle.</string>
-    <string name="info_vm_launched_on_stand_by">Znaleziono maszynę wirtualną wyłączoną i uruchomioną.Spróbuj ponownie za kilka minut.Jeśli spróbujesz zbyt wcześnie i wystąpi błąd połączenia, spróbuj ponownie później.</string>
+    <string name="info_vm_launched_on_stand_by">Znaleziono maszynę wirtualną wyłączoną i uruchomioną. Spróbuj ponownie za kilka minut. Jeśli spróbujesz zbyt wcześnie i wystąpi błąd połączenia, spróbuj ponownie później.</string>
     <string name="connection_delete">Usuwać</string>
     <string name="search_connections">Wyszukaj połączenia</string>
     <string name="color_8">8 kolorów (2 bpp)</string>
-    <string name="error_ssh_hostkey_changed">BŁĄD!Klucz hosta serwera został zmieniony.Jeśli jest to zamierzone, możesz kontynuować.W przeciwnym razie może to być atak człowieka w środku.</string>
-    <string name="error_ssh_kbd_auth_method_unavail">Serwer SSH nie obsługuje metod autoryzacji \password\ ani \keyboard-interactive\ lub wymaga najpierw metody \publickey\.Skonfiguruj go tak, aby zezwalał na co najmniej jedną z dwóch metod, lub przekonfiguruj aplikację.Dostępne metody autoryzacji:</string>
+    <string name="error_ssh_hostkey_changed">BŁĄD! Klucz hosta serwera został zmieniony. Jeśli jest to zamierzone, możesz kontynuować. W przeciwnym razie może to być atak człowieka w środku.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">Serwer SSH nie obsługuje metod autoryzacji \password\ ani \keyboard-interactive\ lub wymaga najpierw metody \publickey\. Skonfiguruj go tak, aby zezwalał na co najmniej jedną z dwóch metod, lub przekonfiguruj aplikację. Dostępne metody autoryzacji:</string>
     <string name="show">Pokazywać</string>
     <string name="use_no_compression_for_local_connections">Brak kompresji (połączenia lokalne, kodowanie Hextile)</string>
-    <string name="error_vm_lookup_failed">Nie można znaleźć maszyny wirtualnej o podanej nazwie przypisanej do użytkownika.Usuń podaną nazwę maszyny wirtualnej, aby wyświetlić listę maszyn wirtualnych przypisanych do użytkownika.</string>
-    <string name="error_ovirt_ssl_handshake_failure">Błąd uzgadniania SSL.Wystąpił problem z certyfikatem SSL serwera.Jeśli używasz certyfikatu z podpisem własnym, musisz (ponownie) zaimportować swój urząd certyfikacji.</string>
+    <string name="error_vm_lookup_failed">Nie można znaleźć maszyny wirtualnej o podanej nazwie przypisanej do użytkownika. Usuń podaną nazwę maszyny wirtualnej, aby wyświetlić listę maszyn wirtualnych przypisanych do użytkownika.</string>
+    <string name="error_ovirt_ssl_handshake_failure">Błąd uzgadniania SSL. Wystąpił problem z certyfikatem SSL serwera. Jeśli używasz certyfikatu z podpisem własnym, musisz (ponownie) zaimportować swój urząd certyfikacji.</string>
     <string name="donate_app">Przekaż ❤</string>
-    <string name="error_ssh_keypair_missing">Para kluczy SSH nie została jeszcze wygenerowana!Proszę wygenerować jeden i umieścić (jego część publiczną) w autoryzowanych kluczach na serwerze SSH.</string>
+    <string name="error_ssh_keypair_missing">Para kluczy SSH nie została jeszcze wygenerowana! Proszę wygenerować jeden i umieścić (jego część publiczną) w autoryzowanych kluczach na serwerze SSH.</string>
     <string name="more_apps">Więcej aplikacji 📱</string>
     <string name="enter_otp_code">Proszę wprowadzić kod jednorazowy</string>
     <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Tekst/cyfry Brak sugestii (VISIBLE_PASSWORD)</string>
     <string name="error_no_vm_found_for_user">Brak dostępnych maszyn wirtualnych dla danego użytkownika.</string>
     <string name="remote_clipboard_integration">Włącz zdalną integrację ze schowkiem lokalnym</string>
-    <string name="rdp_connection_screen_help_text">Kiedy dodasz lub edytujesz połączenie, zobaczysz stronę konfiguracji połączenia.Tutaj możesz skonfigurować nowe połączenie RDP lub wybrać istniejące.Na górze znajduje się przycisk pozwalający na zapisanie połączenia.Poniżej możesz skonfigurować swoje połączenie.
+    <string name="rdp_connection_screen_help_text">Kiedy dodasz lub edytujesz połączenie, zobaczysz stronę konfiguracji połączenia. Tutaj możesz skonfigurować nowe połączenie RDP lub wybrać istniejące. Na górze znajduje się przycisk pozwalający na zapisanie połączenia. Poniżej możesz skonfigurować swoje połączenie.
 
-- Typ połączenia: Tutaj wybierasz typ połączenia RDP.Dostępne typy połączeń to:
+- Typ połączenia: Tutaj wybierasz typ połączenia RDP. Dostępne typy połączeń to:
 (a) RDP, który łączy się bezpośrednio z komputerem za pośrednictwem protokołu RDP.
 (b) RDP przez SSH, który najpierw tuneluje połączenie przez komputer z serwerem SSH.
 
 - Tytuł: Każde utworzone połączenie może mieć przypisany pseudonim, pozwalający łatwo zidentyfikować je na liście.
 
 - Ustawienia tunelu SSH: dostępne w trybie RDP przez SSH.
-(a) Serwer/Port SSH: Adres i port serwera SSH, przez który będzie tunelowane połączenie.Domyślnie SSH nasłuchuje na porcie 22.
-(b) Nazwa użytkownika/Hasło: Nazwa użytkownika i hasło do konta na serwerze SSH.Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
-(c) Zarządzaj kluczem/Użyj klucza: przycisk do zarządzania kluczami publicznymi/prywatnymi oraz pole wyboru wskazujące, czy do uwierzytelnienia używać klucza, a nie hasła.Jeżeli po wygenerowaniu pary kluczy użyjesz przycisku Kopiuj do schowka, po podłączeniu do serwera RDP powinno być możliwe wklejenie klucza publicznego (schowek jest zsynchronizowany z serwerem).
+(a) Serwer/Port SSH: Adres i port serwera SSH, przez który będzie tunelowane połączenie. Domyślnie SSH nasłuchuje na porcie 22.
+(b) Nazwa użytkownika/Hasło: Nazwa użytkownika i hasło do konta na serwerze SSH. Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
+(c) Zarządzaj kluczem/Użyj klucza: przycisk do zarządzania kluczami publicznymi/prywatnymi oraz pole wyboru wskazujące, czy do uwierzytelnienia używać klucza, a nie hasła. Jeżeli po wygenerowaniu pary kluczy użyjesz przycisku Kopiuj do schowka, po podłączeniu do serwera RDP powinno być możliwe wklejenie klucza publicznego (schowek jest zsynchronizowany z serwerem).
 
 - Ustawienia połączenia RDP:
-(a) Serwer/Port RDP: Tutaj wprowadzasz nazwę hosta lub adres IP i port komputera, na którym działa serwer RDP, z którym chcesz się skontaktować.W trybie RDP przez SSH adres ten jest widoczny z serwera SSH.Jeśli serwer SSH i serwer RDP to ten sam komputer fizyczny, możesz użyć hosta lokalnego.Serwery RDP zazwyczaj nasłuchują na porcie 3389.
+(a) Serwer/Port RDP: Tutaj wprowadzasz nazwę hosta lub adres IP i port komputera, na którym działa serwer RDP, z którym chcesz się skontaktować. W trybie RDP przez SSH adres ten jest widoczny z serwera SSH. Jeśli serwer SSH i serwer RDP to ten sam komputer fizyczny, możesz użyć hosta lokalnego. Serwery RDP zazwyczaj nasłuchują na porcie 3389.
 (b) Użytkownik RDP: W tym miejscu należy wprowadzić nazwę użytkownika konta Windows/UNIX.
 (c) Domena RDP: Wprowadź domenę, do której należy Twoje konto.
-(d) Hasło RDP: W tym miejscu należy wprowadzić hasło do konta Windows/UNIX.Bezpieczne przechowywanie nie jest wykorzystywane do przechowywania haseł (znajdują się one w bazie danych), a hasło będzie przechowywane tylko wtedy, gdy zaznaczysz pole Zachowaj.Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
+(d) Hasło RDP: W tym miejscu należy wprowadzić hasło do konta Windows/UNIX. Bezpieczne przechowywanie nie jest wykorzystywane do przechowywania haseł (znajdują się one w bazie danych), a hasło będzie przechowywane tylko wtedy, gdy zaznaczysz pole Zachowaj. Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
 
 - Ustawienia zaawansowane: W tej sekcji znajdziesz sposoby dostosowania rozdzielczości pulpitu i różne poprawki wydajności RDP
 
@@ -415,30 +337,30 @@
 (a) Użyj pada kierunkowego do strzałek: Jeśli wolisz, możesz użyć pada kierunkowego na klawiaturze Bluetooth lub strzałek na klawiaturze ekranowej, aby wysłać strzałki do serwera RDP.
 (b) Obróć pad kierunkowy: w telefonach sparowanych z klawiaturą Bluetooth może być konieczne obrócenie pada kierunkowego na klawiaturze w kierunku przeciwnym do ruchu wskazówek zegara, aby wysyłać prawidłowe wskazówki do serwera.
 (c) Lokalny wskaźnik myszy: Jeśli wskaźnik jest niewidoczny, wybierz tę opcję, aby wymusić jego rysowanie przez aplikację.</string>
-    <string name="spice_connection_screen_help_text">Kiedy dodasz lub edytujesz połączenie, zobaczysz stronę konfiguracji połączenia.Tutaj możesz skonfigurować nowe połączenie SPICE lub wybrać istniejące.Na górze znajduje się przycisk pozwalający na zapisanie połączenia.Poniżej możesz skonfigurować swoje połączenie.
+    <string name="spice_connection_screen_help_text">Kiedy dodasz lub edytujesz połączenie, zobaczysz stronę konfiguracji połączenia. Tutaj możesz skonfigurować nowe połączenie SPICE lub wybrać istniejące. Na górze znajduje się przycisk pozwalający na zapisanie połączenia. Poniżej możesz skonfigurować swoje połączenie.
 
-- Typ połączenia: Tutaj wybierasz typ połączenia SPICE.Dostępne typy połączeń to:
+- Typ połączenia: Tutaj wybierasz typ połączenia SPICE. Dostępne typy połączeń to:
 (a) SPICE, który łączy się bezpośrednio z komputerem za pośrednictwem protokołu SPICE.
 (b) SPICE przez SSH, która najpierw tuneluje połączenie przez komputer z serwerem SSH.
 
 - Tytuł: Każde utworzone połączenie może mieć przypisany pseudonim, pozwalający łatwo zidentyfikować je na liście.
 
 - Ustawienia tunelu SSH: Dostępne w trybie SPICE przez SSH.
-(a) Serwer/Port SSH: Adres i port serwera SSH, przez który będzie tunelowane połączenie.Domyślnie SSH nasłuchuje na porcie 22.
-(b) Nazwa użytkownika/Hasło: Nazwa użytkownika i hasło do konta na serwerze SSH.Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
-(c) Zarządzaj kluczem/Użyj klucza: przycisk do zarządzania kluczami publicznymi/prywatnymi oraz pole wyboru wskazujące, czy do uwierzytelnienia używać klucza, a nie hasła.Jeśli użyjesz przycisku Kopiuj do schowka po wygenerowaniu pary kluczy, powinno być możliwe wklejenie klucza publicznego po połączeniu z serwerem SPICE (schowek jest zsynchronizowany z serwerem).
+(a) Serwer/Port SSH: Adres i port serwera SSH, przez który będzie tunelowane połączenie. Domyślnie SSH nasłuchuje na porcie 22.
+(b) Nazwa użytkownika/Hasło: Nazwa użytkownika i hasło do konta na serwerze SSH. Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
+(c) Zarządzaj kluczem/Użyj klucza: przycisk do zarządzania kluczami publicznymi/prywatnymi oraz pole wyboru wskazujące, czy do uwierzytelnienia używać klucza, a nie hasła. Jeśli użyjesz przycisku Kopiuj do schowka po wygenerowaniu pary kluczy, powinno być możliwe wklejenie klucza publicznego po połączeniu z serwerem SPICE (schowek jest zsynchronizowany z serwerem).
 
 - Ustawienia połączenia SPICE:
-(a) Serwer/Port SPICE: Tutaj wprowadzasz nazwę hosta lub adres IP i port komputera, na którym działa serwer SPICE, z którym chcesz się skontaktować.W trybie SPICE przez SSH adres ten jest widoczny z serwera SSH.Jeśli serwer SSH i serwer SPICE to ten sam komputer fizyczny, możesz użyć hosta lokalnego.Serwery SPICE zazwyczaj nasłuchują na porcie 5900 i nowszym.
-(b) Hasło SPICE: W tym miejscu należy wprowadzić hasło chroniące sesję SPICE.Bezpieczne przechowywanie nie jest wykorzystywane do przechowywania haseł (znajdują się one w bazie danych), a hasło będzie przechowywane tylko wtedy, gdy zaznaczysz pole Zachowaj.Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
+(a) Serwer/Port SPICE: Tutaj wprowadzasz nazwę hosta lub adres IP i port komputera, na którym działa serwer SPICE, z którym chcesz się skontaktować. W trybie SPICE przez SSH adres ten jest widoczny z serwera SSH. Jeśli serwer SSH i serwer SPICE to ten sam komputer fizyczny, możesz użyć hosta lokalnego. Serwery SPICE zazwyczaj nasłuchują na porcie 5900 i nowszym.
+(b) Hasło SPICE: W tym miejscu należy wprowadzić hasło chroniące sesję SPICE. Bezpieczne przechowywanie nie jest wykorzystywane do przechowywania haseł (znajdują się one w bazie danych), a hasło będzie przechowywane tylko wtedy, gdy zaznaczysz pole Zachowaj. Hasło zostanie wpisane na tej stronie, jeśli nie opuściłeś aplikacji od czasu jej ostatniego wprowadzenia.
 
 - Ustawienia zaawansowane: w tej sekcji znajdziesz wszelkie poprawki dotyczące wydajności urządzenia lokalnego lub SPICE
 - Ulepszenia urządzenia lokalnego: dostosowują zachowanie aplikacji na Twoim urządzeniu.
 (a) Użyj pada kierunkowego do strzałek: Jeśli wolisz, możesz użyć pada kierunkowego na klawiaturze Bluetooth lub strzałek na klawiaturze ekranowej, aby wysłać strzałki do serwera SPICE.
 (b) Obróć pad kierunkowy: w telefonach sparowanych z klawiaturą Bluetooth może być konieczne obrócenie pada kierunkowego na klawiaturze w kierunku przeciwnym do ruchu wskazówek zegara, aby wysyłać prawidłowe wskazówki do serwera.
 (c) Lokalny wskaźnik myszy: Jeśli wskaźnik jest niewidoczny, wybierz tę opcję, aby wymusić jego rysowanie przez aplikację.</string>
-    <string name="ssh_key_generated">Pomyślnie wygenerowano lub zaimportowano nowy klucz.Możesz teraz dotknąć przycisku „Generuj/eksportuj klucz”, aby udostępnić, skopiować do schowka lub wyeksportować klucz publiczny.</string>
-    <string name="error_failed_to_download_http">Nie udało się pobrać pliku przez HTTP.Być może Twój serwer jest nieosiągalny.</string>
+    <string name="ssh_key_generated">Pomyślnie wygenerowano lub zaimportowano nowy klucz. Możesz teraz dotknąć przycisku „Generuj/eksportuj klucz”, aby udostępnić, skopiować do schowka lub wyeksportować klucz publiczny.</string>
+    <string name="error_failed_to_download_http">Nie udało się pobrać pliku przez HTTP. Być może Twój serwer jest nieosiągalny.</string>
     <string name="info_ssh_initializing_hostkey">Próba zainicjowania klucza hosta SSH.</string>
     <string name="auto_rotation">Obrót ekranu po podłączeniu</string>
     <string name="need_help">Potrzebujesz pomocy?</string>
@@ -446,47 +368,47 @@
     <string name="ssl_strict">Wymagaj, aby nazwa zwyczajowa była zgodna z certyfikatem (zalecane)</string>
     <string name="cursor_force_disable">Wyłączyć</string>
     <string name="cursor_force_local">Lokalny</string>
-    <string name="error_ssh_port_forwarding_failure">Nie można skonfigurować przekierowania portów dla ruchu tunelowego VNC przez SSH.Upewnij się, że Twój serwer SSH jest skonfigurowany tak, aby zezwalał na przekierowanie portów, i spróbuj ponownie.</string>
-    <string name="error_pve_vmid_not_numeric">Identyfikator maszyny wirtualnej nie jest numeryczny.Wprowadź numeryczny identyfikator maszyny wirtualnej lub pozostaw puste, aby wybrać maszynę wirtualną z listy.</string>
+    <string name="error_ssh_port_forwarding_failure">Nie można skonfigurować przekierowania portów dla ruchu tunelowego VNC przez SSH. Upewnij się, że Twój serwer SSH jest skonfigurowany tak, aby zezwalał na przekierowanie portów, i spróbuj ponownie.</string>
+    <string name="error_pve_vmid_not_numeric">Identyfikator maszyny wirtualnej nie jest numeryczny. Wprowadź numeryczny identyfikator maszyny wirtualnej lub pozostaw puste, aby wybrać maszynę wirtualną z listy.</string>
     <string name="message_please_install_bvnc">Zainstaluj &lt;a href=market://details?id=com.iiordanov.bVNC&gt;bVNC&lt;/a&gt; z Google Play, aby połączyć się z konsolą VNC tej maszyny wirtualnej.</string>
     <string name="previous_versions">Poprzednie wersje ⍼</string>
     <string name="local_device_tweaks">Ulepszenia urządzeń lokalnych</string>
     <string name="info_dialog_title">Informacje</string>
     <string name="audio_initialized">Zainicjowano dźwięk</string>
-    <string name="input_method_direct_drag_pan_description">Bezpośrednio, przytrzymaj panoramę: przesuń, aby przeciągnąć i upuścić.Stuknij jednym palcem w miejsce, w którym chcesz kliknąć lewym przyciskiem myszy, dwoma palcami, aby kliknąć prawym przyciskiem myszy, a trzema palcami, aby kliknąć środkowym przyciskiem.Przesuń dwoma palcami, aby przewinąć.Naciśnij długo, aby rozpocząć przesuwanie.</string>
+    <string name="input_method_direct_drag_pan_description">Bezpośrednio, przytrzymaj panoramę: przesuń, aby przeciągnąć i upuścić. Stuknij jednym palcem w miejsce, w którym chcesz kliknąć lewym przyciskiem myszy, dwoma palcami, aby kliknąć prawym przyciskiem myszy, a trzema palcami, aby kliknąć środkowym przyciskiem. Przesuń dwoma palcami, aby przewinąć. Naciśnij długo, aby rozpocząć przesuwanie.</string>
     <string name="update_button">Aktualizacja</string>
     <string name="copy_logcat">📋 Skopiuj Logcat</string>
     <string name="audio_will_be_initialized">Dźwięk zostanie zainicjowany za około 15 sekund. Wcześniej zatrzymaj odtwarzanie wideo lub audio</string>
     <string name="ssh_use_x11vnc">Automatyczny pulpit</string>
-    <string name="log_copied">Logcat skopiowany do schowka.Możesz teraz wkleić go do wiadomości e-mail lub na forum pomocy technicznej.Przed opublikowaniem sprawdź, czy nie ma żadnych danych osobowych.</string>
+    <string name="log_copied">Logcat skopiowany do schowka. Możesz teraz wkleić go do wiadomości e-mail lub na forum pomocy technicznej. Przed opublikowaniem sprawdź, czy nie ma żadnych danych osobowych.</string>
     <string name="error_vv_download_timeout">Przekroczono limit czasu pobierania pliku vv.</string>
-    <string name="ca_file_error_reading">Błąd odczytu pliku CA.Upewnij się, że jest czytelny.</string>
+    <string name="ca_file_error_reading">Błąd odczytu pliku CA. Upewnij się, że jest czytelny.</string>
     <string name="rdp_connection_settings">Ustawienia połączenia RDP</string>
     <string name="ssh_tunnel_settings">Ustawienia tunelu SSH</string>
-    <string name="error_not_connected_to_network">Wygląda na to, że nie masz połączenia z Internetem.Nie można kontynuować bez połączenia!</string>
-    <string name="error_failed_to_obtain_content">Nie udało się uzyskać pliku.Pobierz go ponownie, ale tym razem szybko otwórz go z folderu Pobieranie w Menedżerze plików.</string>
-    <string name="error_pve_failed_to_authenticate">Nie udało się uwierzytelnić w środowisku wirtualnym Proxmox.Upewnij się, że wprowadziłeś swoją nazwę użytkownika w formacie użytkownik@dziedzina i że hasło jest prawidłowe.</string>
+    <string name="error_not_connected_to_network">Wygląda na to, że nie masz połączenia z Internetem. Nie można kontynuować bez połączenia!</string>
+    <string name="error_failed_to_obtain_content">Nie udało się uzyskać pliku. Pobierz go ponownie, ale tym razem szybko otwórz go z folderu Pobieranie w Menedżerze plików.</string>
+    <string name="error_pve_failed_to_authenticate">Nie udało się uwierzytelnić w środowisku wirtualnym Proxmox. Upewnij się, że wprowadziłeś swoją nazwę użytkownika w formacie użytkownik@dziedzina i że hasło jest prawidłowe.</string>
     <string name="show_advanced_settings">Pokaż ustawienia zaawansowane</string>
-    <string name="error_failed_to_download_https">Nie udało się pobrać pliku przez HTTPS.Być może certyfikat Twojego serwera jest niezaufany (wygasł lub został podpisany samodzielnie) lub Twój serwer jest nieosiągalny.</string>
+    <string name="error_failed_to_download_https">Nie udało się pobrać pliku przez HTTPS. Być może certyfikat Twojego serwera jest niezaufany (wygasł lub został podpisany samodzielnie) lub Twój serwer jest nieosiągalny.</string>
     <string name="auto_request_new_res">Zsynchronizuj pilota z rozdzielczością wyświetlacza</string>
     <string name="single_middle">Tryb środkowego przeciągania — przesuń, aby przeciągnąć/wybrać, podnieś palec, aby zatrzymać</string>
     <string name="enter_rdp_credentials">Proszę wprowadzić dane uwierzytelniające RDP</string>
     <string name="vv_file_not_found">Nie znaleziono pliku .vv!</string>
-    <string name="error_anon_dh_unsupported">Serwer VNC próbuje użyć szyfrów Anonymous Diffie Hellman, które nie są obsługiwane na Twoim urządzeniu z Androidem.Jeśli używasz serwera Vino VNC GNOME, możesz wyłączyć AnonTLS, uruchamiając następującą komendę w terminalu, a następnie uruchamiając ponownie: \gsettings set org.gnome.Vino require-encryption false\.Jeśli używasz x11vnc, możesz dodać następujące opcje: \-vencrypt nodh:only -ssl\.</string>
+    <string name="error_anon_dh_unsupported">Serwer VNC próbuje użyć szyfrów Anonymous Diffie Hellman, które nie są obsługiwane na Twoim urządzeniu z Androidem. Jeśli używasz serwera Vino VNC GNOME, możesz wyłączyć AnonTLS, uruchamiając następującą komendę w terminalu, a następnie uruchamiając ponownie: \gsettings set org.gnome.Vino require-encryption false\. Jeśli używasz x11vnc, możesz dodać następujące opcje: \-vencrypt nodh:only -ssl\.</string>
     <string name="connection_setup_vm_name">Nazwa maszyny wirtualnej (opcjonalnie)</string>
-    <string name="error_no_such_vm_found_for_user">Dla podanego użytkownika nie znaleziono maszyny wirtualnej o podanym identyfikatorze.Usuń identyfikator, aby uzyskać listę maszyn wirtualnych.</string>
+    <string name="error_no_such_vm_found_for_user">Dla podanego użytkownika nie znaleziono maszyny wirtualnej o podanym identyfikatorze. Usuń identyfikator, aby uzyskać listę maszyn wirtualnych.</string>
     <string name="connection_setup_user">Użytkownik@domena</string>
     <string name="enter_vnc_credentials">Wprowadź dane uwierzytelniające VNC</string>
-    <string name="master_password_set_message">Proszę wprowadzić i zapamiętać hasło główne.Im dłuższe hasło, tym trudniej je złamać.Jeśli ustawisz nieprawidłowe hasło lub je zapomnisz, utracisz wszystkie swoje ustawienia!Możesz teraz wyeksportować swoje ustawienia, aby utworzyć ich kopię zapasową (z Menu).Przechowuj je bezpiecznie, ponieważ wyeksportowane ustawienia nie są szyfrowane.</string>
+    <string name="master_password_set_message">Proszę wprowadzić i zapamiętać hasło główne. Im dłuższe hasło, tym trudniej je złamać. Jeśli ustawisz nieprawidłowe hasło lub je zapomnisz, utracisz wszystkie swoje ustawienia! Możesz teraz wyeksportować swoje ustawienia, aby utworzyć ich kopię zapasową (z Menu). Przechowuj je bezpiecznie, ponieważ wyeksportowane ustawienia nie są szyfrowane.</string>
     <string name="get_help">Uzyskaj pomoc</string>
     <string name="mouse_follow_pan">Mysz podąża za patelnią</string>
     <string name="input_mode_panning">Tryb panoramowania pulpitu</string>
-    <string name="input_method_single_handed_description">Obsługa jedną ręką: przesuń, aby przesuwać.Stuknij jednym palcem w miejsce, w którym chcesz kliknąć lewym przyciskiem myszy.Naciśnij długo, aby wybrać tryb lewego/prawego/środkowego przeciągania/przewijania/powiększania.Działają również zwykłe elementy sterujące wielodotykowe.</string>
+    <string name="input_method_single_handed_description">Obsługa jedną ręką: przesuń, aby przesuwać. Stuknij jednym palcem w miejsce, w którym chcesz kliknąć lewym przyciskiem myszy. Naciśnij długo, aby wybrać tryb lewego/prawego/środkowego przeciągania/przewijania/powiększania. Działają również zwykłe elementy sterujące wielodotykowe.</string>
     <string name="rdp_security_auto">Automatyczne negocjowanie bezpieczeństwa</string>
     <string name="enter_password">Proszę wprowadzić hasło</string>
     <string name="pan_follow_mouse">Pan podąża za myszą</string>
     <string name="error_uri_noinfo_nosave">Za mało informacji specyficznych do połączenia.</string>
-    <string name="custom_ca_subject">Opcjonalny temat certyfikatu.Nie potrzebne, jeśli certyfikat CN pasuje do nazwy hosta</string>
+    <string name="custom_ca_subject">Opcjonalny temat certyfikatu. Nie potrzebne, jeśli certyfikat CN pasuje do nazwy hosta</string>
     <string name="color_256">256 kolorów (8 bpp)</string>
     <string name="spice_connection_settings">Ustawienia połączenia SPICE</string>
     <string name="color_greyscale">Skala szarości (1 bpp)</string>
@@ -497,21 +419,21 @@ Jeśli nie ma zapisanych połączeń, dolna część ekranu jest pusta i koniecz
 Na tym ekranie możesz także kontrolować inne aspekty konfiguracji, dotykając innego paska narzędzi lub opcji menu u góry, np.
 instancję, aby edytować ustawienia domyślne lub importować i eksportować ustawienia.
 
-Po zapisaniu połączenia możesz połączyć się ze zdalnym serwerem, dotykając go raz.Będziesz mieć również możliwość usunięcia lub edycji, dotykając go długo.
+Po zapisaniu połączenia możesz połączyć się ze zdalnym serwerem, dotykając go raz. Będziesz mieć również możliwość usunięcia lub edycji, dotykając go długo.
 
 Na koniec możesz użyć pola Wyszukaj połączenia, aby szybko znaleźć połączenia, filtrując pokazane połączenia.</string>
     <string name="delete_key_list">Usuń listę kluczy</string>
-    <string name="error_ssh_key_auth_fail">Nie udało się uwierzytelnić na serwerze SSH za pomocą pary kluczy.Sprawdź swoją nazwę użytkownika SSH i upewnij się, że klucz publiczny znajduje się w pliku autoryzowanych kluczy po stronie zdalnej.</string>
-    <string name="error_ssh_keypair_decryption_failure">Nie udało się odszyfrować pary kluczy.Upewnij się, że poprawnie wpisałeś hasło w polu \'SSH Passphrase\' na ekranie głównym.</string>
+    <string name="error_ssh_key_auth_fail">Nie udało się uwierzytelnić na serwerze SSH za pomocą pary kluczy. Sprawdź swoją nazwę użytkownika SSH i upewnij się, że klucz publiczny znajduje się w pliku autoryzowanych kluczy po stronie zdalnej.</string>
+    <string name="error_ssh_keypair_decryption_failure">Nie udało się odszyfrować pary kluczy. Upewnij się, że poprawnie wpisałeś hasło w polu \'SSH Passphrase\' na ekranie głównym.</string>
     <string name="rdp_security_nla">Uwierzytelnianie na poziomie sieci</string>
     <string name="import_from_file">Importuj z pliku</string>
     <string name="info_cert">Czy akceptujesz ten nowy lub zmieniony certyfikat hosta?\n\nOdciski palców:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nWydane do: %4$s\nWydane przez: %5$s\n\nWażne od: %6$s\nWażne do: %7$s\n</string>
     <string name="show_menu">Pokaż menu</string>
     <string name="local_mouse_check">Lokalny wskaźnik myszy (wybierz, jeśli wskaźnik jest niewidoczny)</string>
     <string name="hide_toolbar">Ukryj pasek narzędzi</string>
-    <string name="input_mode_help_text">W dowolnym trybie wprowadzania dotknij ikony klawiatury, aby wyświetlić klawiaturę ekranową.Ponadto Twoje urządzenie może mieć własny gest, który powoduje wyświetlenie klawiatury.
+    <string name="input_mode_help_text">W dowolnym trybie wprowadzania dotknij ikony klawiatury, aby wyświetlić klawiaturę ekranową. Ponadto Twoje urządzenie może mieć własny gest, który powoduje wyświetlenie klawiatury.
 
-Użyj trybów wprowadzania bezpośredniego, aby uzyskać bardziej intuicyjne sterowanie za pomocą ekranu dotykowego.Użyj trybu symulowanego touchpada, aby uzyskać lepszą kontrolę nad myszą.
+Użyj trybów wprowadzania bezpośredniego, aby uzyskać bardziej intuicyjne sterowanie za pomocą ekranu dotykowego. Użyj trybu symulowanego touchpada, aby uzyskać lepszą kontrolę nad myszą.
 
 Tryb bezpośredni, przesuwanie palcem:
 - Sterowanie myszą bezpośrednio poprzez dotyk.
@@ -544,9 +466,9 @@ Wszystkie tryby wprowadzania:
 - Alternatywne kliknięcie prawym przyciskiem myszy: użyj przycisku \Wstecz\ lub gestu na swoim urządzeniu.
 - Kliknięcie środkowym przyciskiem: dotknij i przytrzymaj, a następnie dotknij dwoma dodatkowymi palcami (w dowolnym miejscu ekranu).
 - Przeciągnięcie myszą: dotknij i przytrzymaj, a następnie przesuń.
-- Kółko przewijania: przeciąganie dwoma palcami w górę/w dół i w lewo/w prawo.Szybkie przeciągnięcie powoduje szybsze przewijanie.
+- Kółko przewijania: przeciąganie dwoma palcami w górę/w dół i w lewo/w prawo. Szybkie przeciągnięcie powoduje szybsze przewijanie.
 - Powiększanie/pomniejszanie: w opcji skalowania z możliwością powiększenia użyj funkcji przybliżania, aby kontrolować skalowanie.
-- Klawisz Ctrl/Alt: Przyciski Menu-&gt;Ctrl/Alt.Nie zapomnij wyłączyć, gdy skończysz!
+- Klawisz Ctrl/Alt: Przyciski Menu-&gt;Ctrl/Alt. Nie zapomnij wyłączyć, gdy skończysz!
 - Kombinacje klawiszy: Menu-&gt;Więcej-&gt;Wyślij klucze.
 - Wyślij tekst: wpisz tekst na klawiaturze ekranowej lub użyj Menu-&gt;Więcej-&gt;Wyślij tekst.</string>
     <string name="move_toolbar">Przesuń pasek narzędzi</string>
@@ -557,7 +479,7 @@ Poniżej możesz skonfigurować swoje połączenie.
 
 - Typ połączenia: Tutaj wybierasz, z jakim środowiskiem wirtualizacji się łączysz.
 
-- Adres serwera: Nazwa hosta lub adres IP serwera.Jeśli nasłuchuje na niestandardowym porcie, możesz dodać port oddzielony dwukropkiem.
+- Adres serwera: Nazwa hosta lub adres IP serwera. Jeśli nasłuchuje na niestandardowym porcie, możesz dodać port oddzielony dwukropkiem.
 
 - Nazwa maszyny wirtualnej: możesz określić nazwę maszyny wirtualnej wyświetlaną na platformie wirtualizacji lub pozostawić to pole puste, aby wyświetlić listę maszyn wirtualnych lub kontenerów do wyboru.
 
@@ -568,7 +490,7 @@ Poniżej możesz skonfigurować swoje połączenie.
 - Ustawienia zaawansowane: w tej sekcji znajdziesz wszelkie poprawki dotyczące lokalnego urządzenia, protokołu i wydajności.</string>
     <string name="message_please_wait">Proszę czekać</string>
     <string name="more_debug_logging">Więcej rejestrowania debugowania</string>
-    <string name="ca_file_not_found">Nie znaleziono pliku.Wprowadź prawidłową nazwę pliku w polu tekstowym (np. /sdcard/ca.crt).</string>
+    <string name="ca_file_not_found">Nie znaleziono pliku. Wprowadź prawidłową nazwę pliku w polu tekstowym (np. /sdcard/ca.crt).</string>
     <string name="single_choose">Wybierz tryb jednoręczny lub anuluj</string>
     <string name="error_pve_failed_to_parse_json">Nie udało się przeanalizować odpowiedzi z wirtualnego środowiska Proxmox.</string>
     <string name="share_app">Udostępnij 🔗</string>
@@ -576,16 +498,16 @@ Poniżej możesz skonfigurować swoje połączenie.
     <string name="input_mode_fit_to_screen">Bez patelni;Mysz trackballowa</string>
     <string name="input_methods">Metoda wprowadzania</string>
     <string name="connection_edit">Redagować</string>
-    <string name="error_ssh_pubkey_auth_method_unavail">Serwer SSH nie obsługuje metody autoryzacji \publickey\ i do uwierzytelnienia próbujemy użyć pary kluczy.Skonfiguruj go tak, aby zezwalał na uwierzytelnianie za pomocą klucza publicznego i spróbuj ponownie.Dostępne metody autoryzacji:</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">Serwer SSH nie obsługuje metody autoryzacji \publickey\ i do uwierzytelnienia próbujemy użyć pary kluczy. Skonfiguruj go tak, aby zezwalał na uwierzytelnianie za pomocą klucza publicznego i spróbuj ponownie. Dostępne metody autoryzacji:</string>
     <string name="local_clipboard_integration">Włącz integrację schowka lokalnego ze zdalnym</string>
     <string name="disable_pointer_offset_correction">Wyłącz korektę przesunięcia wskaźnika</string>
     <string name="enter_passphrase">Wprowadź hasło klucza</string>
-    <string name="input_method_direct_swipe_pan_description">Bezpośrednio, przesuwanie Przesuń: przesuń, aby przesuwać.Stuknij jednym palcem w miejsce, w którym chcesz kliknąć lewym przyciskiem myszy, dwoma palcami, aby kliknąć prawym przyciskiem myszy, a trzema palcami, aby kliknąć środkowym przyciskiem.Przesuń dwoma palcami, aby przewinąć.Długie dotknięcie, aby przeciągnąć i upuścić.</string>
+    <string name="input_method_direct_swipe_pan_description">Bezpośrednio, przesuwanie Przesuń: przesuń, aby przesuwać. Stuknij jednym palcem w miejsce, w którym chcesz kliknąć lewym przyciskiem myszy, dwoma palcami, aby kliknąć prawym przyciskiem myszy, a trzema palcami, aby kliknąć środkowym przyciskiem. Przesuń dwoma palcami, aby przewinąć. Długie dotknięcie, aby przeciągnąć i upuścić.</string>
     <string name="rdp_security_rdp">Bezpieczeństwo PROW</string>
     <string name="user_not_specified">Nie określono użytkownika</string>
     <string name="color_black_and_white">Czarno-biały (1 p.b.)</string>
     <string name="action_rate_or_share_app">⭐ Uzyskaj pomoc, oceń, udostępnij</string>
-    <string name="error_ovirt_timeout">Upłynął limit czasu połączenia z maszyną wirtualną.Sprawdź, czy adres węzła, na którym działa Twoja maszyna wirtualna, jest poprawny, czy jest ona dostępna z Twojej bieżącej sieci i czy żadna zapora sieciowa nie blokuje połączenia.</string>
+    <string name="error_ovirt_timeout">Upłynął limit czasu połączenia z maszyną wirtualną. Sprawdź, czy adres węzła, na którym działa Twoja maszyna wirtualna, jest poprawny, czy jest ona dostępna z Twojej bieżącej sieci i czy żadna zapora sieciowa nie blokuje połączenia.</string>
     <string name="audio">Audio</string>
     <string name="select_vm_title">Wybierz opcję Maszyna wirtualna</string>
     <string name="ca_ovirt_use_custom">Niestandardowe RHEV/oVirt CA</string>
@@ -593,9 +515,9 @@ Poniżej możesz skonfigurować swoje połączenie.
 &lt;br&gt;
 - Zwykły VNC, bezpieczny VNC przez SSH, AnonTLS i VeNCrypt oraz logowanie do systemu Windows UltraVNC z opcjonalnym wzmacniaczem.
 &lt;br&gt;
-- Tryb AutoX: W trybie VNC przez SSH automatycznie odkrywaj istniejące i/lub twórz nowe sesje X przy użyciu x11vnc!Działa jak klient NX.
+- Tryb AutoX: W trybie VNC przez SSH automatycznie odkrywaj istniejące i/lub twórz nowe sesje X przy użyciu x11vnc! Działa jak klient NX.
 &lt;br&gt;
-- Bezpłatne wsparcie rotacyjne.W razie potrzeby użyj systemu operacyjnego, aby ograniczyć rotację.
+- Bezpłatne wsparcie rotacyjne. W razie potrzeby użyj systemu operacyjnego, aby ograniczyć rotację.
 &lt;br&gt;
 - Generowanie i eksportowanie par kluczy SSH Public/Private.
 &lt;br&gt;
@@ -642,7 +564,7 @@ Znane problemy:
     <string name="color_64">64 kolory (4 bpp)</string>
     <string name="connection_setup_password">Hasło</string>
     <string name="connection_type_text">Środowisko wirtualizacji (RHEV/oVirt lub Proxmox)</string>
-    <string name="auto_x_unixpw">Użyj poświadczeń UNIX zamiast wbudowanego mechanizmu bezpieczeństwa.Użytkownik musi mieć możliwość uruchomienia /bin/su.</string>
+    <string name="auto_x_unixpw">Użyj poświadczeń UNIX zamiast wbudowanego mechanizmu bezpieczeństwa. Użytkownik musi mieć możliwość uruchomienia /bin/su.</string>
     <string name="cert_fingerprint">Certyfikat odcisku palca</string>
     <string name="enter_passphrase_title">Wprowadź hasło klucza</string>
     <string name="delete_key">Usuń wybrany klucz</string>
@@ -652,29 +574,29 @@ Znane problemy:
     <string name="single_right">Tryb przeciągania prawym przyciskiem — przesuń, aby przeciągnąć/wybrać, podnieś palec, aby zatrzymać</string>
     <string name="rdp_security_tls">Bezpieczeństwo TLS</string>
     <string name="prefer_sending_unicode">Wejście Unicode (tylko Windows)</string>
-    <string name="error_ssh_x11vnc_no_port_failure">Nie można uzyskać zdalnego portu VNC z x11vnc.Upewnij się, że x11vnc jest zainstalowany.Dla pewności spróbuj ręcznie uruchomić x11vnc z wiersza poleceń.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Nie można uzyskać zdalnego portu VNC z x11vnc. Upewnij się, że x11vnc jest zainstalowany. Dla pewności spróbuj ręcznie uruchomić x11vnc z wiersza poleceń.</string>
     <string name="info_progress_dialog_downloading">Pobierz pierwszą klatkę.\Proszę czekać…</string>
     <string name="ca_spice_manage">Zarządzaj SPICE CA</string>
     <string name="vnc_viewer_started">Uruchomiono przeglądarkę VNC</string>
-    <string name="warning_cert_does_not_match">OSTRZEŻENIE: Zapisany certyfikat x509 lub przekazany podpis nie jest zgodny z bieżącym certyfikatem serwera!To może być atak typu man-in-the-middle.Jeśli wiesz o kluczowej zmianie, możesz kontynuować.</string>
+    <string name="warning_cert_does_not_match">OSTRZEŻENIE: Zapisany certyfikat x509 lub przekazany podpis nie jest zgodny z bieżącym certyfikatem serwera! To może być atak typu man-in-the-middle. Jeśli wiesz o kluczowej zmianie, możesz kontynuować.</string>
     <string name="manage_custom_ca_title">Zarządzaj niestandardowym urzędem certyfikacji</string>
-    <string name="error_no_vnc_support_yet">Typ wyświetlania VNC nie jest jeszcze obsługiwany, ale będzie to nadchodząca funkcja.Dziękujemy za zrozumienie!</string>
+    <string name="error_no_vnc_support_yet">Typ wyświetlania VNC nie jest jeszcze obsługiwany, ale będzie to nadchodząca funkcja. Dziękujemy za zrozumienie!</string>
     <string name="error_pve_api_unexpected_code">Nieoczekiwana odpowiedź ze środowiska wirtualnego Proxmox:</string>
     <string name="scroll_speed">Dotknij opcji Szybkość przewijania</string>
     <string name="love_our_work">Kochasz naszą pracę?</string>
     <string name="input_method_direct_swipe_pan">Bezpośrednio, przesuń palcem</string>
     <string name="download_from_server">Pobierz z serwera</string>
     <string name="pref_keyboard_type_label_TYPE_NULL">Domyślny (TYPE_NULL)</string>
-    <string name="error_uri_parse_error">Nie można przeanalizować identyfikatora URI zamiaru.Sprawdź format URI.Aby uzyskać więcej informacji, możesz także zobaczyć logcat urządzenia.</string>
+    <string name="error_uri_parse_error">Nie można przeanalizować identyfikatora URI zamiaru. Sprawdź format URI. Aby uzyskać więcej informacji, możesz także zobaczyć logcat urządzenia.</string>
     <string name="error">Błąd</string>
-    <string name="rdp_intro_text">Dziękujemy za wsparcie aRDP i ogólnie oprogramowania typu open source!Aby uzyskać pomoc dotyczącą korzystania z protokołu aRDP, zapoznaj się z elementami Pomocy w Menu oraz opisem aplikacji na rynku.
+    <string name="rdp_intro_text">Dziękujemy za wsparcie aRDP i ogólnie oprogramowania typu open source! Aby uzyskać pomoc dotyczącą korzystania z protokołu aRDP, zapoznaj się z elementami Pomocy w Menu oraz opisem aplikacji na rynku.
 &lt;br&gt;
 &lt;br&gt;
 Aktualna lista funkcji aRDP obejmuje:
 &lt;br&gt;
 - Zwykły RDP, RDP tunelowany przez SSH.
 &lt;br&gt;
-- Bezpłatne wsparcie rotacyjne.W razie potrzeby użyj systemu operacyjnego, aby ograniczyć rotację.
+- Bezpłatne wsparcie rotacyjne. W razie potrzeby użyj systemu operacyjnego, aby ograniczyć rotację.
 &lt;br&gt;
 - Ustawienie rozdzielczości zdalnej, rozdzielczości natywnej w trybach poziomym i pionowym.
 &lt;br&gt;
@@ -719,7 +641,7 @@ Aktualna lista funkcji aRDP obejmuje:
 &lt;br&gt;
 Znane problemy:</string>
     <string name="info_ssh_key_fingerprint">Odcisk palca klucza hosta to:</string>
-    <string name="error_ssh_passphrase_but_keypair_unencrypted">Podano hasło, ale para kluczy nie jest zaszyfrowana.Proszę usunąć hasło.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Podano hasło, ale para kluczy nie jest zaszyfrowana. Proszę usunąć hasło.</string>
     <string name="connection_setup_host_name">Adres serwera</string>
     <string name="desktop_scale_percentage">Niestandardowy procent skalowania</string>
     <string name="path_to_ca">Wprowadź ścieżkę pliku (na przykład /sdcard/ca-cert.pem) i dotknij Importuj, aby załadować urząd certyfikacji.</string>
@@ -727,14 +649,14 @@ Znane problemy:</string>
     <string name="enter_gateway_credentials">Wprowadź dane uwierzytelniające bramy</string>
     <string name="info_progress_dialog_establishing">Ustanawiam uścisk dłoni.\nProszę czekać…</string>
     <string name="input_method_help">Pomoc dotycząca metody wprowadzania</string>
-    <string name="spice_intro_text">Dziękujemy za wsparcie aSPICE i ogólnie oprogramowania open source!Aby uzyskać pomoc dotyczącą korzystania z aSPICE, zobacz elementy Pomocy w Menu oraz opis aplikacji na rynku.
+    <string name="spice_intro_text">Dziękujemy za wsparcie aSPICE i ogólnie oprogramowania open source! Aby uzyskać pomoc dotyczącą korzystania z aSPICE, zobacz elementy Pomocy w Menu oraz opis aplikacji na rynku.
 &lt;br&gt;
 &lt;br&gt;
 Aktualna lista funkcji aSPICE obejmuje:
 &lt;br&gt;
 - Zwykły SPICE, SPICE tunelowany przez SSH.
 &lt;br&gt;
-- Bezpłatne wsparcie rotacyjne.W razie potrzeby użyj systemu operacyjnego, aby ograniczyć rotację.
+- Bezpłatne wsparcie rotacyjne. W razie potrzeby użyj systemu operacyjnego, aby ograniczyć rotację.
 &lt;br&gt;
 - Generowanie i eksportowanie par kluczy SSH Public/Private.
 &lt;br&gt;
@@ -779,7 +701,7 @@ Znane problemy:
 &lt;br&gt;
 - Wyślij tekst nie wysyła niektórych symboli.
 &lt;br&gt;</string>
-    <string name="enable_gateway">Włącz bramę</string>
+    <string name="enable_gateway">Włącz RDP Gateway</string>
     <string name="error_pve_timeout_communicating">Przekroczono limit czasu komunikacji ze środowiskiem wirtualnym Proxmox.</string>
     <string name="paste_ca">Wprowadź tutaj urząd certyfikacji, jeśli nie importujesz go jako pliku.</string>
     <string name="rdp_adv_gfx">Efekty RDP</string>
@@ -787,7 +709,7 @@ Znane problemy:
     <string name="enter_spice_password">Proszę podać hasło SPICE</string>
     <string name="copy_of">Kopia</string>
     <string name="vv_file_error">Brakuje pliku .vv lub jest on uszkodzony!</string>
-    <string name="input_method_touchpad_description">Symulowany touchpad: przesuń, aby przesunąć wskaźnik.Stuknij w dowolnym miejscu jednym palcem, aby kliknąć lewym przyciskiem myszy, dwoma palcami, aby kliknąć prawym przyciskiem myszy i trzema palcami, aby kliknąć środkowym przyciskiem myszy.Przesuń dwoma palcami, aby przewinąć.Długie dotknięcie, aby przeciągnąć i upuścić.</string>
+    <string name="input_method_touchpad_description">Symulowany touchpad: przesuń, aby przesunąć wskaźnik. Stuknij w dowolnym miejscu jednym palcem, aby kliknąć lewym przyciskiem myszy, dwoma palcami, aby kliknąć prawym przyciskiem myszy i trzema palcami, aby kliknąć środkowym przyciskiem myszy. Przesuń dwoma palcami, aby przewinąć. Długie dotknięcie, aby przeciągnąć i upuścić.</string>
     <string name="show_keyboard">Pokaż klawiaturę</string>
     <string name="action_delete_connection">Usuń połączenie</string>
     <string name="error_ovirt_unable_to_connect">Nie można połączyć się lub uwierzytelnić. Sprawdź adres serwera, użytkownika, hasło oraz urząd certyfikacji i temat.</string>
@@ -797,26 +719,26 @@ Znane problemy:
     <string name="report_bug">Zgłoś błąd 🐛</string>
     <string name="cursor_mode">Tryb kursora:</string>
     <string name="error_x509_could_not_generate_encoding">Nie można wygenerować kodowania certyfikatu.</string>
-    <string name="no_application_to_handle_vpn">To połączenie jest skonfigurowane do uruchamiania VPN za pośrednictwem aplikacji zewnętrznej.Aby ją uruchomić, musisz zainstalować aplikację taką jak Morpheusly.</string>
+    <string name="no_application_to_handle_vpn">To połączenie jest skonfigurowane do uruchamiania VPN za pośrednictwem aplikacji zewnętrznej. Aby ją uruchomić, musisz zainstalować aplikację taką jak Morpheusly.</string>
     <string name="ok">OK</string>
     <string name="custom_ca_paste">Wklej tutaj (jeśli nie importujesz) urząd certyfikacji</string>
     <string name="single_cancel">Tryb jednoręczny anulowany</string>
-    <string name="ca_subject">Wpisz tutaj nazwę podmiotu certyfikatu.Może nie być potrzebny, jeśli nazwa zwyczajowa certyfikatu (CN) jest zgodna z nazwą hosta serwera.</string>
+    <string name="ca_subject">Wpisz tutaj nazwę podmiotu certyfikatu. Może nie być potrzebny, jeśli nazwa zwyczajowa certyfikatu (CN) jest zgodna z nazwą hosta serwera.</string>
     <string name="back_button">Wracać</string>
     <string name="save_button">Ratować</string>
     <string name="ca_new_or_changed">Nowy lub zmieniony certyfikat serwera</string>
     <string name="single_left">Tryb przeciągania lewym przyciskiem — przesuń, aby przeciągnąć/wybrać, podnieś palec, aby zatrzymać</string>
-    <string name="auto_x_caption">Aplikacja może automatycznie wykrywać istniejące i tworzyć nowe sesje X na systemach Linux/UNIX (podobnie jak NX).Potrzebujesz x11vnc, aby znaleźć, oraz Xvfb, Xvnc lub Xdummy, aby utworzyć sesje.Jeśli masz problemy z połączeniem, spróbuj wybrać konkretny typ sesji zdalnej w ustawieniach zaawansowanych AutoX.</string>
+    <string name="auto_x_caption">Aplikacja może automatycznie wykrywać istniejące i tworzyć nowe sesje X na systemach Linux/UNIX (podobnie jak NX). Potrzebujesz x11vnc, aby znaleźć, oraz Xvfb, Xvnc lub Xdummy, aby utworzyć sesje. Jeśli masz problemy z połączeniem, spróbuj wybrać konkretny typ sesji zdalnej w ustawieniach zaawansowanych AutoX.</string>
     <string name="error_pve_api_io_error">Połączenie ze środowiskiem wirtualnym Proxmox nie powiodło się:</string>
     <string name="vnc_connection_settings">Ustawienia połączenia VNC</string>
     <string name="hide">Ukrywać</string>
-    <string name="error_ovirt_auth_failure">Błąd uwierzytelnienia.Sprawdź podanego użytkownika i hasło.</string>
+    <string name="error_ovirt_auth_failure">Błąd uwierzytelnienia. Sprawdź podanego użytkownika i hasło.</string>
     <string name="error_dialog_title">Błąd</string>
     <string name="auto_x_unix_auth">Uwierzytelnij się automatycznie przy użyciu dostarczonej nazwy użytkownika/hasła SSH (na czarnym ekranie logowania).</string>
     <string name="hide_connection_thumbnails">Ukryj miniatury połączeń</string>
     <string name="action_export_settings">Eksportuj ustawienia</string>
     <string name="connection_edit_delete_prompt">Czy chcesz edytować lub usunąć połączenie</string>
-    <string name="info_set_touchpad_input_mode">Serwer zgłasza, że ​​nie obsługuje wprowadzania myszą w trybie klienta, a bieżący tryb wprowadzania myszą nie będzie działał poprawnie.Jeśli problem będzie się powtarzał, upewnij się, że na maszynie wirtualnej są zainstalowane narzędzia Spice Tools lub przełącz się z menu na tryb symulowanego wprowadzania za pomocą panelu dotykowego.</string>
+    <string name="info_set_touchpad_input_mode">Serwer zgłasza, że ​​nie obsługuje wprowadzania myszą w trybie klienta, a bieżący tryb wprowadzania myszą nie będzie działał poprawnie. Jeśli problem będzie się powtarzał, upewnij się, że na maszynie wirtualnej są zainstalowane narzędzia Spice Tools lub przełącz się z menu na tryb symulowanego wprowadzania za pomocą panelu dotykowego.</string>
     <string name="single_reposition">Położenie wskaźnika myszy zostało zmienione dla trybu jednoręcznego</string>
     <string name="share_app_toast">Udostępnij link do aplikacji wszystkim znajomym w mediach społecznościowych!</string>
     <string name="input_method_direct_drag_pan">Bezpośrednio, przytrzymaj patelnię</string>
@@ -827,8 +749,8 @@ Znane problemy:
     <string name="ssh_server_needs_password_in_addition_to_key">Oprócz uwierzytelniania za pomocą klucza, Twój serwer wymaga uwierzytelnienia hasłem.</string>
     <string name="usb">USB (najpierw podłącz kabel OTG)</string>
     <string name="scroll_wheel">Kółko przewijania</string>
-    <string name="error_failed_to_obtain_file">Nie udało się znaleźć pliku.Pobierz go ponownie, ale tym razem spróbuj otworzyć go z obszaru powiadomień lub, jeśli to możliwe, bezpośrednio z przeglądarki.</string>
-    <string name="error_out_of_memory">Nie można przydzielić wystarczającej ilości pamięci do rysowania zdalnego ekranu.Spróbuj ponownie uruchomić aplikację, a następnie ponownie uruchom urządzenie.Możesz także spróbować zmniejszyć rozmiar pulpitu zdalnego w ustawieniach aplikacji.</string>
+    <string name="error_failed_to_obtain_file">Nie udało się znaleźć pliku. Pobierz go ponownie, ale tym razem spróbuj otworzyć go z obszaru powiadomień lub, jeśli to możliwe, bezpośrednio z przeglądarki.</string>
+    <string name="error_out_of_memory">Nie można przydzielić wystarczającej ilości pamięci do rysowania zdalnego ekranu. Spróbuj ponownie uruchomić aplikację, a następnie ponownie uruchom urządzenie. Możesz także spróbować zmniejszyć rozmiar pulpitu zdalnego w ustawieniach aplikacji.</string>
     <string name="info_ssh_key_fingerprint_identical">\n\nMożesz upewnić się, że jest on identyczny ze znanym odciskiem palca certyfikatu serwera, aby zapobiec atakowi typu man-in-the-middle.</string>
     <string name="enter_vnc_password">Proszę podać hasło VNC</string>
     <string name="master_password_error_intents_not_supported">Intencje połączeń nie są jeszcze obsługiwane, gdy włączone jest hasło główne.</string>
@@ -837,7 +759,43 @@ Znane problemy:
     <string name="custom_ca_import">Alternatywnie wprowadź pełną ścieżkę do swojego urzędu certyfikacji i dotknij opcji Importuj</string>
     <string name="email_us">Napisz do nas 📧</string>
     <string name="username_hint">Nazwa użytkownika logowania UltraVNC MS</string>
-    <string name="vnc_server_empty_no_save">Serwer VNC lub port są puste.Nie można zapisać połączenia!</string>
+    <string name="vnc_server_empty_no_save">Serwer VNC lub port są puste. Nie można zapisać połączenia!</string>
     <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
     <string name="support_forum">Forum wsparcia ❓</string>
+    <string name="vnc_connection_screen_help_text">
+Kiedy dodasz lub edytujesz połączenie, zobaczysz stronę konfiguracji połączenia. Tutaj możesz skonfigurować nowe połączenie VNC lub wybrać istniejące. Na górze znajduje się przycisk pozwalający na zapisanie połączenia. Poniżej możesz skonfigurować swoje połączenie.
+
+Jeśli szukasz szybkiego zwiększenia wydajności, spróbuj ustawić tryb Kolor na niższą wartość. Spróbuj także usunąć dowolny obraz tła pulpitu na serwerze VNC. Na koniec upewnij się, że Twoje urządzenie ma dobrą łączność sieciową i unikaj zakrywania anteny i zmniejszania siły sygnału.
+
+- Typ połączenia: Tutaj wybierasz typ połączenia VNC. Dostępne typy połączeń to:
+(a) Zwykły VNC, który jest obsługiwany przez wszystkie serwery VNC, ale brakuje mu szyfrowania i jest podatny na ataki typu brute-force ze względu na ograniczenie hasła do 8 znaków.
+(b) Bezpieczne VNC przez SSH, które łączy się przez szyfrowany tunel SSH. Potrzebujesz działającej usługi SSHD oraz serwera VNC. Dopóki serwer VNC nie akceptuje połączeń bezpośrednio z Internetu, ten typ połączenia nie jest obciążony żadnymi znanymi lukami w zabezpieczeniach, pod warunkiem, że przy pierwszym połączeniu zostanie zweryfikowany podpis certyfikatu serwera.
+(c) UltraVNC, które zapewnia opcje logowania do systemu Windows i wzmacniacza UltraVNC. Korzystanie z logowania do systemu Windows nie jest objęte ograniczeniem hasła do 8 znaków, ale ten tryb nie zapewnia szyfrowania, więc sesja jest podatna na podsłuchiwanie.
+(d) Bezpieczne VNC przez AnonTLS, które jest zwykłym VNC przez połączenie równoważne stunnelowi. Musisz albo uruchomić stunnel, albo użyć serwera VNC, takiego jak Vino, który od razu obsługuje AnonTLS. Ten tryb zapewnia szyfrowanie sesji, ale podlega ograniczeniu do 8 znaków hasła i nie zapobiega atakom typu man-in-the-middle.
+(e) Bezpieczne VNC poprzez VeNCrypt, które wykorzystuje certyfikaty x509 oraz szyfrowanie sesji i w zależności od konfiguracji serwera może używać poświadczeń użytkownika/hasła bez ograniczenia do 8 znaków. Ten tryb zapobiega atakom typu man-in-the-middle.a także zapewnienie prywatności sesji. Serwery takie jak x11vnc i TigerVNC obsługują ten tryb i są tak samo bezpieczne jak VNC przez SSH.
+
+- Tytuł: Każde utworzone połączenie może mieć przypisany pseudonim, pozwalający łatwo zidentyfikować je na liście.
+
+- Ustawienia tunelu SSH: Dostępne w trybie VNC przez SSH.
+(a) Serwer/Port SSH: Adres i port serwera SSH, przez który będzie tunelowane połączenie. Domyślnie SSH nasłuchuje na porcie 22.
+(b) Nazwa użytkownika/Hasło: Nazwa użytkownika i hasło do konta na serwerze SSH. Hasło zostanie uzupełnione na tej stronie, jeśli nie opuściłeś aplikacji od czasu ostatniego jej wprowadzenia.
+(c) Zarządzaj kluczem/Użyj klucza: przycisk do zarządzania kluczami publicznymi/prywatnymi oraz pole wyboru wskazujące, czy do uwierzytelnienia używać klucza, a nie hasła. Jeśli użyjesz przycisku Kopiuj do schowka po wygenerowaniu pary kluczy, powinno być możliwe wklejenie klucza publicznego po połączeniu z serwerem VNC (schowek jest zsynchronizowany z serwerem).
+
+- Skonfiguruj AutoX: Dostępne tylko w trybie VNC przez SSH. Aplikacja może automatycznie wykrywać istniejące i opcjonalnie tworzyć nowe sesje X na systemach UNIX (takich jak klient NX). Aby znaleźć sesję, potrzebujesz x11vnc oraz Xvfb, Xvnc lub Xdummy zainstalowanego na zdalnym systemie, aby utworzyć sesje. Być może będziesz musiał przenieść plik .dmrc i dodać plik .xinit do swojego katalogu domowego, jeśli Twój pulpit nie wygląda prawidłowo lub otrzymujesz tylko okno xterm.
+
+- Ustawienia połączenia VNC:
+(a) Serwer/Port VNC: Tutaj wprowadzasz nazwę hosta lub adres IP i port komputera, na którym działa serwer VNC, z którym chcesz się skontaktować. W trybie VNC przez SSH adres ten jest widoczny z serwera SSH. Jeśli serwer SSH i serwer VNC to ten sam komputer, możesz użyć hosta lokalnego. Serwery VNC zazwyczaj nasłuchują zaczynając od portu 5900 (pierwszy ekran VNC, ekran: 0).
+(b) Użytkownik VNC: Dostępne w UltraVNC z trybem logowania Windows lub Secure VNC przez VeNCrypt. W tym miejscu wprowadza się nazwę użytkownika konta Windows/UNIX.
+(c) Hasło VNC: Jeśli konfiguracja serwera VNC wymaga hasła, wprowadź je tutaj. W UltraVNC z trybami logowania Windows/VeNCrypt wpisz tutaj hasło do konta Windows/UNIX. Bezpieczne przechowywanie nie jest używane do przechowywania haseł, a hasło będzie przechowywane tylko wtedy, gdy zaznaczysz pole Zachowaj. Hasło zostanie uzupełnione na tej stronie, jeśli nie opuściłeś aplikacji od czasu ostatniego jej wprowadzenia.
+- Tryb koloru: Klient obsługuje kilka trybów kolorów. Tryby z większą liczbą kolorów zapewniają lepsze wrażenia wizualne kosztem większej przepustowości i większej mocy obliczeniowej procesora na urządzeniu. Niektóre serwery VNC nie obsługują wszystkich głębi kolorów (np. Pulpit zdalny OS/X wymaga 24-bitowego koloru). Jeśli masz problemy z połączeniem, wypróbuj inną głębię kolorów.
+
+- Użyj D-Pad dla strzałek: Jeśli wolisz, możesz użyć D-Pad na klawiaturze Bluetooth lub strzałek na klawiaturze ekranowej, aby wysłać strzałki do serwera VNC.
+
+- Obróć pad kierunkowy: w telefonach sparowanych z klawiaturą Bluetooth może być konieczne obrócenie pada kierunkowego na klawiaturze w kierunku przeciwnym do ruchu wskazówek zegara, aby wysyłać prawidłowe wskazówki do serwera.
+
+- Lokalny wskaźnik myszy: niektóre serwery VNC (np. Pulpit zdalny OS/X) nie rysują wskaźnika myszy na kliencie. Zaznaczenie tej opcji spowoduje, że aplikacja będzie rysować wskaźnik myszy w miejscu, w którym znajduje się mysz.
+
+- Mapa bitowa automatyczna/pełnoekranowa: Klient VNC używa mapy bitowej do reprezentowania zdalnego wyświetlacza. W przypadku bardzo dużych zdalnych wyświetlaczy, szczególnie w trybie dopasowania do ekranu, w trybie dopasowania do ekranu mogą wystąpić dziwne artefakty wizualne ze względu na ograniczenia pamięci poszczególnych procesów. Jeśli tak się stanie, spróbuj zaznaczyć tę opcję. Należy pamiętać, że zaznaczenie tej opcji może spowodować zamknięcie aplikacji po nawiązaniu połączenia.
+
+- Repeater: Dostępne tylko w trybie UltraVNC. WAŻNE: Jeśli posiadasz wzmacniacz UltraVNC, wprowadź jego adres i port poza oknem dialogowym \'UltraVNC Repeater\' oraz wprowadź adres i port rzeczywistego serwera VNC w oknie dialogowym \'UltraVNC Repeater\'. Adres i port serwera VNC oddziel dwukropkiem, np.192.168.0.100:5900.</string>
 </resources>

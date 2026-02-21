@@ -831,7 +831,7 @@ aSPICEで対応済み機能は以下の通り：
     <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">テキスト入力サポートあり (TYPE_CLASS_TEXT)</string>
     <string name="no_application_to_handle_vpn">この接続は、外部アプリ経由でVPNを起動するように設定されています。起動するにはMorpheuslyのようなアプリをインストールする必要があります。</string>
     <string name="vnc_viewer_started">VNCビューワーが開始しました</string>
-    <string name="enable_gateway">ゲートウェイを有効にする</string>
+    <string name="enable_gateway">RDP Gateway を有効にする</string>
     <string name="scroll_speed">タッチパッドスクロール速度</string>
 
     <string name="rdp_security_rdp">RDPセキュリティ</string>

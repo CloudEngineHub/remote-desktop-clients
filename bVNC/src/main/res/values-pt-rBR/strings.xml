@@ -863,7 +863,7 @@ Abaixo, é onde você configura sua conexão.
 
     <string name="action_rate_or_share_app">⭐ Get Help, Rate, Share</string>
     <string name="love_our_work">Love our work?</string>
-    <string name="enable_gateway">Enable Gateway</string>
+    <string name="enable_gateway">Enable RDP Gateway</string>
     <string name="enter_gateway_credentials">Please enter Gateway credentials</string>
     <string name="show_only_connection_nicknames">Show Only Connection Nicknames</string>
     <string name="share_app_toast">Share a link to the app with all your friends on social media!</string>

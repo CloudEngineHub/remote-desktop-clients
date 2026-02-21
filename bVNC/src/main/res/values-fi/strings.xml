@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Ääni alustetaan noin 15 sekunnin kuluttua. Pysäytä kaikki käynnissä oleva video- tai äänitoisto ennen sitä.</string>
+    <string name="audio_initialized">Ääni alustettu</string>
+    <string name="action_import_settings">Tuo asetukset</string>
+    <string name="action_new_connection">✚ Uusi yhteys</string>
+    <string name="action_edit_default_settings">⚙ Muokkaa oletusasetuksia</string>
+    <string name="action_export_settings">Vie asetukset</string>
+    <string name="action_delete_connection">Poista yhteys</string>
+    <string name="action_rate_or_share_app">⭐ Hae apua, arvioi, jaa</string>
+    <string name="get_help">Hae apua</string>
+    <string name="advanced_settings">Lisäasetukset</string>
+    <string name="audio">Ääni</string>
+    <string name="auto_rotation">Näytön kierto yhteyttä muodostettaessa</string>
+    <string name="auto_request_new_res">Synkronoi etäkäyttö näytön resoluutioon</string>
+    <string name="custom_ca_subject">Valinnainen varmenteen kohde. Ei tarvita, jos varmenteen CN vastaa isäntänimeä.</string>
+    <string name="custom_ca_import">Vaihtoehtoisesti anna täydellinen polku CA-tiedostoosi ja napauta Tuo</string>
+    <string name="custom_ca_paste">Liitä (jos et tuo) CA tähän</string>
+    <string name="ca_ovirt_use_custom">Mukautettu RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Käytä RHEV/oVirt CA:ta SPICE:lle</string>
+    <string name="ca_ovirt_manage">Hallinnoi RHEV/oVirt CA:ta</string>
+    <string name="ca_spice_manage">Hallinnoi SPICE CA:ta</string>
+    <string name="ca_file_not_found">Tiedostoa ei löydy. Anna kelvollinen tiedostonimi tekstikenttään (esim. /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">Virhe CA-tiedoston lukemisessa. Varmista, että se on luettavissa.</string>
+    <string name="ca_new_or_changed">Uusi tai muuttunut palvelinvarmenne</string>
+    <string name="connection_type_text">Virtualisointiympäristö (RHEV/oVirt tai Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Virtuaalikoneen nimi (valinnainen)</string>
+    <string name="connection_setup_host_name">Palvelimen osoite</string>
+    <string name="connection_setup_user">Käyttäjä@Toimialue</string>
+    <string name="connection_setup_password">Salasana</string>
+    <string name="enter_password">Anna salasana</string>
+    <string name="enter_password_auth_failed">Todennus epäonnistui. Anna kirjautumistietosi uudelleen.</string>
+    <string name="enter_otp_code">Anna OTP-koodi</string>
+    <string name="hide_toolbar">Piilota työkalupalkki</string>
+    <string name="manage_custom_ca_title">Hallinnoi mukautettua CA:ta</string>
+    <string name="save_button">Tallenna</string>
+    <string name="select_vm_title">Valitse virtuaalikone</string>
+    <string name="vv_file_not_found">.vv-tiedostoa ei löydy!</string>
+    <string name="vv_file_error">.vv-tiedosto puuttuu tai on vioittunut!</string>
+    <string name="info_cert">Hyväksytkö tämän uuden tai muuttuneen isäntävarmenteen?\n\nSormenjäljet:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nMyönnetty: %4$s\nMyöntäjä: %5$s\n\nVoimassa alkaen: %6$s\nVoimassa asti: %7$s\n</string>
+
+    <string name="toggle_keyboard">Vaihda näppäimistö</string>
+    <string name="show_keyboard">Näytä näppäimistö</string>
+    <string name="scroll_wheel">Vieritysratas</string>
+
+    <string name="input_method_help">Syöttötavan ohje</string>
+
+    <string name="ok">OK</string>
+
+    <string name="input_methods">Syöttötapa</string>
+
+    <string name="error_failed_to_download_http">Tiedoston lataaminen HTTP:n kautta epäonnistui. Palvelimesi ei ehkä ole tavoitettavissa.</string>
+    <string name="error_failed_to_download_https">Tiedoston lataaminen HTTPS:n kautta epäonnistui. Palvelimesi varmenne ei ehkä ole luotettu (vanhentunut tai itseallekirjoitettu) tai palvelin ei ole tavoitettavissa.</string>
+    <string name="error_failed_to_obtain_content">Tiedoston hakeminen epäonnistui. Lataa se uudelleen ja avaa se tällä kertaa nopeasti Lataukset-kansiosta tiedostonhallinnassa.</string>
+    <string name="error_failed_to_obtain_file">Tiedostoa ei löydy. Lataa se uudelleen ja yritä avata se Ilmoitusalueelta tai suoraan selaimesta jos mahdollista.</string>
+
+    <string name="error_dialog_title">Virhe</string>
+    <string name="info_dialog_title">Tiedot</string>
+    <string name="info_vm_launched_on_stand_by">VM löydettiin sammutettuna ja se on käynnistetty. Yritä uudelleen muutaman minuutin kuluttua. Jos yrität liian pian ja saat yhteysvirheen, yritä myöhemmin uudelleen.</string>
+    <string name="error_no_vm_found_for_user">Ei käytettävissä olevia virtuaalikoneita annetulle käyttäjälle.</string>
+    <string name="error_no_such_vm_found_for_user">Annetulla tunnuksella varustettu virtuaalikone ei löydy annetulle käyttäjälle. Poista tunnus saadaksesi luettelon VM:istä.</string>
+    <string name="error_no_vnc_support_yet">VNC-näyttötyyppiä ei vielä tueta, mutta se on tuleva ominaisuus. Kiitos ymmärryksestäsi!</string>
+    <string name="error_not_connected_to_network">Et näytä olevan yhteydessä internetiin. Ei voida jatkaa ilman yhteyttä!</string>
+    <string name="error_ovirt_timeout">Yhteys VM:ään aikakatkaistiin. Tarkista, että VM:ää suorittavan solmun osoite on oikea, että se on tavoitettavissa nykyisestä verkostasi ja ettei palomuuri estä yhteyttä.</string>
+    <string name="error_ovirt_auth_failure">Todennusvirhe. Tarkista annettu käyttäjä ja salasana.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL-kättelyvvirhe. Palvelimen SSL-varmenteessa on ongelma. Jos käytät itseallekirjoitettua varmennetta, sinun on (uudelleen)tuotava varmenteesi myöntäjä.</string>
+    <string name="error_pve_failed_to_authenticate">Todennus Proxmox Virtual Environmentiin epäonnistui. Varmista, että syötät käyttäjänimesi muodossa käyttäjä@realm ja että salasanasi on oikea.</string>
+    <string name="error_pve_failed_to_parse_json">Proxmox Virtual Environmentin vastauksen jäsentäminen epäonnistui.</string>
+    <string name="error_pve_vmid_not_numeric">VM-tunnus ei ole numeerinen. Anna numeerinen VM-tunnus tai jätä tyhjäksi valitaksesi VM luettelosta.</string>
+    <string name="error_pve_api_unexpected_code">Odottamaton vastaus Proxmox Virtual Environmentilta: </string>
+    <string name="error_pve_api_io_error">Yhteys Proxmox Virtual Environmentiin epäonnistui: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment palautti null-datan.</string>
+    <string name="error_pve_timeout_communicating">Aikakatkaisu kommunikoitaessa Proxmox Virtual Environmentin kanssa.</string>
+    <string name="error_vm_lookup_failed">Käyttäjällesi määritettyä virtuaalikonetta annetulla nimellä ei löydy. Poista määritetty VM-nimi nähdäksesi luettelon käyttäjälle määritetyistä VM:istä.</string>
+    <string name="error_vv_download_timeout">Aikakatkaisu vv-tiedoston lataamisessa.</string>
+    <string name="message_please_wait">Odota</string>
+    <string name="message_please_install_bvnc">Asenna &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> Google Playsta yhdistääksesi tämän VM:n VNC-konsoliin.</string>
+    <string name="ssl_strict">Vaadi yleistä nimeä vastaamaan varmennetta (suositeltu)</string>
+    <string name="usb">USB (kytke OTG-kaapeli ensin)</string>
+
+    <string name="ad_donate_text0">Pro-versiossa on myös tuki monivaiheiselle SSH-todennukselle. Lisäksi se tukee paljon toivottua pääsalasana-ominaisuutta, joka estää luvattoman käytön ja salaa kaikki yhteysasetukset, mukaan lukien salasanat ja SSH-avaimet, varkauden varalta. Ota se käyttöön päävalikosta.</string>
+    <string name="ad_donate_spice_text1a">Napauta tästä ostaaksesi Opaquen ja tallentaaksesi suorat yhteydet Proxmoxiin ja oVirtiin. Se tukee myös .vv-tiedostoja.</string>
+    <string name="ad_donate_spice_text1b">Napauta tästä ostaaksesi Pro-version ja avata vain .vv-tiedostoja.</string>
+    <string name="ad_donate_text1">Napauta tästä tukeaksesi projektia pienellä lahjoituksella ostamalla Pro-version.</string>
+    <string name="ad_donate_text2">Pro-versio mahdollistaa tämän valintaikkunan poistamisen käytöstä ja antaa sinulle pääsyn lisäominaisuuksiin.</string>
+    <string name="ad_donate_text3">Jos haluat tukea projektia edelleen, seuraa seuraavia linkkejä asiakasohjelmiin: </string>
+    <string name="ad_donate_text_vnc">Avoimen lähdekoodin projekti tarvitsee tukeasi! Lahjoita meille ostamalla bVNC Pro. Katso alla linkit bVNC Prohon ja muihin sovelluksiimme.</string>
+    <string name="ad_donate_text_rdp">Avoimen lähdekoodin projekti tarvitsee tukeasi! Lahjoita meille ostamalla aRDP Pro, joka tukee äänenohjausta. Katso alla linkit aRDP Prohon ja muihin sovelluksiimme.</string>
+    <string name="ad_donate_text_spice">Proxmox- ja oVirt-yhteyksiä varten lahjoita projektille ostamalla Opaque tai aSPICE Pro. aSPICE:n ilmaisversio tukee vain suoria yhteyksiä KVM-virtuaalikoneisiin. Katso alla linkit Opaqueen ja aSPICE Prohon sekä muihin sovelluksiimme.</string>
+
+    <string name="address_caption">VNC Server</string>
+    <string name="address_caption_hint">VNC Server</string>
+    <string name="address_caption_hint_tunneled">VNC Server</string>
+    <string name="address_caption_ssh">SSH Server</string>
+    <string name="address_caption_ssh_hint">SSH Server</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Nuoli alas</string>
+    <string name="arrow_left">Nuoli vasemmalle</string>
+    <string name="arrow_right">Nuoli oikealle</string>
+    <string name="arrow_up">Nuoli ylös</string>
+
+    <string name="auto">Automaattinen</string>
+    <string name="auto_x_cancel">Peruuta</string>
+    <string name="auto_x_caption">Sovellus voi automaattisesti löytää olemassa olevia ja luoda uusia X-istuntoja Linux/UNIX-järjestelmissä (kuten NX). Tarvitset x11vnc:n löytämistä varten sekä Xvfb:n, Xvnc:n tai Xdummyn istuntojen luomiseen. Jos yhteyden muodostamisessa on ongelmia, yritä valita tietty etäistuntotyyppi AutoX:n lisäasetuksista.</string>
+    <string name="auto_x_confirm">Vahvista</string>
+    <string name="auto_x_descript_geom">Etätyöpöydän koko (LxK)</string>
+    <string name="auto_x_descript_session">Etäistuntotyyppi</string>
+    <string name="auto_x_disabled">Poistettu käytöstä</string>
+    <string name="auto_x_disabled_selection">AutoX pois käytöstä</string>
+    <string name="auto_x_enabled">Käytössä</string>
+    <string name="auto_x_find">Vain etsi, älä luo</string>
+    <string name="auto_x_find_login">Etsi X-kirjautuminen (vaatii sudon)</string>
+    <string name="auto_x_geom_custom">Mukautettu</string>
+    <string name="auto_x_geom_native">Alkuperäinen</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Automaattinen</string>
+    <string name="auto_x_session_custom">Mukautettu</string>
+    <string name="auto_x_title">Määritä AutoX</string>
+    <string-array name="auto_x_type">
+        <!-- If adding selections, they need to be in sync with values
+        declared in VncConstants for conversion bet. selection and commands
+        to work properly. -->
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Todenna automaattisesti annetulla SSH-käyttäjänimellä/salasanalla (mustaan kirjautumisnäyttöön).</string>
+    <string name="auto_x_unixpw">Käytä UNIX-tunnistetietoja sisäänrakennetun suojausmekanismin sijaan. Käyttäjän on pystyttävä suorittamaan /bin/su.</string>
+    <string name="auto_x_xdummy">Etsi tai luo Xdummyllä</string>
+    <string name="auto_x_xvfb">Etsi tai luo Xvfb:llä</string>
+    <string name="auto_x_xvnc">Etsi tai luo Xvnc:llä</string>
+
+    <string name="button_send_text">Lähetä teksti</string>
+    <string name="button_send_without_saving">Lähetä teksti / älä tallenna sitä</string>
+
+    <string name="center_mouse">Hiiri @</string>
+
+    <string name="close">Sulje</string>
+
+    <string name="color_format_caption">Väritila</string>
+    <string name="color_mode">Väritila</string>
+
+    <string name="connect_button">Yhdistä</string>
+    <string name="back_button">Takaisin</string>
+    <string name="update_button">Päivitä</string>
+
+    <string name="connection_caption">Yhteys</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Yhteystyyppi</string>
+    <string name="connection_type_rdp_over_ssh">RDP SSH:n kautta</string>
+    <string name="connection_type_spice_over_ssh">SPICE SSH:n kautta</string>
+    <string name="connection_type_vnc">Perus-VNC</string>
+    <string name="connection_type_vnc_over_ssh">Suojattu VNC SSH:n kautta</string>
+    <string name="connection_type_vnc_over_ssl">Suojattu VNC AnonTLS:n kautta</string>
+    <string name="connection_type_vnc_over_stunnel">Suojattu VNC SSL-tunnelin kautta</string>
+    <string name="connection_type_vnc_over_vencrypt">Suojattu VNC VeNCryptin kautta</string>
+    <string name="connection_edit_delete_prompt">Haluatko muokata tai poistaa yhteyden</string>
+    <string name="connection_edit">Muokkaa</string>
+    <string name="connection_delete">Poista</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopioi luettelo</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Oletussyöttötapa</string>
+    <string name="delete_connection">Poista yhteys</string>
+    <string name="delete_key">Poista valittu näppäin</string>
+    <string name="delete_key_list">Poista näppäinluettelo</string>
+
+    <string name="disconnect">Katkaise yhteys</string>
+
+    <string name="dpad_as_arrows">Käytä D-Pad-ohjainta nuolinäppäiminä ja D-Pad-klikkausta Ctrl-näppäimenä.</string>
+
+    <string name="enable_recording">Ota tallennus käyttöön</string>
+    <string name="enable_sound">Ota ääni käyttöön</string>
+
+    <string name="enter_text">Lähetä teksti</string>
+    <string name="enter_text_title">Kirjoita lähetettävä teksti</string>
+
+    <string name="error_anon_dh_unsupported">VNC-palvelin yrittää käyttää anonyymejä Diffie-Hellman-salauksia, joita Android-laitteesi ei tue. Jos käytät GNOME:n Vino VNC-palvelinta, voit poistaa AnonTLS:n käytöstä suorittamalla seuraavan komennon päätteessä ja käynnistämällä sen uudelleen: \"gsettings set org.gnome.Vino require-encryption false\". Jos käytät x11vnc:tä, voit lisätä seuraavat asetukset: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Yhteyden muodostaminen epäonnistui.</string>
+    <string name="error_connection_interrupted">Yhteys katkesi.</string>
+    <string name="error_no_user_hostname">Anna vähintään käyttäjänimi ja isäntänimi tai IP-osoite.</string>
+    <string name="error_out_of_memory">Muistia ei voitu varata riittävästi etänäytön piirtämiseen. Yritä käynnistää sovellus uudelleen ja sitten laitteesi. Voit myös yrittää pienentää etätyöpöydän kokoa sovelluksen asetuksissa.</string>
+    <string name="error_ovirt_unable_to_connect">Ei voida yhdistää tai todentaa. Tarkista palvelimen osoite, käyttäjä, salasana sekä varmenteen myöntäjä ja kohde.</string>
+    <string name="error_pick_correct_item">Varmista, että olet valinnut oikean kohteen Yhteystyyppi-kohdasta.</string>
+    <string name="error_rdp_authentication_failed">RDP-todennus epäonnistui! Tarkista RDP-käyttäjänimi ja salasana ja yritä uudelleen.</string>
+    <string name="error_rdp_connection_failed">RDP-yhteys epäonnistui! Joko verkkoyhteys katkesi, RDP-palvelin sammutettiin tai poistettiin käytöstä, tai istuntosi kaapattiin.</string>
+    <string name="error_rdp_unable_to_connect">Ei voida yhdistää RDP-palvelimeen! Varmista, että RDP-palvelimen asetus on oikea, palvelin on päällä, RDP on käytössä ja palvelin on samassa verkossa tämän laitteen kanssa.</string>
+    <string name="error_security_type">Palvelin ei tarjonnut tuettua suojaustyyppiä.</string>
+    <string name="error_spice_unable_to_connect">Ei voida yhdistää tai todentaa. Tarkista palvelimen osoite ja portti.</string>
+    <string name="error_ssh_could_not_exec_command">Etäkomennon suorittaminen epäonnistui.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Sudo-salasanan lähettäminen epäonnistui.</string>
+    <string name="error_ssh_hostkey_changed">VIRHE! Palvelimen isäntäavain on muuttunut. Jos tämä on tarkoituksellista, voit jatkaa. Muutoin kyseessä saattaa olla väliintulohyökkäys.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH-palvelin ei tue \"password\"- eikä \"keyboard-interactive\"-todennusmenetelmiä, tai se vaatii ensin \"publickey\"-menetelmän. Määritä se sallimaan ainakin toinen näistä kahdesta menetelmästä tai määritä sovellus uudelleen. Käytettävissä olevat todennusmenetelmät: </string>
+    <string name="error_ssh_key_auth_fail">Todennus SSH-palvelimelle avainparilla epäonnistui. Tarkista SSH-käyttäjänimesi ja varmista, että julkinen avaimesi on etäpuolen authorized_keys-tiedostossa.</string>
+    <string name="error_ssh_keypair_decryption_failure">Avainparin salauksen purkaminen epäonnistui. Varmista, että olet syöttänyt salauslauseesi oikein päänäytön \'SSH-salauslause\'-kenttään.</string>
+    <string name="error_ssh_keypair_missing">SSH-avainparia ei ole vielä luotu! Luo se ja aseta (julkinen osa) SSH-palvelimen authorized_keys-tiedostoon.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Salauslause annettu mutta avainpari ei ole salattu. Poista salauslause.</string>
+    <string name="error_ssh_port_forwarding_failure">VNC-liikenteen tunneloinnin porttiedelleenohjauksen asettaminen SSH:n kautta epäonnistui. Varmista, että SSH-palvelimesi on määritetty sallimaan porttiedelleenohjaus ja yritä uudelleen.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH-palvelin ei tue \"publickey\"-todennusmenetelmää, ja yritämme todentaa avainparilla. Määritä se sallimaan julkinen avaintodennus ja yritä uudelleen. Käytettävissä olevat todennusmenetelmät: </string>
+    <string name="error_ssh_pwd_auth_fail">Todennus SSH-palvelimelle salasanalla epäonnistui. Tarkista SSH-käyttäjänimesi ja SSH-salasanasi.</string>
+    <string name="error_ssh_unable_to_connect">Yhdistäminen SSH-palvelimeen epäonnistui. Tarkista verkkoyhteys sekä SSH-palvelimen osoite ja portti.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">Etä-VNC-porttia ei saatu x11vnc:ltä. Varmista, että x11vnc on asennettu. Varmuuden vuoksi yritä ajaa x11vnc komentorivillä manuaalisesti.</string>
+    <string name="error_uri_noinfo_nosave">Yhteyttä varten annettu tieto on riittämätön.</string>
+    <string name="error_uri_parse_error">Intent URI:n jäsentäminen epäonnistui. Tarkista URI-muoto. Voit myös katsoa laitteen logcatia lisätietoja varten.</string>
+    <string name="error_vnc_authentication">VNC-todennus epäonnistui! Tarkista VNC-salasana (ja käyttäjä tarvittaessa).</string>
+    <string name="error_vnc_unable_to_connect">"Yhteys VNC-palvelimeen epäonnistui syystä: "</string>
+    <string name="error_x509_could_not_generate_encoding">Varmenteen koodausta ei voitu luoda.</string>
+    <string name="error_x509_could_not_generate_signature">Varmenteen SHA1- tai MD5-allekirjoitusta ei voitu luoda. SHA1/MD5-algoritmia ei löydy.</string>
+
+    <string name="export_settings">Vie</string>
+
+
+    <string name="extra_keys_disable">Poista lisänäppäimet käytöstä</string>
+    <string name="extra_keys_enable">Ota lisänäppäimet käyttöön</string>
+
+    <string name="fit_to_screen">Sovita näyttöön</string>
+
+    <string name="force">Koko näytön bittikartta</string>
+
+    <string name="immersive_mode_disable">Poista immersiivinen tila käytöstä</string>
+
+    <string name="import_export_settings">📦 Tuo/vie asetukset</string>
+    <string name="import_settings">Tuo</string>
+
+
+    <string name="info">Tiedot</string>
+    <string name="info_cert_signatures">"Varmenteen tiedot ovat: "</string>
+    <string name="info_cert_signatures_identical">\n\nVoit varmistaa, että tiedot vastaavat palvelinvarmennetta väliintulohyökkäyksen estämiseksi.</string>
+    <string name="info_cert_tunnel">Haluatko yhdistää isäntään, jonka seuraava varmenne tunnistaa?\n\nSormenjälki: %1$s\n\nMyönnetty:\n%2$s\n\nMyöntäjä:\n%3$s\n\nVoimassa alkaen:\n%4$s\n\nVoimassa asti:\n%5$s\n\nHuomio: Sovellus ei tarkista varmenteiden myöntäjiä eikä varmenteen peruutuksia.</string>
+    <string name="info_continue_connecting">"Jatka yhdistämistä kohteeseen: "</string>
+    <string name="info_encoding">" koodaus, "</string>
+    <string name="info_progress_dialog_aborted">Yhteys peruutettu!</string>
+    <string name="info_progress_dialog_connecting">Yhdistetään…</string>
+    <string name="info_progress_dialog_downloading">Ladataan ensimmäistä kuvaa.\nOdota…</string>
+    <string name="info_progress_dialog_establishing">Muodostetaan kättelyä.\nOdota…</string>
+    <string name="info_ssh_initializing_hostkey">Yritetään alustaa SSH-isäntäavain.</string>
+    <string name="info_ssh_key_fingerprint">"Isäntäavaimen sormenjälki on: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nVoit varmistaa, että se on sama kuin palvelinvarmenteen tunnettu sormenjälki väliintulohyökkäyksen estämiseksi.</string>
+    <string name="info_update_color_model_to">"Päivitetään värimalli kohteeseen "</string>
+
+    <string name="input_method_direct_drag_pan_description">Suora, pidä panoroi: Pyyhkäise vetämiseksi ja pudottamiseksi. Napauta yhdellä sormella haluamaasi kohtaan vasemmanpuoleista napsautusta varten, kahdella sormella oikeanpuoleista napsautusta varten ja kolmella sormella keskimmäistä napsautusta varten. Pyyhkäise kahdella sormella vierittääksesi. Pitkä napautus aloittaa panoroinnin.</string>
+    <string name="input_method_direct_swipe_pan_description">Suora, pyyhkäise panoroi: Pyyhkäise panoroidaksesi. Napauta yhdellä sormella haluamaasi kohtaan vasemmanpuoleista napsautusta varten, kahdella sormella oikeanpuoleista napsautusta varten ja kolmella sormella keskimmäistä napsautusta varten. Pyyhkäise kahdella sormella vierittääksesi. Pitkä napautus vetämiseen ja pudottamiseen.</string>
+    <string name="input_method_single_handed_description">Yksikätinen: Pyyhkäise panoroidaksesi. Napauta yhdellä sormella haluamaasi kohtaan vasemmanpuoleista napsautusta varten. Pitkä napautus valitsee vasemman/oikean/keski-vedon/vieritys/zoomaustilan. Tavalliset monikoske-hallintakomennot toimivat myös.</string>
+    <string name="input_method_touchpad_description">Simuloitu kosketuslevy: Pyyhkäise siirtääksesi osoitinta. Napauta missä tahansa yhdellä sormella vasemmanpuoleista napsautusta varten, kahdella sormella oikeanpuoleista napsautusta varten ja kolmella sormella keskimmäistä napsautusta varten. Pyyhkäise kahdella sormella vierittääksesi. Pitkä napautus vetämiseen ja pudottamiseen.</string>
+    <string name="input_mode">Syöttötapa</string>
+
+    <string name="input_mode_fit_to_screen">Ei panorointia; Trackball-hiiri</string>
+    <string name="input_mode_panning">Työpöydän panorointitila</string>
+    <string name="input_method_mouse">Hiiriosoittimen hallinta</string>
+
+    <string name="input_method_direct_swipe_pan">Suora, pyyhkäise panoroi</string>
+    <string name="input_method_direct_drag_pan">Suora, pidä panoroi</string>
+    <string name="input_method_single_handed">Yksikätinen</string>
+    <string name="input_method_touchpad">Simuloitu kosketuslevy</string>
+
+    <string name="input_mode_help">Syöttötavan ohje</string>
+    <string name="input_mode_help_text">"
+Missä tahansa syöttötilassa napauta näppäimistökuvaketta saadaksesi näyttönäppäimistön näkyviin. Laitteellasi saattaa myös olla oma ele, joka tuo näppäimistön näkyviin.
+
+Käytä suoria syöttötiloja intuitiivisempaan kosketusnäyttöhallintaan. Käytä simuloitua kosketuslevytilaa tarkempaan hiirenhallintaan.
+
+Suora, pyyhkäise panoroi -tila:
+ - Hallitse hiirtä suoraan kosketuksella.
+ - Pyyhkäise panoroidaksesi.
+ - Napauttaminen napsauttaa hiirtä napauttamaasi kohtaan.
+ - Vieritystapahtumat lähetetään kahden sormen välille, josta kaksisorminen pyyhkäisy alkoi.
+
+Suora, pidä panoroi -tila:
+ - Hallitse hiirtä suoraan kosketuksella.
+ - Pitkä napautus aloittaa panorointitilan.
+ - Napauttaminen napsauttaa hiirtä napauttamaasi kohtaan.
+ - Vieritystapahtumat lähetetään kahden sormen välille, josta kaksisorminen pyyhkäisy alkoi.
+
+Simuloitu kosketuslevytila:
+ - Käytä näyttöäsi kuten kosketuslevyä.
+ - Pyyhkäise siirtääksesi hiiriosoitinta.
+ - Siirrä hiirtä näytön reunan yli panoroidaksesi.
+ - Napauttaminen napsauttaa hiirtä siinä, missä osoitin on.
+ - Vieritystapahtumat lähetetään sinne, missä hiiriosoitin sijaitsee.
+
+Yksikätinen tila:
+ - Sama kuin Suora, pyyhkäise panoroi -tila, paitsi pitkä napautus avaa valikon tilavalinnalla.
+ - Tilan valinnan jälkeen sormen pyyhkäiseminen näytöllä suorittaa valitun eleen.
+ - Sormen nostaminen viimeistelee eleen.
+
+Kaikki syöttötilat:
+ - Vasemmanpuoleinen napsautus: Napauta kerran.
+ - Kaksoisnapsautus: Tuplanapautus.
+ - Oikeanpuoleinen napsautus: Pidä napauttamista ja napauta toisella sormella (missä tahansa muualla näytöllä).
+ - Vaihtoehtoinen oikeanpuoleinen napsautus: Käytä laitteesi \"Takaisin\"-painiketta tai elettä.
+ - Keskimmäinen napsautus: Pidä napauttamista ja napauta kahdella lisäsormella (missä tahansa muualla näytöllä).
+ - Hiiren veto: Pidä napauttamista pitkään ja pyyhkäise.
+ - Vieritysratas: Kaksisorminen veto ylös/alas ja vasemmalle/oikealle. Nopea veto vierittää nopeammin.
+ - Zoomaa sisään/ulos: Zoomattavassa skaalauksessa nipistä zoomausta skaalaamiseksi.
+ - Ctrl/Alt-näppäin: Valikko-&gt;Ctrl/Alt-painikkeet. Muista kytkeä pois päältä kun olet valmis!
+ - Näppäinyhdistelmät: Valikko-&gt;Lisää-&gt;Lähetä näppäimiä.
+ - Lähetä teksti: Joko kirjoita näyttönäppäimistöllä tai käytä Valikko-&gt;Lisää-&gt;Lähetä teksti."</string>
+
+    <string name="intro_close">Sulje</string>
+    <string name="intro_dont_show">Älä näytä uudelleen</string>
+
+    <string name="intro_text">
+Nykyinen luettelo bVNC:n ominaisuuksista:
+&lt;br&gt;
+- Tavallinen VNC, suojattu VNC SSH:n kautta, AnonTLS ja VeNCrypt sekä UltraVNC Windows-kirjautuminen valinnaisella toistimella.
+&lt;br&gt;
+- AutoX-tila: VNC SSH:n kautta -tilassa löydä automaattisesti olemassa olevia ja/tai luo uusia X-istuntoja x11vnc:llä! Toimii kuin NX-asiakas.
+&lt;br&gt;
+- Vapaa kiertosuintatuki. Rajoita kiertoa käyttöjärjestelmällä tarvittaessa.
+&lt;br&gt;
+- SSH-julkisen/yksityisen avainparin luonti ja vienti.
+&lt;br&gt;
+- Kaikki standardit VNC-koodaukset, mukaan lukien Tight, ZRLE ja CopyRect.
+&lt;br&gt;
+- Automaattinen istunnon tallennus.
+&lt;br&gt;
+- Zoomattava, sovita näyttöön ja yksi-yhteen -skaalaustilat.
+&lt;br&gt;
+- Monitouch-hallinta etähiirelle suorissa ja simuloiduissa kosketuslevyn syöttötiloissa.
+&lt;br&gt;
+- Täysi yksikätinen hallinta etähiirelle yksikätisessä syöttötilassa.
+&lt;br&gt;
+- Monitouch-hiiren napsautukset: napauta vasemmanpuoleista napsautusta, kaksisorminen napautus oikeanpuoleista napsautusta, kolmisorminen napautus keskimmäistä napsautusta varten.
+&lt;br&gt;
+- Monitouch-vieritys: kaksisorminen veto ylös/alas ja vasemmalle/oikealle vieritystä varten.
+&lt;br&gt;
+- Näyttönäppäimistön meta- ja nuolinäppäimet, jotka voidaan kokonaan poistaa käytöstä valikosta tai sijoittaa näyttöpainikkeella.
+&lt;br&gt;
+- Tekstin ja mielivaltaisten näppäinyhdistelmien lähettäminen yhdistettynä.
+&lt;br&gt;
+- Apua yhteyksien luomiseen (\"Valikko-&gt;Yhteysohje\") yhteysruudussa.
+&lt;br&gt;
+- Apua syöttötiloihin (\"Valikko-&gt;Lisää-&gt;Syöttötilan ohje\") yhdistettynä.
+&lt;br&gt;
+- Käytettävissä olevan kosketuslevyn käyttäminen nuolina hiiren liikuttamisen sijaan ja kosketuslevyn napsautus Ctrl-näppäimenä.
+&lt;br&gt;
+- Vaihto pystysuuntaiseen tilaan yhteyksien aikana, D-pad-/kosketuslevyn kiertäminen BT-näppäimistöille.
+&lt;br&gt;
+- Monikielituki, kunhan VNC-palvelimessa on tarvittava kielimäärittely käytössä.
+&lt;br&gt;
+- Kopioi/liitä -integraatio
+&lt;br&gt;
+- Etäkoneen resoluutiomuutokset
+&lt;br&gt;
+- Täysi hiilituki Android 4.0+ -laitteilla, mukaan lukien oikea ja keski-napsautus ja vieritysratas.
+&lt;br&gt;
+&lt;br&gt;
+Tunnetut ongelmat:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitiivinen, turvallinen VNC-asiakas</string>
+
+
+    <string name="keep_password_button">Säilytä</string>
+    <string name="keep_screen_awake_enable">Pidä näyttö herätettynä</string>
+
+    <string name="keys_caption">Näppäimet</string>
+
+    <string name="landscape_force">Pakota vaakasuuntainen asento</string>
+
+    <string name="left_handed_mode">Vasenkätinen tila</string>
+    <string name="disable_pointer_offset_correction">Poista osoittimen siirtymäkorjaus käytöstä</string>
+
+    <string name="list_caption">Luettelo</string>
+    <string name="list_name_caption">Luettelon nimi</string>
+
+    <string name="local_mouse_check">Paikallinen hiiriosoitin (valitse, jos osoitin on näkymätön)</string>
+
+    <string name="main_screen_help">Yhteysohje</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kun lisäät tai muokkaat yhteyttä, näet yhteyden määrityssivun. Täällä voit asettaa
+uuden VNC-yhteyden tai valita olemassa olevan. Yläosassa on painike, jonka avulla voit
+tallentaa yhteyden. Sen alla konfiguroit yhteytesi.
+
+Jos etsit nopeaa suorituskyvyn parannusta, yritä asettaa Väritila pienempään arvoon. Yritä myös poistaa työpöydän taustakuva VNC-palvelimelta. Varmista lopuksi, että laitteellasi on hyvä verkkoyhteys ja vältä antennin peittämistä, mikä heikentäisi signaalivoimakkuutta.
+
+ - Yhteystyyppi: Täällä valitset VNC-yhteystyypin. Käytettävissä olevat yhteystyypit ovat:
+   (a) Tavallinen VNC, jota kaikki VNC-palvelimet tukevat, mutta jolta puuttuu salaus ja joka on altis raakavoimahyökkäyksille 8 merkin salasanarajoituksen vuoksi.
+   (b) Suojattu VNC SSH:n kautta, joka yhdistää salatun SSH-tunnelin kautta. Tarvitset SSHD-palvelun sekä VNC-palvelimen. Niin kauan kuin VNC-palvelin ei hyväksy yhteyksiä suoraan Internetistä, tällä yhteystyypillä ei ole tunnettuja haavoittuvuuksia, kunhan varmistat palvelinvarmenteen allekirjoituksen ensimmäistä kertaa yhdistettäessä.
+   (c) UltraVNC, joka antaa sinulle Windows-kirjautumisen ja UltraVNC-toistin-asetukset. Windows-kirjautumisen käyttö ei kärsi 8 merkin salasanarajoituksesta, mutta tämä tila ei tarjoa salausta, joten istuntosi on altis nuuskimiselle.
+   (d) Suojattu VNC AnonTLS:n kautta, joka on tavallinen VNC stunnel-vastaavan yhteyden kautta. Sinun on joko ajettava stunnel tai käytettävä VNC-palvelinta kuten Vino, joka tukee AnonTLS:ää valmiiksi. Tämä tila tarjoaa istunnon salauksen, mutta kärsii 8 merkin salasanarajoituksesta eikä estä väliintulohyökkäyksiä.
+   (e) Suojattu VNC VeNCryptin kautta, joka käyttää x509-varmenteita sekä istunnon salausta, ja palvelimen konfiguraatiosta riippuen voi käyttää käyttäjä/salasana-tunnistetietoja ilman 8 merkin rajoitusta. Tämä tila estää väliintulohyökkäykset sekä tarjoaa istunnon yksityisyyden. Palvelimet kuten x11vnc ja TigerVNC tukevat tätä tilaa ja ovat yhtä turvallisia kuin VNC SSH:n kautta.
+
+ - Otsikko: Jokaisella luomallasi yhteydellä voi olla lempinimi, jolla se on helppo tunnistaa luettelosta.
+
+ - SSH-tunneliasetukset: Käytettävissä VNC SSH:n kautta -tilassa.
+   (a) SSH Server/Portti: SSH-palvelimen osoite ja portti, jonka kautta yhteys tunneloidaan. SSH kuuntelee oletuksena portissa 22.
+   (b) Käyttäjänimi/Salasana: SSH-palvelimen tilin käyttäjänimi ja salasana. Salasana täytetään tälle sivulle, jos et ole sulkenut sovellusta siitä lähtien, kun viimeksi syötit sen.
+   (c) Hallinnoi avainta/Käytä avainta: Painike julkisten/yksityisten avainten hallintaan ja valintaruutu, joka ilmaisee, käytetäänkö avainta salasanan sijaan todentamiseen. Jos käytät Kopioi leikepöydälle -painiketta avainparin luomisen jälkeen, sinun pitäisi pystyä liittämään julkinen avain kun olet yhdistänyt VNC-palvelimeen (leikepöytä synkronoidaan palvelimelle).
+
+ - Määritä AutoX: Käytettävissä vain VNC SSH:n kautta -tilassa. Sovellus voi automaattisesti löytää olemassa olevia ja valinnaisesti luoda uusia X-istuntoja UNIX-järjestelmissä (kuten NX-asiakas). Tarvitset x11vnc:n löytämistä varten ja Xvfb:n, Xvnc:n tai Xdummyn etäjärjestelmään asennettuna istuntojen luomiseksi. Sinun saattaa täytyä siirtää .dmrc-tiedostosi pois ja lisätä .xinit-tiedosto kotihakemistoosi, jos työpöytäsi ei näytä oikealta tai saat vain xterm-ikkunan.
+
+ - VNC-yhteysasetukset:
+   (a) VNC Server/Portti: Täällä syötät sen tietokoneen isäntänimen tai IP-osoitteen ja portin, johon VNC-palvelin on yhteydessä. VNC SSH:n kautta -tilassa tämä osoite on SSH-palvelimen näkökulmasta. Jos SSH-palvelin ja VNC-palvelin ovat sama tietokone, voit käyttää localhostia. VNC-palvelimet kuuntelevat yleensä portista 5900 alkaen (ensimmäinen VNC-näyttö, näyttö :0).
+   (b) VNC-käyttäjä: Käytettävissä UltraVNC:ssä Windows-kirjautumistilassa tai Suojattu VNC VeNCryptin kautta -tilassa; tässä syötät Windows/UNIX-tilin käyttäjänimen.
+   (c) VNC-salasana: Jos VNC-palvelimesi konfiguraatio vaatii salasanan, syötä se tähän. UltraVNC Windows-kirjautumisella/VeNCrypt-tiloissa, laita Windows/UNIX-tilisi salasana tähän. Turvallista tallennusta ei käytetä salasanoille, ja salasana tallennetaan vain, jos valitset \"Säilytä\"-ruudun. Salasana täytetään tälle sivulle, jos et ole sulkenut sovellusta siitä lähtien, kun viimeksi syötit sen.
+
+ - Väritila: Asiakas tukee useita väritiloja. Tilat, joissa on enemmän värejä, tarjoavat paremman visuaalisen kokemuksen suuremman kaistanleveyden ja enemmän CPU-laskennan kustannuksella laitteellasi. Jotkin VNC-palvelimet eivät tue kaikkia värisyvyyksiä (esim. OS/X Remote Desktop vaatii 24-bittistä väriä). Jos sinulla on vaikeuksia yhdistää, kokeile toista värisyvyyttä.
+
+ - Käytä D-Pad-ohjainta nuolina: Jos haluat, voit käyttää Bluetooth-näppäimistösi D-Pad-ohjainta tai näyttönäppäimistön nuolia lähettääksesi nuolet VNC-palvelimelle.
+
+ - Kierrä D-Pad: Bluetoothilla yhdistetyt puhelimet saattavat tarvita näppäimistön D-pad-ohjaimen kiertämistä vastapäivään oikeiden suuntien lähettämiseksi palvelimelle.
+
+ - Paikallinen hiiriosoitin: Jotkut VNC-palvelimet (esim. OS/X Remote Desktop) eivät piirrä hiiriosoitinta asiakkaalle. Tämän vaihtoehdon valitseminen saa sovelluksen piirtämään hiiriosoittimen hiiren sijaintiin.
+
+ - Automaattinen/Koko näytön bittikartta: VNC-asiakas käyttää bittikartaa etänäytön esittämiseen. Hyvin suurille etänäytöille, erityisesti sovita näyttöön -tilassa, saatat kokea outoja visuaalisia artefakteja sovita näyttöön -tilassa prosessikohtaisten muistirajoitusten vuoksi. Jos niin tapahtuu, yritä valita tämä asetus. Muista, että vaihtoehdon valitseminen saattaa aiheuttaa sovelluksen sulkeutumisen yhteyden muodostamisen yhteydessä.
+
+ - Toistin: Käytettävissä vain UltraVNC-tilassa. TÄRKEÄÄ: Jos sinulla on UltraVNC-toistin, syötä sen osoite ja portti \'UltraVNC-toistin\'-valintaikkunan ulkopuolelle ja syötä todellisen VNC-palvelimen osoite ja portti \'UltraVNC-toistin\'-valintaikkunan sisälle. Erota VNC-palvelimen osoite ja portti kaksoispisteellä, esim. 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Ota pääsalasana käyttöön</string>
+    <string name="master_password_error_failed_to_disable">Pääsalasanan poistaminen käytöstä epäonnistui. Tarkista laitteesi vapaa tila ja yritä uudelleen.</string>
+    <string name="master_password_error_failed_to_enable">Pääsalasanan käyttöönotto epäonnistui. Tarkista laitteesi vapaa tila ja yritä uudelleen.</string>
+    <string name="master_password_error_intents_not_supported">Yhteysintentejä ei vielä tueta, kun pääsalasana on käytössä.</string>
+    <string name="master_password_error_password_necessary">Pääsalasana vaaditaan jatkamiseksi.</string>
+    <string name="master_password_error_password_not_set">Pääsalasanan asettaminen peruutettiin.</string>
+    <string name="master_password_error_shortcuts_not_supported">Pikakuvakkeita ei vielä tueta, kun pääsalasana on käytössä.</string>
+    <string name="master_password_error_wrong_password">Todennus annetulla pääsalasanalla epäonnistui.</string>
+    <string name="master_password_hint_once">Anna salasana</string>
+    <string name="master_password_hint_twice">Toista salasana</string>
+    <string name="master_password_set">Aseta pääsalasana</string>
+    <string name="master_password_set_error">Salasanat eivät täsmää, ole huolellinen!</string>
+    <string name="master_password_set_message">Anna ja muista pääsalasana. Mitä pidempi salasanasi on, sitä vaikeampi se on murtaa. Jos asetat salasanasi väärin tai unohdat sen, menetät kaikki asetuksesi! Sinun kannattaa ehkä viedä asetuksesi nyt varmuuskopiointia varten (valikosta). Säilytä ne turvallisesti, sillä vietyä asetuksia ei salata.</string>
+    <string name="master_password_verify">Vahvista pääsalasana</string>
+    <string name="master_password_verify_message">Anna oikea pääsalasana jatkaaksesi.</string>
+
+    <string name="meta_key_title">Lähetä erikoisnäppäimiä</string>
+
+    <string name="mouse_follow_pan">Hiiri seuraa panorointia</string>
+
+    <string name="new_connection">Uusi yhteys</string>
+    <string name="new_list_button">Uusi luettelo</string>
+
+    <string name="nickname_caption">Lempinimi</string>
+    <string name="nickname_caption_hint">Otsikko (valinnainen)</string>
+
+    <string name="off">Pois</string>
+
+    <string name="one_to_one">Yksi yhteen</string>
+
+    <string name="open_doc">Käsikirja/Wiki</string>
+
+    <string name="pan_follow_mouse">Panorointi seuraa hiirtä</string>
+
+    <string name="password_caption">VNC-todennus</string>
+    <string name="password_caption_hint">VNC-salasana</string>
+    <string name="password_caption_ssh">SSH-todennus</string>
+    <string name="password_hint_ssh">SSH-salasana</string>
+
+    <string name="port_caption">VNC-portti</string>
+    <string name="port_caption_ssh">SSH-portti</string>
+    <string name="port_hint">Portti</string>
+    <string name="port_ssh_hint">Portti</string>
+
+    <string name="portrait_mode">Vaihda pystysuuntaiseen tilaan yhdistettynä</string>
+    <string name="local_clipboard_integration">Ota paikallinen-etä-leikepöytäintegraatio käyttöön</string>
+    <string name="remote_clipboard_integration">Ota etä-paikallinen-leikepöytäintegraatio käyttöön</string>
+    <string name="position_toolbar_last_used">Palauta työkalupalkin sijainti</string>
+    <string name="applies_to_new_connections_only">Koskee vain uusia yhteyksiä</string>
+    <string name="pro_feature_mfa">Palvelimellasi näyttää olevan monivaiheinen todennus käytössä. Tue projektia ostamalla Pro-versio, jossa on tuki tähän ominaisuuteen. Linkki Pro-versioon löytyy aloitusvalintaikkunasta.</string>
+    <string name="pro_feature_intro">Näyttää siltä, että käytät Pro-ominaisuutta. Tue projektia ostamalla Pro-versio, jossa on tuki tähän ominaisuuteen. Tarkista aloitusvalintaikkuna linkkejä varten oikeaan sovellukseen.</string>
+    <string name="pro_feature_generic">Näyttää siltä, että käytät Pro-ominaisuutta. Tue projektia ostamalla Pro-versio, jossa on tuki tähän ominaisuuteen. Linkki Pro-versioon löytyy aloitusvalintaikkunasta.</string>
+    <string name="pro_feature_rdp">Näyttää siltä, että yritit avata .rdp-tiedoston, joka on Pro-ominaisuus. Tue projektia ostamalla aRDP Pro, joka tukee .rdp-tiedostoja. Linkki aRDP Pro -versioon löytyy aloitusvalintaikkunasta.</string>
+    <string name="pro_feature_spice">Näyttää siltä, että yritit avata .vv-tiedoston. Jos haluat tallentaa yhteyksiä Proxmoxiin tai oVirtiin suoraan sovellukseen ja avata myös .vv-tiedostoja, harkitse Opaquen ostamista. Jos tarvitset vain .vv-tiedostotukea, voit hankkia aSPICE Pron. Löydät linkit molempiin sovelluksiin aloitusvalintaikkunasta.</string>
+
+    <string name="rdp_address_caption_hint">RDP Server</string>
+    <string name="rdp_adv_console_mode">Konsolitila</string>
+    <string name="rdp_adv_desktop_background">Näytä työpöydän tausta</string>
+    <string name="rdp_adv_desktop_composition">Ota työpöydän koostumus käyttöön</string>
+    <string name="rdp_adv_font_smoothing">Suorita fonttien pehmennys</string>
+    <string name="rdp_adv_menu_animation">Näytä valikkoanmaatiot</string>
+    <string name="rdp_adv_redirect_sdcard">Ohjaa SD-kortti</string>
+    <string name="rdp_adv_remotefx">Ota RemoteFX käyttöön</string>
+    <string name="rdp_adv_visual_styles">Ota visuaaliset tyylit käyttöön</string>
+    <string name="rdp_adv_window_contents">Näytä ikkunan sisältö vetämisen aikana</string>
+    <string name="rdp_security_mode">Suojaustila</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Etätyöpöydän koko (LxK)</string>
+    <string name="rdp_domain_hint">RDP-toimialue</string>
+    <string name="rdp_geom_automatic">Automaattinen</string>
+    <string name="rdp_geom_checkbox_enable">Ota mukautettu resoluutio käyttöön</string>
+    <string name="rdp_geom_custom">Mukautettu</string>
+    <string name="rdp_geom_description_hint">Palvelin tarvitsee ExtendedDesktopSize-tuen</string>
+    <string name="rdp_geom_disabled">Poistettu käytöstä</string>
+    <string name="rdp_geom_native_landscape">Alkuperäinen vaaka</string>
+    <string name="rdp_geom_native_portrait">Alkuperäinen pysty</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Neuvottele suojaus automaattisesti</string>
+    <string name="rdp_security_rdp">RDP-suojaus</string>
+    <string name="rdp_security_tls">TLS-suojaus</string>
+    <string name="rdp_security_nla">Verkkotason todennus</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Kiitos aRDP:n ja avoimen lähdekoodin ohjelmistojen tukemisesta yleensä! Apua aRDP:n käyttöön löytyy valikon Ohje-kohdista ja sovelluksen kuvauksesta kaupassa.
+&lt;br&gt;
+&lt;br&gt;
+Nykyinen luettelo aRDP:n ominaisuuksista sisältää:
+&lt;br&gt;
+- Tavallinen RDP, RDP tunneloitu SSH:n kautta.
+&lt;br&gt;
+- Vapaa kiertosuintatuki. Rajoita kiertoa käyttöjärjestelmällä tarvittaessa.
+&lt;br&gt;
+- Etäresoluution asettaminen, alkuperäinen resoluutio vaaka- ja pystymoodissa.
+&lt;br&gt;
+- SSH-julkisen/yksityisen avainparin luonti ja vienti.
+&lt;br&gt;
+- Automaattinen istunnon tallennus.
+&lt;br&gt;
+- Zoomattava, sovita näyttöön ja yksi-yhteen -skaalaustilat.
+&lt;br&gt;
+- Monitouch-hallinta etähiirelle suorissa ja simuloiduissa kosketuslevyn syöttötiloissa.
+&lt;br&gt;
+- Täysi yksikätinen hallinta etähiirelle yksikätisessä syöttötilassa.
+&lt;br&gt;
+- Monitouch-hiiren napsautukset: napauta vasemmanpuoleista napsautusta, kaksisorminen napautus oikeanpuoleista napsautusta, kolmisorminen napautus keskimmäistä napsautusta varten.
+&lt;br&gt;
+- Monitouch-vieritys: kaksisorminen veto ylös/alas ja vasemmalle/oikealle vieritystä varten.
+&lt;br&gt;
+- Näyttönäppäimistön meta- ja nuolinäppäimet, jotka voidaan kokonaan poistaa käytöstä valikosta tai sijoittaa näyttöpainikkeella.
+&lt;br&gt;
+- Tekstin ja mielivaltaisten näppäinyhdistelmien lähettäminen yhdistettynä.
+&lt;br&gt;
+- Apua yhteyksien luomiseen (\"Valikko-&gt;Yhteysohje\") yhteysruudussa.
+&lt;br&gt;
+- Apua syöttötiloihin (\"Valikko-&gt;Lisää-&gt;Syöttötilan ohje\") yhdistettynä.
+&lt;br&gt;
+- Käytettävissä olevan kosketuslevyn käyttäminen nuolina hiiren liikuttamisen sijaan ja kosketuslevyn napsautus Ctrl-näppäimenä, D-pad-/kosketuslevyn kiertäminen BT-näppäimistöille.
+&lt;br&gt;
+- Monikielituki, kunhan RDP-palvelimessa on tarvittava kielimäärittely käytössä.
+&lt;br&gt;
+- Saumattomat etäkoneen resoluutiomuutokset
+&lt;br&gt;
+- Täysi hiilituki Android 4.0+ -laitteilla, mukaan lukien oikea ja keski-napsautus ja vieritysratas.
+&lt;br&gt;
+- Väritilojen valinta
+&lt;br&gt;
+- Kopioi/liitä -integraatio
+&lt;br&gt;
+- Asetusten vienti
+&lt;br&gt;
+- Ääni
+&lt;br&gt;
+&lt;br&gt;
+Tunnetut ongelmat:</string>
+    <string name="rdp_intro_title">aRDP: Intuitiivinen, turvallinen RDP-asiakas</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kun lisäät tai muokkaat yhteyttä, näet yhteyden määrityssivun. Täällä voit asettaa uuden RDP-yhteyden tai valita olemassa olevan. Yläosassa on painike, jonka avulla voit tallentaa yhteyden. Sen alla konfiguroit yhteytesi.
+
+ - Yhteystyyppi: Täällä valitset RDP-yhteystyypin. Käytettävissä olevat yhteystyypit ovat:
+   (a) RDP, joka yhdistää suoraan tietokoneeseen RDP-protokollan kautta.
+   (b) RDP SSH:n kautta, joka tunneloi ensin yhteytesi SSH-palvelinta ajavan tietokoneen kautta.
+
+ - Otsikko: Jokaisella luomallasi yhteydellä voi olla lempinimi, jolla se on helppo tunnistaa luettelosta.
+
+ - SSH-tunneliasetukset: Käytettävissä RDP SSH:n kautta -tilassa.
+   (a) SSH Server/Portti: SSH-palvelimen osoite ja portti, jonka kautta yhteys tunneloidaan. SSH kuuntelee oletuksena portissa 22.
+   (b) Käyttäjänimi/Salasana: SSH-palvelimen tilin käyttäjänimi ja salasana. Salasana täytetään tälle sivulle, jos et ole sulkenut sovellusta siitä lähtien, kun viimeksi syötit sen.
+   (c) Hallinnoi avainta/Käytä avainta: Painike julkisten/yksityisten avainten hallintaan ja valintaruutu, joka ilmaisee, käytetäänkö avainta salasanan sijaan todentamiseen. Jos käytät Kopioi leikepöydälle -painiketta avainparin luomisen jälkeen, sinun pitäisi pystyä liittämään julkinen avain kun olet yhdistänyt RDP-palvelimeen (leikepöytä synkronoidaan palvelimelle).
+
+ - RDP-yhteysasetukset:
+   (a) RDP Server/Portti: Täällä syötät sen tietokoneen isäntänimen tai IP-osoitteen ja portin, johon RDP-palvelin on yhteydessä. RDP SSH:n kautta -tilassa tämä osoite on SSH-palvelimen näkökulmasta. Jos SSH-palvelin ja RDP-palvelin ovat sama fyysinen tietokone, voit käyttää localhostia. RDP-palvelimet kuuntelevat yleensä portissa 3389.
+   (b) RDP-käyttäjä: Täällä syötät Windows/UNIX-tilin käyttäjänimen.
+   (c) RDP-toimialue: Anna toimialue, johon tilisi kuuluu.
+   (d) RDP-salasana: Täällä syötät Windows/UNIX-tilisi salasanan. Turvallista tallennusta ei käytetä salasanoille (ne ovat tietokannassa), ja salasana tallennetaan vain, jos valitset \"Säilytä\"-ruudun. Salasana täytetään tälle sivulle, jos et ole sulkenut sovellusta siitä lähtien, kun viimeksi syötit sen.
+
+ - Lisäasetukset: Tässä osiossa löydät tapoja mukauttaa työpöydän resoluutiota ja erilaisia RDP-suorituskykyparannuksia.
+
+ - Paikalliset laitesäädöt: Nämä säätävät sovelluksen toimintaa laitteellasi.
+   (a) Käytä D-Pad-ohjainta nuolina: Jos haluat, voit käyttää Bluetooth-näppäimistösi D-Pad-ohjainta tai näyttönäppäimistön nuolia lähettääksesi nuolet RDP-palvelimelle.
+   (b) Kierrä D-Pad: Bluetoothilla yhdistetyt puhelimet saattavat tarvita näppäimistön D-pad-ohjaimen kiertämistä vastapäivään oikeiden suuntien lähettämiseksi palvelimelle.
+   (c) Paikallinen hiiriosoitin: Jos osoitin on näkymätön, valitse tämä pakottaaksesi sovelluksen piirtämään sen."</string>
+    <string name="rdp_password_hint">RDP-salasana</string>
+    <string name="rdp_server_empty">RDP-palvelin tai portti tyhjä. Ei voida yhdistää!</string>
+    <string name="rdp_username_hint">RDP-käyttäjänimi</string>
+
+    <string name="remote_sound_disabled">Ääni poistettu käytöstä</string>
+    <string name="remote_sound_on_device">Ääni laitteella</string>
+    <string name="remote_sound_on_server">Ääni palvelimella</string>
+
+    <string name="repeater_button">UltraVNC Repeater</string>
+    <string name="repeater_caption">TÄRKEÄÄ: Jos käytät UltraVNC-toistinta, syötä sen osoite ja portti tämän valintaikkunan ulkopuolelle. Tähän syötä todellisen VNC-palvelimen osoite ja portti. Erota VNC-palvelimen osoite ja portti kaksoispisteellä, esim. 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC Repeater</string>
+    <string name="repeater_clear">Älä käytä</string>
+    <string name="repeater_dialog_title">VNC Server toistimen takana</string>
+    <string name="repeater_empty_text">Ei toistinta</string>
+    <string name="repeater_save">Käytä</string>
+
+    <string name="right_alt_as_iso_l3_shift">Oikea Alt ISO L3 Shift -näppäimenä (vain VNC)</string>
+
+    <string name="rotate_dpad">Kierrä Bluetooth- tai ohjelmisto-D-Pad-ohjainta</string>
+
+    <string name="save_as_copy">Tallenna kopiona</string>
+
+    <string name="scaling">Skaalaus</string>
+    <string name="scaling_zoomable">Zoomattava</string>
+
+    <!-- Send selected metakey -->
+    <string name="send_button">Lähetä</string>
+    <string name="send_key_again">Lähetä näppäin uudelleen</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">VNC-yhteys</string>
+    <string name="shortcut_label_rdp">RDP-yhteys</string>
+    <string name="shortcut_label_spice">SPICE-yhteys</string>
+
+    <string name="showkbd_label">Näppäimistö</string>
+
+    <string name="single_cancel">Yksikätinen tila peruutettu</string>
+    <string name="single_choose">Valitse yksikätinen tila tai peruuta</string>
+    <string name="single_left">Vasemmanpuoleinen vetotila – pyyhkäise vetääksesi/valitaksesi, nosta sormi lopettaaksesi</string>
+    <string name="single_middle">Keski-vetotila – pyyhkäise vetääksesi/valitaksesi, nosta sormi lopettaaksesi</string>
+    <string name="single_reposition">Hiiriosoitin sijoitettu uudelleen yksikätistä tilaa varten</string>
+    <string name="single_right">Oikeanpuoleinen vetotila – pyyhkäise vetääksesi/valitaksesi, nosta sormi lopettaaksesi</string>
+    <string name="single_scroll">Vieritystila – pyyhkäise ylös/alas vierittääksesi, nosta sormi lopettaaksesi</string>
+    <string name="single_zoom">Zoomaus tila – pyyhkäise ylös/alas zoomataaksesi sisään/ulos, nosta sormi lopettaaksesi</string>
+
+    <string name="snap_one_to_one">Napsautettu 1:1-zoomaukseen</string>
+
+    <string name="special_keys">Lähetä näppäimiä</string>
+
+    <string name="spice_address_caption_hint">SPICE Server</string>
+    <string name="spice_button_import_ca">Tuo CA</string>
+    <string name="spice_ca_cert_path_hint">Polku varmenteen myöntäjätiedostoon</string>
+    <string name="spice_ca_file_error_reading">Virhe CA-tiedoston lukemisessa. Varmista, että se on luettavissa.</string>
+    <string name="spice_ca_file_not_found">Tiedostoa ei löydy. Anna kelvollinen tiedostonimi tekstikenttään (esim. /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Varmenteen kohde</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Kiitos aSPICE:n ja avoimen lähdekoodin ohjelmistojen tukemisesta yleensä! Apua aSPICE:n käyttöön löytyy valikon Ohje-kohdista ja sovelluksen kuvauksesta kaupassa.
+&lt;br&gt;
+&lt;br&gt;
+Nykyinen luettelo aSPICE:n ominaisuuksista sisältää:
+&lt;br&gt;
+- Tavallinen SPICE, SPICE tunneloitu SSH:n kautta.
+&lt;br&gt;
+- Vapaa kiertosuintatuki. Rajoita kiertoa käyttöjärjestelmällä tarvittaessa.
+&lt;br&gt;
+- SSH-julkisen/yksityisen avainparin luonti ja vienti.
+&lt;br&gt;
+- Automaattinen istunnon tallennus.
+&lt;br&gt;
+- Zoomattava, sovita näyttöön ja yksi-yhteen -skaalaustilat.
+&lt;br&gt;
+- Monitouch-hallinta etähiirelle suorissa ja simuloiduissa kosketuslevyn syöttötiloissa.
+&lt;br&gt;
+- Täysi yksikätinen hallinta etähiirelle yksikätisessä syöttötilassa.
+&lt;br&gt;
+- Monitouch-hiiren napsautukset: napauta vasemmanpuoleista napsautusta, kaksisorminen napautus oikeanpuoleista napsautusta, kolmisorminen napautus keskimmäistä napsautusta varten.
+&lt;br&gt;
+- Monitouch-vieritys: kaksisorminen veto ylös/alas ja vasemmalle/oikealle vieritystä varten.
+&lt;br&gt;
+- Näyttönäppäimistön meta- ja nuolinäppäimet, jotka voidaan kokonaan poistaa käytöstä valikosta tai sijoittaa näyttöpainikkeella.
+&lt;br&gt;
+- Tekstin ja mielivaltaisten näppäinyhdistelmien lähettäminen yhdistettynä.
+&lt;br&gt;
+- Apua yhteyksien luomiseen (\"Valikko-&gt;Yhteysohje\") yhteysruudussa.
+&lt;br&gt;
+- Apua syöttötiloihin (\"Valikko-&gt;Lisää-&gt;Syöttötilan ohje\") yhdistettynä.
+&lt;br&gt;
+- Käytettävissä olevan kosketuslevyn käyttäminen nuolina hiiren liikuttamisen sijaan ja kosketuslevyn napsautus Ctrl-näppäimenä, D-pad-/kosketuslevyn kiertäminen BT-näppäimistöille.
+&lt;br&gt;
+- Monikielituki, kunhan SPICE-palvelimessa on tarvittava kielimäärittely käytössä.
+&lt;br&gt;
+- Saumattomat etäkoneen resoluutiomuutokset
+&lt;br&gt;
+- Täysi hiilituki Android 4.0+ -laitteilla, mukaan lukien oikea ja keski-napsautus ja vieritysratas.
+&lt;br&gt;
+&lt;br&gt;
+Suunnitellut ominaisuudet:
+&lt;br&gt;
+- Kopioi/liitä -integraatio
+&lt;br&gt;
+- Ääni
+&lt;br&gt;
+- Suorituskykyparannukset
+&lt;br&gt;
+Tunnetut ongelmat:
+&lt;br&gt;
+- Lähetä teksti ei lähetä joitakin symboleja.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitiivinen, turvallinen SPICE-asiakas</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kun lisäät tai muokkaat yhteyttä, näet yhteyden määrityssivun. Täällä voit asettaa uuden SPICE-yhteyden tai valita olemassa olevan. Yläosassa on painike, jonka avulla voit tallentaa yhteyden. Sen alla konfiguroit yhteytesi.
+
+ - Yhteystyyppi: Täällä valitset SPICE-yhteystyypin. Käytettävissä olevat yhteystyypit ovat:
+   (a) SPICE, joka yhdistää suoraan tietokoneeseen SPICE-protokollan kautta.
+   (b) SPICE SSH:n kautta, joka tunneloi ensin yhteytesi SSH-palvelinta ajavan tietokoneen kautta.
+
+ - Otsikko: Jokaisella luomallasi yhteydellä voi olla lempinimi, jolla se on helppo tunnistaa luettelosta.
+
+ - SSH-tunneliasetukset: Käytettävissä SPICE SSH:n kautta -tilassa.
+   (a) SSH Server/Portti: SSH-palvelimen osoite ja portti, jonka kautta yhteys tunneloidaan. SSH kuuntelee oletuksena portissa 22.
+   (b) Käyttäjänimi/Salasana: SSH-palvelimen tilin käyttäjänimi ja salasana. Salasana täytetään tälle sivulle, jos et ole sulkenut sovellusta siitä lähtien, kun viimeksi syötit sen.
+   (c) Hallinnoi avainta/Käytä avainta: Painike julkisten/yksityisten avainten hallintaan ja valintaruutu, joka ilmaisee, käytetäänkö avainta salasanan sijaan todentamiseen. Jos käytät Kopioi leikepöydälle -painiketta avainparin luomisen jälkeen, sinun pitäisi pystyä liittämään julkinen avain kun olet yhdistänyt SPICE-palvelimeen (leikepöytä synkronoidaan palvelimelle).
+
+ - SPICE-yhteysasetukset:
+   (a) SPICE Server/Portti: Täällä syötät sen tietokoneen isäntänimen tai IP-osoitteen ja portin, johon SPICE-palvelin on yhteydessä. SPICE SSH:n kautta -tilassa tämä osoite on SSH-palvelimen näkökulmasta. Jos SSH-palvelin ja SPICE-palvelin ovat sama fyysinen tietokone, voit käyttää localhostia. SPICE-palvelimet kuuntelevat yleensä portissa 5900 ja ylöspäin.
+   (b) SPICE-salasana: Täällä syötät salasanan, joka on asetettu suojaamaan SPICE-istuntoasi. Turvallista tallennusta ei käytetä salasanoille (ne ovat tietokannassa), ja salasana tallennetaan vain, jos valitset \"Säilytä\"-ruudun. Salasana täytetään tälle sivulle, jos et ole sulkenut sovellusta siitä lähtien, kun viimeksi syötit sen.
+
+ - Lisäasetukset: Tässä osiossa löydät paikalliset laite- tai SPICE-suorituskykyparannukset.
+ - Paikalliset laitesäädöt: Nämä säätävät sovelluksen toimintaa laitteellasi.
+   (a) Käytä D-Pad-ohjainta nuolina: Jos haluat, voit käyttää Bluetooth-näppäimistösi D-Pad-ohjainta tai näyttönäppäimistön nuolia lähettääksesi nuolet SPICE-palvelimelle.
+   (b) Kierrä D-Pad: Bluetoothilla yhdistetyt puhelimet saattavat tarvita näppäimistön D-pad-ohjaimen kiertämistä vastapäivään oikeiden suuntien lähettämiseksi palvelimelle.
+   (c) Paikallinen hiiriosoitin: Jos osoitin on näkymätön, valitse tämä pakottaaksesi sovelluksen piirtämään sen."</string>
+    <string name="spice_password_hint">SPICE-salasana</string>
+    <string name="spice_server_empty">SPICE-palvelin tai portti tyhjä. Ei voida yhdistää!</string>
+    <string name="spice_tls_port_hint">TLS-portti</string>
+    <string name="spice_username_hint">SPICE-käyttäjänimi</string>
+
+    <string name="ssh_passphrase_hint">SSH-salauslause</string>
+    <string name="ssh_pubkey_button">Hallinnoi avainta</string>
+    <string name="ssh_use_pubkey">Käytä avainta</string>
+    <string name="ssh_use_x11vnc">Automaattinen työpöytä</string>
+    <string name="ssh_x11vnc_customize">Määritä AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Poista käytöstä</string>
+    <string name="tap_enable">Ota käyttöön</string>
+
+    <string name="username_caption">VNC-käyttäjä</string>
+    <string name="username_hint">UltraVNC MS-kirjautumisen käyttäjänimi</string>
+    <string name="username_hint_optional">VNC-käyttäjänimi (valinnainen)</string>
+    <string name="username_hint_ssh">SSH-käyttäjänimi</string>
+    <string name="username_hint_vencrypt">VNC-käyttäjänimi</string>
+    <string name="verification_code">Vahvistuskoodi</string>
+    <string name="verification_code_message">Anna monivaiheisen todennuksen vahvistuskoodi</string>
+
+    <string name="view_only">Vain katselu -tila</string>
+
+    <string name="vnc_server_empty">VNC-palvelin tai portti tyhjä. Ei voida yhdistää!</string>
+    <string name="vnc_server_empty_no_save">VNC-palvelin tai portti tyhjä. Ei voida tallentaa yhteyttä!</string>
+
+    <string name="warning_cert_does_not_match">VAROITUS: Tallennettu x509-varmenne tai annettu allekirjoitus ei vastaa nykyistä palvelinvarmennetta! Kyseessä saattaa olla väliintulohyökkäys. Jos olet tietoinen avainmuutoksesta, voit jatkaa. </string>
+    <string name="copy_logcat">📋 Kopioi Logcat</string>
+    <string name="log_copied">Logcat kopioitu leikepöydälle. Voit nyt liittää sen sähköpostiin tai tukifoorumille. Tarkista ennen julkaisemista, ettei se sisällä henkilökohtaisia tietoja.</string>
+    <string name="info_set_touchpad_input_mode">Palvelin ilmoittaa, ettei se tue asiakasmoodin hiirinsyöttöä, ja nykyinen hiirinsyöttötila ei toimi oikein. Jos tämä jatkuu, varmista, että spice tools on asennettu virtuaalikoneeseen tai vaihda simuloituun kosketuslevyn syöttötilaan valikosta.</string>
+    <string name="ssh_tunnel_settings">SSH-tunneliasetukset</string>
+    <string name="vnc_connection_settings">VNC-yhteysasetukset</string>
+    <string name="show_advanced_settings">Näytä lisäasetukset</string>
+    <string name="use_no_compression_for_local_connections">Ei pakkausta (paikalliset yhteydet, Hextile-koodaus)</string>
+    <string name="rdp_connection_settings">RDP-yhteysasetukset</string>
+    <string name="local_device_tweaks">Paikalliset laitesäädöt</string>
+    <string name="spice_connection_settings">SPICE-yhteysasetukset</string>
+    <string name="ca_subject">Anna varmenteen kohteen nimi tähän. Ei ehkä tarvita, jos varmenteen yleinen nimi (CN) vastaa palvelimen isäntänimeä.</string>
+    <string name="path_to_ca">Anna tiedostopolku (esimerkiksi /sdcard/ca-cert.pem) ja napauta Tuo ladataksesi varmenteen myöntäjäsi.</string>
+    <string name="paste_ca">Anna varmenteen myöntäjä tähän, jos et tuo sitä tiedostona.</string>
+    <string name="cert_issuer">Varmenteen myöntäjä</string>
+    <string name="cert_fingerprint">Varmenteen sormenjälki</string>
+    <string name="error">Virhe</string>
+    <string name="panning">Panorointinäyttö</string>
+    <string name="copy_of">Kopio kohteesta</string>
+    <string name="ssh_key_generated">Uusi avain luotu tai tuotu onnistuneesti. Voit nyt napauttaa \'Luo/vie avain\' -painiketta jakaaksesi, kopioidaksesi leikepöydälle tai viedäksesi julkisen avaimen.</string>
+    <string name="cursor_force_local">"Paikallinen"</string>
+    <string name="cursor_force_disable">"Poista käytöstä"</string>
+    <string name="cursor_mode">"Osoitintila:"</string>
+    <string name="rendering_mode">"Renderöintitila:"</string>
+    <string name="color_24_bit">"24-bittinen väri (24 bpp)"</string>
+    <string name="color_256">"256 väriä (8 bpp)"</string>
+    <string name="color_64">"64 väriä (4 bpp)"</string>
+    <string name="color_8">"8 väriä (2 bpp)"</string>
+    <string name="color_greyscale">"Harmaasävy (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Mustavalkoinen (1 bpp)"]]></string>
+    <string name="show">"Näytä"</string>
+    <string name="hide">"Piilota"</string>
+    <string name="search_connections">Etsi yhteyksiä</string>
+    <string name="user_not_specified">Käyttäjää ei ole määritetty</string>
+    <string name="enter_ssh_credentials">Anna SSH-tunnistetiedot</string>
+    <string name="enter_vnc_credentials">Anna VNC-tunnistetiedot</string>
+    <string name="enter_vnc_password">Anna VNC-salasana</string>
+    <string name="enter_rdp_credentials">Anna RDP-tunnistetiedot</string>
+    <string name="enter_gateway_credentials">Anna yhdyskäytävän tunnistetiedot</string>
+    <string name="enter_spice_password">Anna SPICE-salasana</string>
+    <string name="enter_passphrase_title">Anna avaimen salauslause</string>
+    <string name="enter_passphrase">Anna avaimen salauslause</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Palvelimesi vaatii salasanatodennuksen avaintodennuksen lisäksi.</string>
+    <string name="main_screen_help_text">"
+Kun sovellus käynnistetään, se näyttää näytön tallennetuilla yhteyksillä.
+
+Jos tallennettuja yhteyksiä ei ole, näytön alaosa on tyhjä ja sinun on napautettava plus-painiketta luodaksesi uuden.
+Voit myös hallita muita konfiguraation näkökohtia tältä näytöltä napauttamalla muita työkalupalkki- tai valikkovaihtoehtoja yläosassa,
+esimerkiksi muokataksesi oletusasetuksia tai tuodaksesi ja viedäksesi asetuksia.
+
+Kun sinulla on yhteys tallennettuna, voit yhdistää etäpalvelimeen napauttamalla sitä kerran. Sinulla on myös mahdollisuus poistaa tai muokata se pitkään napauttamalla.
+
+Lopuksi voit käyttää Etsi yhteyksiä -kenttää löytääksesi nopeasti yhteyksiä suodattimella näkyvistä yhteyksistä."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kun lisäät tai muokkaat yhteyttä, näet yhteyden määrityssivun.
+Täällä voit asettaa uuden Opaque-yhteyden tai valita olemassa olevan.
+Yläosassa on painike, jonka avulla voit tallentaa yhteyden.
+Sen alla konfiguroit yhteytesi.
+
+ - Yhteystyyppi: Täällä valitset, mihin virtualisointiympäristöön yhdistät.
+
+ - Palvelimen osoite: Palvelimen isäntänimi tai IP. Jos se kuuntelee ei-standardiportissa, voit lisätä portin erotettuna kaksoispisteellä.
+
+ - Virtuaalikoneen nimi: Voit määrittää VM:n nimen sellaisena kuin se näkyy virtualisointialustallasi tai jättää tämän kentän tyhjäksi saadaksesi luettelon VM:istä tai säilöistä valittavaksi.
+
+ - Käyttäjä: Anna käyttäjänimi todentautuaksesi virtualisointikehykseesi.
+
+ - Salasana: Jos haluat tallentaa salasanan, anna se tähän tai jätä kenttä tyhjäksi saadaksesi kyselyn joka kerta.
+
+ - Lisäasetukset: Tässä osiossa löydät paikalliset laite-, protokolla- ja suorituskykyparannukset."
+    </string>
+    <string name="help">Ohje ⓘ</string>
+    <string name="need_help">Tarvitsetko apua?</string>
+    <string name="support_forum">Tukifoorumi ❓</string>
+    <string name="email_us">Lähetä meille sähköpostia 📧</string>
+    <string name="report_bug">Ilmoita virheestä 🐛</string>
+    <string name="download_from_server">Lataa palvelimelta</string>
+    <string name="import_from_file">Tuo tiedostosta</string>
+    <string name="please_grant_permission_from_prefs">Sinun on ehkä myönnettävä sovellukselle käyttöoikeudet Asetuksissa.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Lisää virheenkorjauslokitusta</string>
+    <string name="prefer_sending_unicode">Unicode-syöttö (vain Windows)</string>
+    <string name="hide_connection_thumbnails">Piilota yhteyden esikatselukuvat</string>
+    <string name="show_only_connection_nicknames">Näytä vain yhteyden lempinimet</string>
+    <string name="love_our_work">Pidätkö työmme?</string>
+    <string name="rate_app">Arvioi ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Jaa 🔗</string>
+    <string name="share_app_toast">Jaa linkki sovellukseen kaikille ystävillesi sosiaalisessa mediassa!</string>
+    <string name="donate_app">Lahjoita ❤</string>
+    <string name="more_apps">Lisää sovelluksia 📱</string>
+    <string name="previous_versions">Aiemmat versiot ⍼</string>
+    <string name="keyboard_type">Ohjelmistonäppäimistön tyyppi</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Oletus (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Teksti/numerot ilman ehdotuksia (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Teksti ehdotusten kanssa (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">Tämä yhteys on asetettu käynnistämään VPN ulkoisen sovelluksen kautta. Sinun on asennettava sovellus kuten Morpheusly sen käynnistämiseksi.</string>
+    <string name="vnc_viewer_started">VNC Viewer käynnistetty</string>
+    <string name="enable_gateway">Ota RDP Gateway käyttöön</string>
+    <string name="scroll_speed">Kosketusvieritysnopeus</string>
+    <string name="desktop_scale_percentage">Mukautettu skaalausprossentti</string>
+    <string name="show_menu">Näytä valikko</string>
+    <string name="move_toolbar">Siirrä työkalupalkki</string>
+</resources>

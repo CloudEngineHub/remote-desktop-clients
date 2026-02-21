@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="audio_will_be_initialized">Heli lähtestatakse umbes 15 sekundi pärast. Palun peatage kõik töötavad video- või heliesitused enne seda</string>
+    <string name="audio_initialized">Heli lähtestatud</string>
+    <string name="action_import_settings">Impordi seaded</string>
+    <string name="action_new_connection">✚ Uus ühendus</string>
+    <string name="action_edit_default_settings">⚙ Muuda vaikimisi seadeid</string>
+    <string name="action_export_settings">Ekspordi seaded</string>
+    <string name="action_delete_connection">Kustuta ühendus</string>
+    <string name="action_rate_or_share_app">⭐ Hangi abi, hinnake, jagage</string>
+    <string name="get_help">Hangi abi</string>
+    <string name="advanced_settings">Täpsemad seaded</string>
+    <string name="audio">Heli</string>
+    <string name="auto_rotation">Ekraani pööramine ühenduse ajal</string>
+    <string name="auto_request_new_res">Sünkrooni kaugekraan ekraani eraldusvõimega</string>
+    <string name="custom_ca_subject">Valikuline sertifikaadi teema. Pole vajalik, kui sertifikaadi CN vastab hostimanusele</string>
+    <string name="custom_ca_import">Teise võimalusena sisestage täielik tee oma CA-le ja puudutage Impordi</string>
+    <string name="custom_ca_paste">Kleepige CA siia (kui ei impordita)</string>
+    <string name="ca_ovirt_use_custom">Kohandatud RHEV/oVirt CA</string>
+    <string name="ca_spice_use_ovirt">Kasuta RHEV/oVirt CA-d SPICE jaoks</string>
+    <string name="ca_ovirt_manage">Halda RHEV/oVirt CA-d</string>
+    <string name="ca_spice_manage">Halda SPICE CA-d</string>
+    <string name="ca_file_not_found">Faili ei leitud. Palun sisestage tekstiväljale kehtiv failinimi (nt /sdcard/ca.crt).</string>
+    <string name="ca_file_error_reading">CA-faili lugemisel tekkis viga. Veenduge, et see on loetav.</string>
+    <string name="ca_new_or_changed">Uus või muutunud serveri sertifikaat</string>
+    <string name="connection_type_text">Virtualiseerimiskeskkond (RHEV/oVirt või Proxmox)</string>
+    <string-array name="connection_types">
+        <item>@string/connection_type_ovirt</item>
+        <item>@string/connection_type_pve</item>
+    </string-array>
+    <string name="connection_setup_vm_name">Virtuaalmasina nimi (valikuline)</string>
+    <string name="connection_setup_host_name">Serveri aadress</string>
+    <string name="connection_setup_user">Kasutaja@Domeen</string>
+    <string name="connection_setup_password">Parool</string>
+    <string name="enter_password">Palun sisestage parool</string>
+    <string name="enter_password_auth_failed">Autentimine ebaõnnestus. Palun sisestage oma andmed uuesti.</string>
+    <string name="enter_otp_code">Palun sisestage OTP kood</string>
+    <string name="hide_toolbar">Peida tööriistariba</string>
+    <string name="manage_custom_ca_title">Halda kohandatud CA-d</string>
+    <string name="save_button">Salvesta</string>
+    <string name="select_vm_title">Vali virtuaalmasin</string>
+    <string name="vv_file_not_found">.vv-faili ei leitud!</string>
+    <string name="vv_file_error">.vv-fail puudub või on rikutud!</string>
+    <string name="info_cert">Kas võtate vastu selle uue või muutunud hostisertifikaadi?\n\nSõrmejäljed:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nVäljastatud: %4$s\nVäljastaja: %5$s\n\nKehtib alates: %6$s\nKehtib kuni: %7$s\n</string>
+
+    <string name="toggle_keyboard">Lülita klaviatuur</string>
+    <string name="show_keyboard">Näita klaviatuuri</string>
+    <string name="scroll_wheel">Kerimisratas</string>
+
+    <string name="input_method_help">Sisestusmeetodi abi</string>
+
+    <string name="ok">OK</string>
+
+    <string name="input_methods">Sisestusmeetod</string>
+
+    <string name="error_failed_to_download_http">Faili allalaadimine HTTP kaudu ebaõnnestus. Võimalik, et teie server pole kättesaadav.</string>
+    <string name="error_failed_to_download_https">Faili allalaadimine HTTPS kaudu ebaõnnestus. Võimalik, et teie serveri sertifikaat pole usaldusväärne (aegunud või iseallkirjastatud) või server pole kättesaadav.</string>
+    <string name="error_failed_to_obtain_content">Faili hankimine ebaõnnestus. Laadige see uuesti alla, kuid seekord avage see kiiresti failihalduri allalaadimiste kaustast.</string>
+    <string name="error_failed_to_obtain_file">Faili leidmine ebaõnnestus. Laadige see uuesti alla, kuid seekord proovige avada see teavitusalast või otse brauserist, kui võimalik.</string>
+
+    <string name="error_dialog_title">Viga</string>
+    <string name="info_dialog_title">Teave</string>
+    <string name="info_vm_launched_on_stand_by">Teie VM leiti välja lülitatud olekus ja käivitati. Palun proovige mõne minuti pärast uuesti. Kui proovite liiga vara ja saate ühenduse tõrke, proovige hiljem uuesti.</string>
+    <string name="error_no_vm_found_for_user">Antud kasutajale pole saadaval ühtegi virtuaalmasinat.</string>
+    <string name="error_no_such_vm_found_for_user">Antud kasutajale pole leitud virtuaalmasinat määratud ID-ga. Kustutage ID, et saada VM-ide loend.</string>
+    <string name="error_no_vnc_support_yet">VNC kuvatüüpi ei toetata veel, kuid see on tulev funktsioon. Täname mõistmise eest!</string>
+    <string name="error_not_connected_to_network">Tundub, et te pole Internetiga ühendatud. Jätkamine ilma ühenduseta pole võimalik!</string>
+    <string name="error_ovirt_timeout">Ühendus teie VM-iga aegus. Kontrollige, et teie VM-i käitava sõlme aadress on õige, see on teie praegusest võrgust kättesaadav ja ükski tulemüür ei blokeeri ühendust.</string>
+    <string name="error_ovirt_auth_failure">Autentimistõrge. Kontrollige esitatud kasutajanime ja parooli.</string>
+    <string name="error_ovirt_ssl_handshake_failure">SSL-kälus ebaõnnestus. Serveri SSL-sertifikaadiga on probleem. Kui kasutate iseallkirjastatud sertifikaati, peate (uuesti) importima oma sertifikaadi väljastaja.</string>
+    <string name="error_pve_failed_to_authenticate">Proxmox Virtual Environment\'i autentimine ebaõnnestus. Veenduge, et sisestate kasutajanime vormingus kasutaja@realm ja parool on õige.</string>
+    <string name="error_pve_failed_to_parse_json">Proxmox Virtual Environment\'i vastuse töötlemine ebaõnnestus.</string>
+    <string name="error_pve_vmid_not_numeric">VM ID pole numbriline. Sisestage numbriline VM ID või jätke tühjaks, et valida VM loendist.</string>
+    <string name="error_pve_api_unexpected_code">Ootamatu vastus Proxmox Virtual Environment\'ilt: </string>
+    <string name="error_pve_api_io_error">Ühendus Proxmox Virtual Environment\'iga ebaõnnestus: </string>
+    <string name="error_pve_null_data">Proxmox Virtual Environment tagastas tühja andmestiku.</string>
+    <string name="error_pve_timeout_communicating">Proxmox Virtual Environment\'iga suhtlemise aegumine.</string>
+    <string name="error_vm_lookup_failed">Teie kasutajale määratud nimega virtuaalmasinat ei leitud. Kustutage VM-i nimi, et näha kasutajale määratud VM-ide loendit.</string>
+    <string name="error_vv_download_timeout">vv-faili allalaadimise aegumine.</string>
+    <string name="message_please_wait">Palun oodake</string>
+    <string name="message_please_install_bvnc">Selle VM-i VNC-konsooli kaudu ühendumiseks installige &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> Google Play\'st.</string>
+    <string name="ssl_strict">Nõua üldnime vastavust sertifikaadiga (soovitatav)</string>
+    <string name="usb">USB (ühendage esmalt OTG-kaabel)</string>
+
+    <string name="ad_donate_text0">Pro-versioon toetab ka mitme teguriga SSH-autentimist. Lisaks toetab see palju nõutud peaparooli funktsiooni, mis takistab volitamata kasutamist ja krüpteerib kõik ühenduse seaded, sh paroolid ja SSH-võtmed, kaitstes varguse eest. Lubage see peamenüüst.</string>
+    <string name="ad_donate_spice_text1a">Puudutage siin Opaque ostmiseks ja Proxmox\'i ning oVirt\'i otseühenduste salvestamiseks. See toetab ka .vv-faile.</string>
+    <string name="ad_donate_spice_text1b">Puudutage siin Pro-versiooni ostmiseks ja .vv-failide avamiseks.</string>
+    <string name="ad_donate_text1">Puudutage siin projekti toetamiseks väikese annetusega, ostes Pro-versiooni.</string>
+    <string name="ad_donate_text2">Pro-versioon võimaldab selle dialoogi keelata ja annab juurdepääsu lisafunktsioonidele.</string>
+    <string name="ad_donate_text3">Kui soovite projekti veelgi toetada, järgige järgmisi linke klientrakendustele: </string>
+    <string name="ad_donate_text_vnc">Avatud lähtekoodiga projekt vajab teie tuge! Annetage meile bVNC Pro ostmisega. Allpool on lingid bVNC Pro-le ja meie teistele rakendustele.</string>
+    <string name="ad_donate_text_rdp">Avatud lähtekoodiga projekt vajab teie tuge! Annetage meile aRDP Pro ostmisega, mis toetab heliedastust. Allpool on lingid aRDP Pro-le ja meie teistele rakendustele.</string>
+    <string name="ad_donate_text_spice">Proxmox\'i ja oVirt\'i ühenduste jaoks annetage projekti toetuseks Opaque\'i või aSPICE Pro ostmisega. aSPICE tasuta versioon toetab ainult otseühendusi KVM virtuaalmasinatega. Allpool on lingid Opaque\'ile ja aSPICE Pro-le, samuti meie teistele rakendustele.</string>
+
+    <string name="address_caption">VNC-server</string>
+    <string name="address_caption_hint">VNC-server</string>
+    <string name="address_caption_hint_tunneled">VNC-server</string>
+    <string name="address_caption_ssh">SSH-server</string>
+    <string name="address_caption_ssh_hint">SSH-server</string>
+
+    <string name="alt_check">Alt</string>
+
+    <string name="arrow_down">Nool alla</string>
+    <string name="arrow_left">Nool vasakule</string>
+    <string name="arrow_right">Nool paremale</string>
+    <string name="arrow_up">Nool üles</string>
+
+    <string name="auto">Automaatne</string>
+    <string name="auto_x_cancel">Tühista</string>
+    <string name="auto_x_caption">Rakendus suudab automaatselt avastada olemasolevaid ja luua uusi X-seansse Linuxi/UNIX-i süsteemides (sarnaselt NX-ile). Seansside leidmiseks vajate x11vnc-d ja loomiseks Xvfb-d, Xvnc-d või Xdummy-d. Kui ühendumine ebaõnnestub, proovige valida AutoX täpsematest seadetest kindel kaugseansitüüp.</string>
+    <string name="auto_x_confirm">Kinnita</string>
+    <string name="auto_x_descript_geom">Kaugtöölaua suurus (LxK)</string>
+    <string name="auto_x_descript_session">Kaugseansitüüp</string>
+    <string name="auto_x_disabled">Keelatud</string>
+    <string name="auto_x_disabled_selection">AutoX keelatud</string>
+    <string name="auto_x_enabled">Lubatud</string>
+    <string name="auto_x_find">Ainult leia, ära loo</string>
+    <string name="auto_x_find_login">Leia X-sisselogimine (vajab sudo)</string>
+    <string name="auto_x_geom_custom">Kohandatud</string>
+    <string name="auto_x_geom_native">Natiivne</string>
+    <string-array name="auto_x_geometry">
+        <item>@string/auto_x_geom_native</item>
+        <item>@string/auto_x_geom_custom</item>
+    </string-array>
+    <string-array name="auto_x_session">
+        <item>@string/auto_x_session_auto</item>
+        <item>@string/auto_x_session_custom</item>
+        <item>@string/auto_x_session_kde</item>
+        <item>@string/auto_x_session_unity</item>
+        <item>@string/auto_x_session_unity_2d</item>
+        <item>@string/auto_x_session_xfce</item>
+        <item>@string/auto_x_session_gnome</item>
+        <item>@string/auto_x_session_gnome_cl</item>
+        <item>@string/auto_x_session_trinity</item>
+        <item>@string/auto_x_session_mate</item>
+    </string-array>
+    <string name="auto_x_session_auto">Automaatne</string>
+    <string name="auto_x_session_custom">Kohandatud</string>
+    <string name="auto_x_title">SeadistaNa AutoX</string>
+    <string-array name="auto_x_type">
+        <!-- If adding selections, they need to be in sync with values
+        declared in VncConstants for conversion bet. selection and commands
+        to work properly. -->
+        <item>@string/auto_x_disabled_selection</item>
+        <item>@string/auto_x_xvfb</item>
+        <item>@string/auto_x_xvnc</item>
+        <item>@string/auto_x_xdummy</item>
+        <item>@string/auto_x_find</item>
+        <item>@string/auto_x_find_login</item>
+    </string-array>
+    <string name="auto_x_unix_auth">Autendi automaatselt esitatud SSH kasutajanime/parooliga (musta sisselogimiskuvani).</string>
+    <string name="auto_x_unixpw">Kasuta UNIX-i mandaate sisseehitatud turbeprotokolli asemel. Kasutaja peab saama käitada /bin/su.</string>
+    <string name="auto_x_xdummy">Leia või loo Xdummy\'ga</string>
+    <string name="auto_x_xvfb">Leia või loo Xvfb\'ga</string>
+    <string name="auto_x_xvnc">Leia või loo Xvnc\'ga</string>
+
+    <string name="button_send_text">Saada tekst</string>
+    <string name="button_send_without_saving">Saada tekst/ära salvesta</string>
+
+    <string name="center_mouse">Hiir @</string>
+
+    <string name="close">Sulge</string>
+
+    <string name="color_format_caption">Värvirežiim</string>
+    <string name="color_mode">Värvirežiim</string>
+
+    <string name="connect_button">Ühenda</string>
+    <string name="back_button">Mine tagasi</string>
+    <string name="update_button">Uuenda</string>
+
+    <string name="connection_caption">Ühendus</string>
+    <string-array name="connection_type">
+        <item>@string/connection_type_vnc</item>
+        <item>@string/connection_type_vnc_over_ssh</item>
+        <item>@string/connection_type_ultravnc</item>
+        <item>@string/connection_type_vnc_over_ssl</item>
+        <item>@string/connection_type_vnc_over_vencrypt</item>
+        <item>@string/connection_type_vnc_over_stunnel</item>
+    </string-array>
+    <string name="connection_type_caption">Ühenduse tüüp</string>
+    <string name="connection_type_rdp_over_ssh">RDP üle SSH</string>
+    <string name="connection_type_spice_over_ssh">SPICE üle SSH</string>
+    <string name="connection_type_vnc">Tavaline VNC</string>
+    <string name="connection_type_vnc_over_ssh">Turvaline VNC üle SSH</string>
+    <string name="connection_type_vnc_over_ssl">Turvaline VNC üle AnonTLS</string>
+    <string name="connection_type_vnc_over_stunnel">Turvaline VNC üle SSL-tunneli</string>
+    <string name="connection_type_vnc_over_vencrypt">Turvaline VNC üle VeNCrypt</string>
+    <string name="connection_edit_delete_prompt">Kas soovite ühendust redigeerida või kustutada</string>
+    <string name="connection_edit">Redigeeri</string>
+    <string name="connection_delete">Kustuta</string>
+
+    <string name="control_check">Ctrl</string>
+
+    <string name="copy_list_button">Kopeeri loend</string>
+
+    <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
+
+    <string name="default_input_mode">Vaikimisi sisestusmeetod</string>
+    <string name="delete_connection">Kustuta ühendus</string>
+    <string name="delete_key">Kustuta valitud klahv</string>
+    <string name="delete_key_list">Kustuta klahviloend</string>
+
+    <string name="disconnect">Ühendus katkesta</string>
+
+    <string name="dpad_as_arrows">Kasuta D-pad noolteks ja D-pad klõpsu Ctrl-ina.</string>
+
+    <string name="enable_recording">Luba salvestamine</string>
+    <string name="enable_sound">Luba heli</string>
+
+    <string name="enter_text">Saada tekst</string>
+    <string name="enter_text_title">Sisestage saadetav tekst</string>
+
+    <string name="error_anon_dh_unsupported">VNC-server üritab kasutada anonüümse Diffie Hellmani šifreid, mida teie Androidi seade ei toeta. Kui kasutate GNOME\'i Vino VNC-serverit, saate AnonTLS keelata, käivitades terminalis järgmise käsu ja seejärel taaskäivitades: \"gsettings set org.gnome.Vino require-encryption false\". Kui kasutate x11vnc-d, saate lisada järgmised valikud: \"-vencrypt nodh:only -ssl\".</string>
+    <string name="error_connection_failed">Ühendamine ebaõnnestus.</string>
+    <string name="error_connection_interrupted">Ühendus katkes.</string>
+    <string name="error_no_user_hostname">Palun sisestage vähemalt kasutajanimi ja hostinimi või IP-aadress.</string>
+    <string name="error_out_of_memory">Kaugjõudla kuvamiseks ei saanud piisavalt mälu eraldada. Proovige rakendus taaskäivitada, seejärel taaskäivitage seade. Samuti võite proovida vähendada kaugtöölaua suurust rakenduse seadetes.</string>
+    <string name="error_ovirt_unable_to_connect">Ei saanud ühendust luua ega autentida. Kontrollige serveri aadressi, kasutajanime, parooli ning sertifikaadi väljastajat ja teemat.</string>
+    <string name="error_pick_correct_item">Veenduge, et olete ühenduse tüübi all valinud õige üksuse.</string>
+    <string name="error_rdp_authentication_failed">RDP-autentimine ebaõnnestus! Kontrollige RDP kasutajanime ja parooli ning proovige uuesti.</string>
+    <string name="error_rdp_connection_failed">RDP-ühendamine ebaõnnestus! Võrguühendus katkes, RDP-server lülitati välja või keelati või teie seanss võeti üle.</string>
+    <string name="error_rdp_unable_to_connect">RDP-serveriga ühendamine ebaõnnestus! Veenduge, et RDP-serveri seade on õige, server on sisse lülitatud, RDP on lubatud ja server asub samas võrgus kui see seade.</string>
+    <string name="error_security_type">Server ei pakkunud toetatud turbetüüpi.</string>
+    <string name="error_spice_unable_to_connect">Ei saanud ühendust luua ega autentida. Kontrollige serveri aadressi ja porti.</string>
+    <string name="error_ssh_could_not_exec_command">Kaugkäsu täitmine ebaõnnestus.</string>
+    <string name="error_ssh_could_not_send_sudo_pwd">Sudo parooli saatmine ebaõnnestus.</string>
+    <string name="error_ssh_hostkey_changed">VIGA! Serveri hostiparool on muutunud. Kui see on tahtlik, võite jätkata. Muul juhul võib tegemist olla mees-keskel rünnakuga.</string>
+    <string name="error_ssh_kbd_auth_method_unavail">SSH-server ei toeta kummagi autentimismeetodi: \"parool\" ega \"klaviatuur-interaktiivne\" või nõuab esmalt \"avalik võti\" meetodit. Palun seadistage see lubama vähemalt ühte kahest meetodist või konfigureerige rakendus ümber. Saadaval autentimismeetodid: </string>
+    <string name="error_ssh_key_auth_fail">SSH-serveriga autentimine võtmepaariga ebaõnnestus. Kontrollige SSH kasutajanime ja veenduge, et teie avalik võti on kaugpool authorized_keys failis.</string>
+    <string name="error_ssh_keypair_decryption_failure">Võtmepaari dekrüpteerimine ebaõnnestus. Veenduge, et olete oma paroolfraasi õigesti sisestanud põhiekraani väljale \'SSH paroolfraas\'.</string>
+    <string name="error_ssh_keypair_missing">SSH võtmepaari pole veel loodud! Looge see ja pange (selle avalik osa) SSH-serveri authorized_keys faili.</string>
+    <string name="error_ssh_passphrase_but_keypair_unencrypted">Paroolfraas on esitatud, kuid võtmepaar pole krüpteeritud. Palun kustutage paroolfraas.</string>
+    <string name="error_ssh_port_forwarding_failure">VNC-liikluse SSH-tunneldamiseks pordi suunamise seadistamine ebaõnnestus. Veenduge, et teie SSH-server on konfigureeritud lubama pordi suunamist, ja proovige uuesti.</string>
+    <string name="error_ssh_pubkey_auth_method_unavail">SSH-server ei toeta \"avaliku võtme\" autentimismeetodit, kuid me üritame autentimiseks kasutada võtmepaari. Palun konfigureerige see lubama avaliku võtme autentimist ja proovige uuesti. Saadaval autentimismeetodid: </string>
+    <string name="error_ssh_pwd_auth_fail">SSH-serveriga autentimine parooliga ebaõnnestus. Kontrollige SSH kasutajanime ja parooli.</string>
+    <string name="error_ssh_unable_to_connect">SSH-serveriga ühendamine ebaõnnestus. Kontrollige võrguühendust, SSH-serveri aadressi ja porti.</string>
+    <string name="error_ssh_x11vnc_no_port_failure">x11vnc\'lt kaugse VNC-pordi hankimine ebaõnnestus. Veenduge, et x11vnc on installitud. Kindluse mõttes proovige x11vnc käsitsi käsureal käivitada.</string>
+    <string name="error_uri_noinfo_nosave">Ühendamiseks on esitatud ebapiisavalt teavet.</string>
+    <string name="error_uri_parse_error">Intent URI töötlemine ebaõnnestus. Kontrollige URI vormingut. Lisateavet leiate ka seadme logcatist.</string>
+    <string name="error_vnc_authentication">VNC-autentimine ebaõnnestus! Kontrollige VNC parooli (ja kasutajanime, kui see on asjakohane).</string>
+    <string name="error_vnc_unable_to_connect">"VNC-serveriga ühendamine ebaõnnestus põhjusel: "</string>
+    <string name="error_x509_could_not_generate_encoding">Sertifikaadi kodeeringut ei saanud luua.</string>
+    <string name="error_x509_could_not_generate_signature">SHA1 või MD5 allkirja sertifikaadist ei saanud luua. SHA1/MD5 algoritmi ei leitud.</string>
+
+    <string name="export_settings">Ekspordi</string>
+
+
+    <string name="extra_keys_disable">Keela lisaclahvid</string>
+    <string name="extra_keys_enable">Luba lisaclahvid</string>
+
+    <string name="fit_to_screen">Sobita ekraanile</string>
+
+    <string name="force">Täisekraani bitmap</string>
+
+    <string name="immersive_mode_disable">Keela immersiivne režiim</string>
+
+    <string name="import_export_settings">📦 Impordi/ekspordi seaded</string>
+    <string name="import_settings">Impordi</string>
+
+
+    <string name="info">Teave</string>
+    <string name="info_cert_signatures">"Sertifikaadi teave on: "</string>
+    <string name="info_cert_signatures_identical">\n\nSaate kontrollida, et teave vastab serveri sertifikaadile, et vältida mees-keskel rünnakut.</string>
+    <string name="info_cert_tunnel">Kas soovite luua ühenduse hostiga, mille identifitseerib järgmine sertifikaat?\n\nSõrmejälg: %1$s\n\nVäljastatud:\n%2$s\n\nVäljastaja:\n%3$s\n\nKehtib alates:\n%4$s\n\nKehtib kuni:\n%5$s\n\nMärkus: Rakendus ei kontrolli sertifikaadi väljastajaid ega tühistamist.</string>
+    <string name="info_continue_connecting">"Jätkake ühendamist: "</string>
+    <string name="info_encoding">" kodeering, "</string>
+    <string name="info_progress_dialog_aborted">Ühendamine katkestati!</string>
+    <string name="info_progress_dialog_connecting">Ühendamine…</string>
+    <string name="info_progress_dialog_downloading">Esimese kaadri allalaadimine.\nPalun oodake…</string>
+    <string name="info_progress_dialog_establishing">Kätluse loomine.\nPalun oodake…</string>
+    <string name="info_ssh_initializing_hostkey">SSH hostiparooli lähtestamine.</string>
+    <string name="info_ssh_key_fingerprint">"Hostiparooli sõrmejälg on: "</string>
+    <string name="info_ssh_key_fingerprint_identical">\n\nSaate kontrollida, et see on identne serveri sertifikaadi teadaoleva sõrmejäljega, et vältida mees-keskel rünnakut.</string>
+    <string name="info_update_color_model_to">"Värvimudelimise uuendamine: "</string>
+
+    <string name="input_method_direct_drag_pan_description">Otse, hoia panoraamimiseks: Pühkige lohistamiseks ja kukutamiseks. Puudutage ühe sõrmega soovitud vasaku nupu klõpsamiseks, kahe sõrmega parema nupu klõpsamiseks ja kolme sõrmega keskmise nupu klõpsamiseks. Pühkige kahe sõrmega kerimiseks. Pikk puudutus panoraamimise alustamiseks.</string>
+    <string name="input_method_direct_swipe_pan_description">Otse, pühkige panoraamimine: Pühkige panoraamimiseks. Puudutage ühe sõrmega soovitud vasaku nupu klõpsamiseks, kahe sõrmega parema nupu klõpsamiseks ja kolme sõrmega keskmise nupu klõpsamiseks. Pühkige kahe sõrmega kerimiseks. Pikk puudutus lohistamiseks ja kukutamiseks.</string>
+    <string name="input_method_single_handed_description">Ühekäeline: Pühkige panoraamimiseks. Puudutage ühe sõrmega soovitud vasaku nupu klõpsamiseks. Pikk puudutus vasaku/parema/keskmise lohistamise/kerimise/suumimise režiimi valimiseks. Tavalised mitmepuudutuse juhtnupud toimivad samuti.</string>
+    <string name="input_method_touchpad_description">Simuleeritud puuteplaat: Pühkige kursori liigutamiseks. Puudutage kõikjal ühe sõrmega vasaku nupu klõpsamiseks, kahe sõrmega parema nupu klõpsamiseks ja kolme sõrmega keskmise nupu klõpsamiseks. Pühkige kahe sõrmega kerimiseks. Pikk puudutus lohistamiseks ja kukutamiseks.</string>
+    <string name="input_mode">Sisestusmeetod</string>
+
+    <string name="input_mode_fit_to_screen">Ilma panoraamimiseta; rullnupuhiir</string>
+    <string name="input_mode_panning">Töölaua panoraamimise režiim</string>
+    <string name="input_method_mouse">Hiire kursori juhtimine</string>
+
+    <string name="input_method_direct_swipe_pan">Otse, pühkige panoraamimine</string>
+    <string name="input_method_direct_drag_pan">Otse, hoia panoraamimiseks</string>
+    <string name="input_method_single_handed">Ühekäeline</string>
+    <string name="input_method_touchpad">Simuleeritud puuteplaat</string>
+
+    <string name="input_mode_help">Sisestusmeetodi abi</string>
+    <string name="input_mode_help_text">"
+Igas sisestusmeetodis puudutage klaviatuuriikooni ekraaniklavatuuri kuvamiseks. Samuti võib teie seadmel olla oma žest klaviatuuri kuvamiseks.
+
+Kasutage otseseid sisestusmeetodeid intuitiivsemaks puuteekraani juhtimiseks. Kasutage simuleeritud puuteplaadi režiimi täpsemaks hiire juhtimiseks.
+
+Otse, pühkige panoraamimise režiim:
+ - Juhtige hiirt otse puute kaudu.
+ - Pühkige panoraamimiseks.
+ - Puudutamine paneb hiire klõpsama seal, kus puudutasite.
+ - Kerimissündmused saadetakse kahe sõrme vahele, kust kahesõrmeline pühkimine algas.
+
+Otse, hoia panoraamimise režiim:
+ - Juhtige hiirt otse puute kaudu.
+ - Pikk puudutus panoraamimisrežiimi alustamiseks.
+ - Puudutamine paneb hiire klõpsama seal, kus puudutasite.
+ - Kerimissündmused saadetakse kahe sõrme vahele, kust kahesõrmeline pühkimine algas.
+
+Simuleeritud puuteplaadi režiim:
+ - Kasutage ekraani nagu puuteplaati.
+ - Pühkige hiire kursori liigutamiseks.
+ - Liigutage hiirt ekraani serva taha panoraamimiseks.
+ - Puudutamine paneb hiire klõpsama seal, kus kursor on.
+ - Kerimissündmused saadetakse sinna, kus hiire kursor asub.
+
+Ühekäeline režiim:
+ - Sama mis otse, pühkige panoraamimine, välja arvatud see, et pikk puudutus avab menüü režiimi valikutega.
+ - Pärast režiimi valimist täidab sõrme pühkimine ekraanil valitud žesti.
+ - Sõrme tõstmine lõpetab žesti.
+
+Kõik sisestusmeetodid:
+ - Vasak klõps: Üks puudutus.
+ - Topeltklõps: Topeltpuudutus.
+ - Parem klõps: Hoia ja puudutage teise sõrmega (kõikjal mujal ekraanil).
+ - Alternatiivne parem klõps: Kasutage oma seadme \"Tagasi\" nuppu või žesti.
+ - Keskmine klõps: Hoia ja puudutage kahe täiendava sõrmega (kõikjal mujal ekraanil).
+ - Hiire lohistamine: Pika hoidmisega ja pühkimisega.
+ - Kerimisratas: Kahe sõrmega lohistamine üles/alla ja vasak/parem. Kiire lohistamine kerib kiiremini.
+ - Suum sisse/välja: Suumitavas skaleerimises näpistage suurendamiseks.
+ - Ctrl/Alt klahv: Menüü-&gt;Ctrl/Alt nupud. Ärge unustage lülitada välja, kui olete lõpetanud!
+ - Klahvikombinatsioonid: Menüü-&gt;Veel-&gt;Saada klahvid.
+ - Saada tekst: Kas tippige ekraaniklavatuuri abil või kasutage Menüü-&gt;Veel-&gt;Saada tekst."</string>
+
+    <string name="intro_close">Sulge</string>
+    <string name="intro_dont_show">Ära näita enam</string>
+
+    <string name="intro_text">
+Praegune bVNC funktsioonide loend:
+&lt;br&gt;
+- Tavaline VNC, turvaline VNC üle SSH, AnonTLS ja VeNCrypt ning UltraVNC Windowsi sisselogimine valikulise korduriga.
+&lt;br&gt;
+- AutoX-režiim: VNC üle SSH režiimis avastage automaatselt olemasolevad ja/või looge uued X-seansid x11vnc abil! Toimib nagu NX-klient.
+&lt;br&gt;
+- Vaba pööramistugi. Kasutage operatsioonisüsteemi pööramispiiramiseks, kui vaja.
+&lt;br&gt;
+- SSH avaliku/privaatvõtme paari loomine ja eksportimine.
+&lt;br&gt;
+- Kõik VNC standardkodeeringud, sh Tight, ZRLE ja CopyRect.
+&lt;br&gt;
+- Automaatne seansside salvestamine.
+&lt;br&gt;
+- Suumitav, ekraanile sobitamine ja üks-ühele skaleerimisrežiimid.
+&lt;br&gt;
+- Mitmepuudutusega hiire juhtimine kaugseadmes otsese ja simuleeritud puuteplaadi sisestusmeetodites.
+&lt;br&gt;
+- Täielik ühekäeline hiire juhtimine kaugseadmes ühekäelises sisestusmeetodis.
+&lt;br&gt;
+- Mitmepuudutusega hiireklõpsud: puudutamine vasaku nupu klõpsamiseks, kahe sõrmega puudutamine parema nupu klõpsamiseks, kolme sõrmega puudutamine keskmise nupu klõpsamiseks.
+&lt;br&gt;
+- Mitmepuudutusega kerimine: kahe sõrmega lohistamine üles/alla ja vasak/parem kerimiseks.
+&lt;br&gt;
+- Ekraani meta- ja noolklahvid, mida saab menüüst täielikult keelata või ekraani nupuga peita.
+&lt;br&gt;
+- Teksti ja suvaliste klahvikombinatsioonide saatmine ühenduse ajal.
+&lt;br&gt;
+- Abi ühenduste loomisega (\"Menüü-&gt;Ühenduse abi\") ühenduse ekraanil.
+&lt;br&gt;
+- Abi sisestusmeetoditega (\"Menüü-&gt;Veel-&gt;Sisestusmeetodi abi\") ühenduse ajal.
+&lt;br&gt;
+- Saadaoleva puuteplaadi kasutamine nooltena hiire liigutamise asemel ja puuteplaadi klõpsu kasutamine Ctrl-ina.
+&lt;br&gt;
+- Portreetrežiimile lülitumine ühenduse ajal, D-pad/puuteplaadi pööramine BT-klaviatuuride jaoks.
+&lt;br&gt;
+- Mitmekeelne tugi, eeldusel et VNC-serveril on vajalik keelelayout lubatud.
+&lt;br&gt;
+- Kopeeri/kleebi integratsioon
+&lt;br&gt;
+- Kaugmasina eraldusvõime muutused
+&lt;br&gt;
+- Täielik hiiretugi Android 4.0+ seadmetel, sh parem ja keskmine klõps ning kerimisratas.
+&lt;br&gt;
+&lt;br&gt;
+Teadaolevad probleemid:
+&lt;br&gt;</string>
+    <string name="intro_title">bVNC: Intuitiivne, turvaline VNC-klient</string>
+
+
+    <string name="keep_password_button">Hoia</string>
+    <string name="keep_screen_awake_enable">Hoia ekraan ärkvel</string>
+
+    <string name="keys_caption">Klahvid</string>
+
+    <string name="landscape_force">Sunni horisontaalset orientatsiooni</string>
+
+    <string name="left_handed_mode">Vasakukäelise režiim</string>
+    <string name="disable_pointer_offset_correction">Keela kursori nihke korrektsioon</string>
+
+    <string name="list_caption">Loend</string>
+    <string name="list_name_caption">Loendi nimi</string>
+
+    <string name="local_mouse_check">Kohalik hiire kursor (valige, kui kursor on nähtamatu)</string>
+
+    <string name="main_screen_help">Ühenduse abi</string>
+    <string name="vnc_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kui lisate või redigeerite ühendust, kuvatakse ühenduse konfiguratsiooni leht. Siin saate seadistada
+uue VNC-ühenduse või valida olemasoleva. Ülaosas on nupp ühenduse salvestamiseks.
+Allpool konfigureerite ühendust.
+
+Kui soovite kiiret jõudluse parandust, proovige seada värvirežiim madalamale väärtusele. Samuti proovige eemaldada VNC-serveri töölaua taustapilt. Lõpuks veenduge, et teie seadmel on hea võrguühendus ja vältige antenni katmist, mis vähendab signaalitugevust.
+
+ - Ühenduse tüüp: Siin valite VNC-ühenduse tüübi. Saadaval ühenduse tüübid:
+   (a) Tavaline VNC, mida toetavad kõik VNC-serverid, kuid millel puudub krüpteerimine ja mis on tundlik jõurünnakute suhtes 8-tähemärgilise paroolipiiri tõttu.
+   (b) Turvaline VNC üle SSH, mis ühendub krüpteeritud SSH-tunneli kaudu. Vajate SSHD-teenust ja VNC-serverit. Kui VNC-server ei aktsepteeri otseühendusi Internetist, pole selles ühenduse tüübis teadaolevaid turvaauke, kui verifitseerite serveri sertifikaadi allkirja esimest korda ühendades.
+   (c) UltraVNC, mis annab Windowsi sisselogimise ja UltraVNC korduri valikud. Windowsi sisselogimise kasutamine ei kannata 8-tähemärgilise paroolipiiri käes, kuid see režiim ei paku krüpteerimist, nii et teie seanss on pealtkuulamise suhtes haavatav.
+   (d) Turvaline VNC üle AnonTLS, mis on tavaline VNC stunnel-ekvivalentse ühenduse kaudu. Peate käitama stunneli või kasutama VNC-serverit nagu Vino, mis toetab AnonTLS-i otse. See režiim pakub seanssi krüpteerimist, kuid kannatab 8-tähemärgilise paroolipiiri käes ja ei väldi mees-keskel rünnakuid.
+   (e) Turvaline VNC üle VeNCrypt, mis kasutab x509 sertifikaate ja seanssi krüpteerimist ning olenevalt serveri konfiguratsioonist saab kasutada kasutaja/parooli mandaate ilma 8-tähemärgilise piiranguta. See režiim väldib mees-keskel rünnakuid ja tagab seanssi privaatsuse. Serverid nagu x11vnc ja TigerVNC toetavad seda režiimi ning on sama turvalised kui VNC üle SSH.
+
+ - Pealkiri: Igale loodud ühendusele saab anda hüüdnime, et seda loendis hõlpsamini tuvastada.
+
+ - SSH-tunneli seaded: Saadaval VNC üle SSH režiimis.
+   (a) SSH-server/port: Ühenduse tunneldatava SSH-serveri aadress ja port. Vaikimisi kuulab SSH pordil 22.
+   (b) Kasutajanimi/parool: SSH-serveri konto kasutajanimi ja parool. Parool täidetakse sellel lehel, kui te pole rakendusest väljunud pärast selle viimast sisestamist.
+   (c) Halda võtit/kasuta võtit: Nupp avalike/privaatvõtmete haldamiseks ja märkeruut, mis näitab, kas kasutada võtit parooliga autentimise asemel. Kui kasutate võtmepaari loomise järel kopeerimise lõikelaudale nuppu, peaksite saama avaliku võtme kleepimisvõimaluse VNC-serveriga ühendumisel (lõikelaud sünkroonitakse serveriga).
+
+ - SeadistaNa AutoX: Saadaval ainult VNC üle SSH režiimis. Rakendus suudab automaatselt avastada olemasolevaid ja valikuliselt luua uusi X-seansse UNIX-i süsteemides (nagu NX-klient). Vajate x11vnc-d seansside leidmiseks ning kaugseadmesse installitud Xvfb-d, Xvnc-d või Xdummy-d seansside loomiseks. Võimalik, et peate .dmrc faili ära liigutama ja kodukataloogis .xinit faili looma, kui töölaud ei näe õige välja või kuvatakse ainult xterm-aken.
+
+ - VNC-ühenduse seaded:
+   (a) VNC-server/port: Siin sisestate selle arvuti hostinimi või IP-aadress ja port, kus töötab VNC-server, millega soovite ühendust luua. VNC üle SSH režiimis on see aadress nähtav SSH-serverist. Kui SSH-server ja VNC-server on sama arvuti, saate kasutada localhost\'i. VNC-serverid kuulavad tavaliselt alates pordist 5900 (esimene VNC-ekraan, ekraan :0).
+   (b) VNC kasutaja: Saadaval UltraVNC Windowsi sisselogimise režiimis või turvalise VNC üle VeNCrypt, siin sisestate oma Windowsi/UNIX-i konto kasutajanime.
+   (c) VNC parool: Kui teie VNC-serveri konfiguratsioon nõuab parooli, sisestage see parool siia. UltraVNC Windowsi sisselogimise/VeNCrypt režiimides pange siia oma Windowsi/UNIX-i konto parool. Turvaline salvestus paroolide jaoks ei ole kasutusel ja parool salvestatakse ainult siis, kui märkite ruudu "Hoia". Parool täidetakse sellel lehel, kui te pole rakendusest väljunud pärast selle viimast sisestamist.
+
+ - Värvirežiim: Klient toetab mitut värvirežiimi. Rohkemate värvidega režiimid pakuvad paremat visuaalset kogemust suurema ribalaiuse ja suurema CPU arvutuse arvelt teie seadmel. Mõned VNC-serverid ei toeta kõiki värvisügavusi (nt OS/X Remote Desktop nõuab 24-bitist värvi). Kui ühendamisel on raskusi, proovige mõnda muud värvisügavust.
+
+ - Kasuta D-pad noolteks: Kui eelistate, saate kasutada Bluetoothi klaviatuuri D-pad-i või ekraaniklavatuuri nooli VNC-serverile noolte saatmiseks.
+
+ - Pöörake D-pad: Telefonid, mis on seotud Bluetoothi klaviatuuriga, võivad vajada klaviatuuri D-pad-i pööramisel vastupäeva, et serverile õiged suunad saata.
+
+ - Kohalik hiire kursor: Mõned VNC-serverid (nt OS/X Remote Desktop) ei joonista hiire kursorit kliendil. Selle valiku märkimine põhjustab rakenduse hiire kursori joonistamise hiire asukohas.
+
+ - Automaatne/täisekraani bitmap: VNC-klient kasutab kaugjõudla esindamiseks bitmap-i. Väga suurte kaugjõudlate puhul, eriti ekraanile sobitamise režiimis, võite ekraanile sobitamise režiimis kogeda kummalisi visuaalseid artefakte protsessipõhiste mälupiirangute tõttu. Kui see juhtub, proovige seda valikut märkida. Pidage meeles, et valiku märkimine võib põhjustada rakenduse sulgemist ühenduse loomisel.
+
+ - Kordur: Saadaval ainult UltraVNC režiimis. TÄHTIS: Kui teil on UltraVNC kordur, sisestage selle aadress ja port väljaspool \'UltraVNC korduri\' dialoogi ning sisestage tegeliku VNC-serveri aadress ja port \'UltraVNC korduri\' dialoogi sees. Eraldage VNC-serveri aadress ja port kooloniga, nt 192.168.0.100:5900."</string>
+
+    <string name="master_password_enable">🔒 Luba peaparool</string>
+    <string name="master_password_error_failed_to_disable">Peaparooli keelamine ebaõnnestus. Kontrollige seadme vaba ruumi ja proovige uuesti.</string>
+    <string name="master_password_error_failed_to_enable">Peaparooli lubamine ebaõnnestus. Kontrollige seadme vaba ruumi ja proovige uuesti.</string>
+    <string name="master_password_error_intents_not_supported">Ühenduse kavatsused ei ole veel toetatud, kui peaparool on lubatud.</string>
+    <string name="master_password_error_password_necessary">Jätkamiseks on vaja peaparooli.</string>
+    <string name="master_password_error_password_not_set">Peaparooli seadmine tühistati.</string>
+    <string name="master_password_error_shortcuts_not_supported">Otseteed ei ole veel toetatud, kui peaparool on lubatud.</string>
+    <string name="master_password_error_wrong_password">Esitatud peaparooliga autentimine ebaõnnestus.</string>
+    <string name="master_password_hint_once">Sisestage parool</string>
+    <string name="master_password_hint_twice">Korrake parooli</string>
+    <string name="master_password_set">Sea peaparool</string>
+    <string name="master_password_set_error">Paroolid ei ühti, palun olge ettevaatlik!</string>
+    <string name="master_password_set_message">Palun sisestage ja meeldejätke peaparool. Mida pikem on teie parool, seda raskem on seda murda. Kui seate parooli valesti või unustate selle, kaotate kõik seaded! Võite praegu oma seaded eksportida nende varundamiseks (menüüst). Hoidke neid turvaliselt, kuna eksporditud seaded pole krüpteeritud.</string>
+    <string name="master_password_verify">Kinnitage peaparool</string>
+    <string name="master_password_verify_message">Jätkamiseks sisestage õige peaparool.</string>
+
+    <string name="meta_key_title">Saada erivõtmeid</string>
+
+    <string name="mouse_follow_pan">Hiir järgib panoraamimist</string>
+
+    <string name="new_connection">Uus ühendus</string>
+    <string name="new_list_button">Uus loend</string>
+
+    <string name="nickname_caption">Hüüdnimi</string>
+    <string name="nickname_caption_hint">Pealkiri (valikuline)</string>
+
+    <string name="off">Väljas</string>
+
+    <string name="one_to_one">Üks-ühele</string>
+
+    <string name="open_doc">Käsiraamat/Wiki</string>
+
+    <string name="pan_follow_mouse">Panoraamimine järgib hiirt</string>
+
+    <string name="password_caption">VNC aut.</string>
+    <string name="password_caption_hint">VNC parool</string>
+    <string name="password_caption_ssh">SSH aut.</string>
+    <string name="password_hint_ssh">SSH parool</string>
+
+    <string name="port_caption">VNC port</string>
+    <string name="port_caption_ssh">SSH port</string>
+    <string name="port_hint">Port</string>
+    <string name="port_ssh_hint">Port</string>
+
+    <string name="portrait_mode">Lülitu ühenduse ajal portreetrežiimi</string>
+    <string name="local_clipboard_integration">Luba kohaliku lõikelaua integratsioon kauglõikuaga</string>
+    <string name="remote_clipboard_integration">Luba kauglõikelaua integratsioon kohaliku lõikuaga</string>
+    <string name="position_toolbar_last_used">Taasta tööriistariba asukoht</string>
+    <string name="applies_to_new_connections_only">Kehtib ainult uute ühenduste kohta</string>
+    <string name="pro_feature_mfa">Näib, et teie serveril on mitmefaktoriline autentimine lubatud. Toetage projekti Pro-versiooni ostmisega, mis toetab seda funktsiooni. Link Pro-versioonile on saadaval avadialoogis.</string>
+    <string name="pro_feature_intro">Näib, et kasutate Pro-funktsiooni. Toetage projekti Pro-versiooni ostmisega, mis toetab seda funktsiooni. Vaadake avadialoogist linke õige rakenduse jaoks.</string>
+    <string name="pro_feature_generic">Näib, et kasutate Pro-funktsiooni. Toetage projekti Pro-versiooni ostmisega, mis toetab seda funktsiooni. Link Pro-versioonile on saadaval avadialoogis.</string>
+    <string name="pro_feature_rdp">Näib, et proovisite avada .rdp-faili, mis on Pro-funktsioon. Toetage projekti aRDP Pro ostmisega, mis toetab .rdp-faile. Link aRDP Pro versioonile on saadaval avadialoogis.</string>
+    <string name="pro_feature_spice">Näib, et proovisite avada .vv-faili. Kui soovite salvestada ühendusi Proxmox\'ile või oVirt\'ile otse rakenduses ja avada ka .vv-faile, kaaluge Opaque ostmist. Kui vajate ainult .vv-faili tuge, saate aSPICE Pro. Mõlema rakenduse lingid leiate avadialoogist.</string>
+
+    <string name="rdp_address_caption_hint">RDP-server</string>
+    <string name="rdp_adv_console_mode">Konsooli režiim</string>
+    <string name="rdp_adv_desktop_background">Näita töölaua tausta</string>
+    <string name="rdp_adv_desktop_composition">Luba töölaua kompositsioon</string>
+    <string name="rdp_adv_font_smoothing">Teosta fondi silumine</string>
+    <string name="rdp_adv_menu_animation">Näita menüüanimatsioone</string>
+    <string name="rdp_adv_redirect_sdcard">Suuna SD-kaart ümber</string>
+    <string name="rdp_adv_remotefx">Luba RemoteFX</string>
+    <string name="rdp_adv_visual_styles">Luba visuaalsed stiilid</string>
+    <string name="rdp_adv_window_contents">Näita akna sisu lohistamise ajal</string>
+    <string name="rdp_security_mode">Turvarežiim</string>
+    <string-array name="rdp_connection_type">
+        <item>@string/connection_type_rdp</item>
+        <item>@string/connection_type_rdp_over_ssh</item>
+    </string-array>
+    <string name="rdp_descript_geom">Kaugtöölaua suurus (LxK)</string>
+    <string name="rdp_domain_hint">RDP domeen</string>
+    <string name="rdp_geom_automatic">Automaatne</string>
+    <string name="rdp_geom_checkbox_enable">Luba kohandatud eraldusvõime</string>
+    <string name="rdp_geom_custom">Kohandatud</string>
+    <string name="rdp_geom_description_hint">Server vajab ExtendedDesktopSize tuge</string>
+    <string name="rdp_geom_disabled">Keelatud</string>
+    <string name="rdp_geom_native_landscape">Natiivne horisontaalne</string>
+    <string name="rdp_geom_native_portrait">Natiivne vertikaalne</string>
+    <string-array name="rdp_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string-array name="spice_geometry">
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+        <item>@string/rdp_geom_automatic</item>
+    </string-array>
+    <string-array name="rdp_colors">
+        <item>32</item>
+        <item>24</item>
+        <item>16</item>
+        <item>15</item>
+        <item>8</item>
+    </string-array>
+    <string name="rdp_security_auto">Automaatne turbeläbirääkimine</string>
+    <string name="rdp_security_rdp">RDP-turve</string>
+    <string name="rdp_security_tls">TLS-turve</string>
+    <string name="rdp_security_nla">Võrgutaseme autentimine</string>
+    <string-array name="rdp_security">
+        <item>@string/rdp_security_auto</item>
+        <item>@string/rdp_security_rdp</item>
+        <item>@string/rdp_security_tls</item>
+        <item>@string/rdp_security_nla</item>
+    </string-array>
+    <string-array name="vnc_geometry">
+        <item>@string/rdp_geom_disabled</item>
+        <item>@string/rdp_geom_automatic</item>
+        <item>@string/rdp_geom_native_landscape</item>
+        <item>@string/rdp_geom_native_portrait</item>
+        <item>@string/rdp_geom_custom</item>
+    </string-array>
+    <string name="rdp_intro_text">
+Täname aRDP ja avatud lähtekoodiga tarkvara toetamise eest! aRDP kasutamise abi saamiseks vaadake menüü abüksuseid ja rakenduse kirjeldust turul.
+&lt;br&gt;
+&lt;br&gt;
+aRDP funktsioonide praegune loend sisaldab:
+&lt;br&gt;
+- Tavaline RDP, SSH kaudu tunneldatud RDP.
+&lt;br&gt;
+- Vaba pööramistugi. Kasutage operatsioonisüsteemi pööramispiiramiseks, kui vaja.
+&lt;br&gt;
+- Kaugeraldusvõime seadistamine, natiivne eraldusvõime horisontaalses ja portreetrežiimis.
+&lt;br&gt;
+- SSH avaliku/privaatvõtme paari loomine ja eksportimine.
+&lt;br&gt;
+- Automaatne seansside salvestamine.
+&lt;br&gt;
+- Suumitav, ekraanile sobitamine ja üks-ühele skaleerimisrežiimid.
+&lt;br&gt;
+- Mitmepuudutusega hiire juhtimine kaugseadmes otsese ja simuleeritud puuteplaadi sisestusmeetodites.
+&lt;br&gt;
+- Täielik ühekäeline hiire juhtimine kaugseadmes ühekäelises sisestusmeetodis.
+&lt;br&gt;
+- Mitmepuudutusega hiireklõpsud: puudutamine vasaku nupu klõpsamiseks, kahe sõrmega puudutamine parema nupu klõpsamiseks, kolme sõrmega puudutamine keskmise nupu klõpsamiseks.
+&lt;br&gt;
+- Mitmepuudutusega kerimine: kahe sõrmega lohistamine üles/alla ja vasak/parem kerimiseks.
+&lt;br&gt;
+- Ekraani meta- ja noolklahvid, mida saab menüüst täielikult keelata või ekraani nupuga peita.
+&lt;br&gt;
+- Teksti ja suvaliste klahvikombinatsioonide saatmine ühenduse ajal.
+&lt;br&gt;
+- Abi ühenduste loomisega (\"Menüü-&gt;Ühenduse abi\") ühenduse ekraanil.
+&lt;br&gt;
+- Abi sisestusmeetoditega (\"Menüü-&gt;Veel-&gt;Sisestusmeetodi abi\") ühenduse ajal.
+&lt;br&gt;
+- Saadaoleva puuteplaadi kasutamine nooltena hiire liigutamise asemel ja puuteplaadi klõpsu kasutamine Ctrl-ina, D-pad/puuteplaadi pööramine BT-klaviatuuride jaoks.
+&lt;br&gt;
+- Mitmekeelne tugi, eeldusel et RDP-serveril on vajalik keelelayout lubatud.
+&lt;br&gt;
+- Sujuvad kaugmasina eraldusvõime muutused
+&lt;br&gt;
+- Täielik hiiretugi Android 4.0+ seadmetel, sh parem ja keskmine klõps ning kerimisratas.
+&lt;br&gt;
+- Värvirežiimide valik
+&lt;br&gt;
+- Kopeeri/kleebi integratsioon
+&lt;br&gt;
+- Seadete eksportimine
+&lt;br&gt;
+- Heli
+&lt;br&gt;
+&lt;br&gt;
+Teadaolevad probleemid:</string>
+    <string name="rdp_intro_title">aRDP: Intuitiivne, turvaline RDP-klient</string>
+    <string name="rdp_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kui lisate või redigeerite ühendust, kuvatakse ühenduse konfiguratsiooni leht. Siin saate seadistada uue RDP-ühenduse või valida olemasoleva. Ülaosas on nupp ühenduse salvestamiseks. Allpool konfigureerite ühendust.
+
+ - Ühenduse tüüp: Siin valite RDP-ühenduse tüübi. Saadaval ühenduse tüübid:
+   (a) RDP, mis ühendub arvutiga otse RDP-protokolli kaudu.
+   (b) RDP üle SSH, mis tunneldab esmalt teie ühenduse läbi SSH-serverit käitava arvuti.
+
+ - Pealkiri: Igale loodud ühendusele saab anda hüüdnime, et seda loendis hõlpsamini tuvastada.
+
+ - SSH-tunneli seaded: Saadaval RDP üle SSH režiimis.
+   (a) SSH-server/port: Ühenduse tunneldatava SSH-serveri aadress ja port. Vaikimisi kuulab SSH pordil 22.
+   (b) Kasutajanimi/parool: SSH-serveri konto kasutajanimi ja parool. Parool täidetakse sellel lehel, kui te pole rakendusest väljunud pärast selle viimast sisestamist.
+   (c) Halda võtit/kasuta võtit: Nupp avalike/privaatvõtmete haldamiseks ja märkeruut, mis näitab, kas kasutada võtit parooliga autentimise asemel. Kui kasutate võtmepaari loomise järel kopeerimise lõikelaudale nuppu, peaksite saama avaliku võtme kleepimisvõimaluse RDP-serveriga ühendumisel (lõikelaud sünkroonitakse serveriga).
+
+ - RDP-ühenduse seaded:
+   (a) RDP-server/port: Siin sisestate selle arvuti hostinimi või IP-aadress ja port, kus töötab RDP-server, millega soovite ühendust luua. RDP üle SSH režiimis on see aadress nähtav SSH-serverist. Kui SSH-server ja RDP-server on sama füüsiline arvuti, saate kasutada localhost\'i. RDP-serverid kuulavad tavaliselt pordil 3389.
+   (b) RDP kasutaja: Siin sisestate oma Windowsi/UNIX-i konto kasutajanime.
+   (c) RDP domeen: Sisestage domeen, millesse teie konto kuulub.
+   (d) RDP parool: Siin sisestate oma Windowsi/UNIX-i konto parooli. Turvaline salvestus paroolide jaoks ei ole kasutusel (need on andmebaasis) ja parool salvestatakse ainult siis, kui märkite ruudu "Hoia". Parool täidetakse sellel lehel, kui te pole rakendusest väljunud pärast selle viimast sisestamist.
+
+ - Täpsemad seaded: Sellest jaotisest leiate viisid töölaua eraldusvõime kohandamiseks ja erinevaid RDP jõudluse optimeerimisi.
+
+ - Kohaliku seadme kohandused: Need reguleerivad rakenduse käitumist teie seadmel.
+   (a) Kasuta D-pad noolteks: Kui eelistate, saate kasutada Bluetoothi klaviatuuri D-pad-i või ekraaniklavatuuri nooli RDP-serverile noolte saatmiseks.
+   (b) Pöörake D-pad: Telefonid, mis on seotud Bluetoothi klaviatuuriga, võivad vajada klaviatuuri D-pad-i pööramisel vastupäeva, et serverile õiged suunad saata.
+   (c) Kohalik hiire kursor: Kui kursor on nähtamatu, valige see, et sundida rakendust seda joonistama."</string>
+    <string name="rdp_password_hint">RDP parool</string>
+    <string name="rdp_server_empty">RDP-server või port on tühi. Ühendamine pole võimalik!</string>
+    <string name="rdp_username_hint">RDP kasutajanimi</string>
+
+    <string name="remote_sound_disabled">Heli keelatud</string>
+    <string name="remote_sound_on_device">Heli seadmel</string>
+    <string name="remote_sound_on_server">Heli serveris</string>
+
+    <string name="repeater_button">UltraVNC kordur</string>
+    <string name="repeater_caption">TÄHTIS: Kui kasutate UltraVNC kordurit, sisestage selle aadress ja port väljaspool seda dialoogi. Siin sisestage tegeliku VNC-serveri aadress ja port. Eraldage VNC-serveri aadress ja port kooloniga, nt 192.168.0.100:5900.</string>
+    <string name="repeater_caption_hint">UltraVNC kordur</string>
+    <string name="repeater_clear">Ära kasuta</string>
+    <string name="repeater_dialog_title">VNC-server korduri taga</string>
+    <string name="repeater_empty_text">Kordurit pole</string>
+    <string name="repeater_save">Kasuta</string>
+
+    <string name="right_alt_as_iso_l3_shift">Parem Alt kui ISO L3 vahetus (ainult VNC)</string>
+
+    <string name="rotate_dpad">Pöörake Bluetooth või tarkvara D-pad</string>
+
+    <string name="save_as_copy">Salvesta koopiana</string>
+
+    <string name="scaling">Skaleerimine</string>
+    <string name="scaling_zoomable">Suumitav</string>
+
+    <!-- Send selected metakey -->
+    <string name="send_button">Saada</string>
+    <string name="send_key_again">Saada klahv uuesti</string>
+
+    <string name="shift_check">Shift</string>
+
+    <string name="shortcut_label_vnc">VNC-ühendus</string>
+    <string name="shortcut_label_rdp">RDP-ühendus</string>
+    <string name="shortcut_label_spice">SPICE-ühendus</string>
+
+    <string name="showkbd_label">Klaviatuur</string>
+
+    <string name="single_cancel">Ühekäeline režiim tühistati</string>
+    <string name="single_choose">Vali ühekäeline režiim või tühista</string>
+    <string name="single_left">Vasak lohistamine – pühkige lohistamiseks/valimiseks, tõstke sõrm peatamiseks</string>
+    <string name="single_middle">Keskmine lohistamine – pühkige lohistamiseks/valimiseks, tõstke sõrm peatamiseks</string>
+    <string name="single_reposition">Hiire kursor paigutati ümber ühekäeliseks režiimiks</string>
+    <string name="single_right">Parem lohistamine – pühkige lohistamiseks/valimiseks, tõstke sõrm peatamiseks</string>
+    <string name="single_scroll">Kerimisrežiim – pühkige üles/alla kerimiseks, tõstke sõrm peatamiseks</string>
+    <string name="single_zoom">Suumimisrežiim – pühkige üles/alla suurendamiseks/vähendamiseks, tõstke sõrm peatamiseks</string>
+
+    <string name="snap_one_to_one">Kinnitati 1:1 suumile</string>
+
+    <string name="special_keys">Saada klahvid</string>
+
+    <string name="spice_address_caption_hint">SPICE-server</string>
+    <string name="spice_button_import_ca">Impordi CA</string>
+    <string name="spice_ca_cert_path_hint">Tee sertifikaadi väljastaja failini</string>
+    <string name="spice_ca_file_error_reading">CA-faili lugemisel tekkis viga. Veenduge, et see on loetav.</string>
+    <string name="spice_ca_file_not_found">Faili ei leitud. Palun sisestage tekstiväljale kehtiv failinimi (nt /sdcard/ca-cert.pem).</string>
+    <string name="cert_subject">Sertifikaadi teema</string>
+    <string-array name="spice_connection_type">
+        <item>@string/connection_type_spice</item>
+        <item>@string/connection_type_spice_over_ssh</item>
+    </string-array>
+    <string name="spice_intro_text">
+Täname aSPICE ja avatud lähtekoodiga tarkvara toetamise eest! aSPICE kasutamise abi saamiseks vaadake menüü abüksuseid ja rakenduse kirjeldust turul.
+&lt;br&gt;
+&lt;br&gt;
+aSPICE funktsioonide praegune loend sisaldab:
+&lt;br&gt;
+- Tavaline SPICE, SSH kaudu tunneldatud SPICE.
+&lt;br&gt;
+- Vaba pööramistugi. Kasutage operatsioonisüsteemi pööramispiiramiseks, kui vaja.
+&lt;br&gt;
+- SSH avaliku/privaatvõtme paari loomine ja eksportimine.
+&lt;br&gt;
+- Automaatne seansside salvestamine.
+&lt;br&gt;
+- Suumitav, ekraanile sobitamine ja üks-ühele skaleerimisrežiimid.
+&lt;br&gt;
+- Mitmepuudutusega hiire juhtimine kaugseadmes otsese ja simuleeritud puuteplaadi sisestusmeetodites.
+&lt;br&gt;
+- Täielik ühekäeline hiire juhtimine kaugseadmes ühekäelises sisestusmeetodis.
+&lt;br&gt;
+- Mitmepuudutusega hiireklõpsud: puudutamine vasaku nupu klõpsamiseks, kahe sõrmega puudutamine parema nupu klõpsamiseks, kolme sõrmega puudutamine keskmise nupu klõpsamiseks.
+&lt;br&gt;
+- Mitmepuudutusega kerimine: kahe sõrmega lohistamine üles/alla ja vasak/parem kerimiseks.
+&lt;br&gt;
+- Ekraani meta- ja noolklahvid, mida saab menüüst täielikult keelata või ekraani nupuga peita.
+&lt;br&gt;
+- Teksti ja suvaliste klahvikombinatsioonide saatmine ühenduse ajal.
+&lt;br&gt;
+- Abi ühenduste loomisega (\"Menüü-&gt;Ühenduse abi\") ühenduse ekraanil.
+&lt;br&gt;
+- Abi sisestusmeetoditega (\"Menüü-&gt;Veel-&gt;Sisestusmeetodi abi\") ühenduse ajal.
+&lt;br&gt;
+- Saadaoleva puuteplaadi kasutamine nooltena hiire liigutamise asemel ja puuteplaadi klõpsu kasutamine Ctrl-ina, D-pad/puuteplaadi pööramine BT-klaviatuuride jaoks.
+&lt;br&gt;
+- Mitmekeelne tugi, eeldusel et SPICE-serveril on vajalik keelelayout lubatud.
+&lt;br&gt;
+- Sujuvad kaugmasina eraldusvõime muutused
+&lt;br&gt;
+- Täielik hiiretugi Android 4.0+ seadmetel, sh parem ja keskmine klõps ning kerimisratas.
+&lt;br&gt;
+&lt;br&gt;
+Planeeritud funktsioonid:
+&lt;br&gt;
+- Kopeeri/kleebi integratsioon
+&lt;br&gt;
+- Heli
+&lt;br&gt;
+- Jõudluse parandused
+&lt;br&gt;
+Teadaolevad probleemid:
+&lt;br&gt;
+- Teksti saatmine ei saada mõnda sümbolit.
+&lt;br&gt;
+</string>
+    <string name="spice_intro_title">aSPICE: Intuitiivne, turvaline SPICE-klient</string>
+    <string name="spice_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kui lisate või redigeerite ühendust, kuvatakse ühenduse konfiguratsiooni leht. Siin saate seadistada uue SPICE-ühenduse või valida olemasoleva. Ülaosas on nupp ühenduse salvestamiseks. Allpool konfigureerite ühendust.
+
+ - Ühenduse tüüp: Siin valite SPICE-ühenduse tüübi. Saadaval ühenduse tüübid:
+   (a) SPICE, mis ühendub arvutiga otse SPICE-protokolli kaudu.
+   (b) SPICE üle SSH, mis tunneldab esmalt teie ühenduse läbi SSH-serverit käitava arvuti.
+
+ - Pealkiri: Igale loodud ühendusele saab anda hüüdnime, et seda loendis hõlpsamini tuvastada.
+
+ - SSH-tunneli seaded: Saadaval SPICE üle SSH režiimis.
+   (a) SSH-server/port: Ühenduse tunneldatava SSH-serveri aadress ja port. Vaikimisi kuulab SSH pordil 22.
+   (b) Kasutajanimi/parool: SSH-serveri konto kasutajanimi ja parool. Parool täidetakse sellel lehel, kui te pole rakendusest väljunud pärast selle viimast sisestamist.
+   (c) Halda võtit/kasuta võtit: Nupp avalike/privaatvõtmete haldamiseks ja märkeruut, mis näitab, kas kasutada võtit parooliga autentimise asemel. Kui kasutate võtmepaari loomise järel kopeerimise lõikelaudale nuppu, peaksite saama avaliku võtme kleepimisvõimaluse SPICE-serveriga ühendumisel (lõikelaud sünkroonitakse serveriga).
+
+ - SPICE-ühenduse seaded:
+   (a) SPICE-server/port: Siin sisestate selle arvuti hostinimi või IP-aadress ja port, kus töötab SPICE-server, millega soovite ühendust luua. SPICE üle SSH režiimis on see aadress nähtav SSH-serverist. Kui SSH-server ja SPICE-server on sama füüsiline arvuti, saate kasutada localhost\'i. SPICE-serverid kuulavad tavaliselt pordil 5900 ja kõrgemal.
+   (b) SPICE parool: Siin sisestate parooli, mis on seatud teie SPICE-seansi kaitsmiseks. Turvaline salvestus paroolide jaoks ei ole kasutusel (need on andmebaasis) ja parool salvestatakse ainult siis, kui märkite ruudu "Hoia". Parool täidetakse sellel lehel, kui te pole rakendusest väljunud pärast selle viimast sisestamist.
+
+ - Täpsemad seaded: Sellest jaotisest leiate kohaliku seadme või SPICE jõudluse optimeerimisi.
+ - Kohaliku seadme kohandused: Need reguleerivad rakenduse käitumist teie seadmel.
+   (a) Kasuta D-pad noolteks: Kui eelistate, saate kasutada Bluetoothi klaviatuuri D-pad-i või ekraaniklavatuuri nooli SPICE-serverile noolte saatmiseks.
+   (b) Pöörake D-pad: Telefonid, mis on seotud Bluetoothi klaviatuuriga, võivad vajada klaviatuuri D-pad-i pööramisel vastupäeva, et serverile õiged suunad saata.
+   (c) Kohalik hiire kursor: Kui kursor on nähtamatu, valige see, et sundida rakendust seda joonistama."</string>
+    <string name="spice_password_hint">SPICE parool</string>
+    <string name="spice_server_empty">SPICE-server või port on tühi. Ühendamine pole võimalik!</string>
+    <string name="spice_tls_port_hint">TLS-port</string>
+    <string name="spice_username_hint">SPICE kasutajanimi</string>
+
+    <string name="ssh_passphrase_hint">SSH paroolfraas</string>
+    <string name="ssh_pubkey_button">Halda võtit</string>
+    <string name="ssh_use_pubkey">Kasuta võtit</string>
+    <string name="ssh_use_x11vnc">Automaatne töölaud</string>
+    <string name="ssh_x11vnc_customize">SeadistaNa AutoX</string>
+
+    <string name="super_check">Super</string>
+
+    <string name="tap_disable">Keela</string>
+    <string name="tap_enable">Luba</string>
+
+    <string name="username_caption">VNC kasutaja</string>
+    <string name="username_hint">UltraVNC MS sisselogimise kasutajanimi</string>
+    <string name="username_hint_optional">VNC kasutajanimi (valikuline)</string>
+    <string name="username_hint_ssh">SSH kasutajanimi</string>
+    <string name="username_hint_vencrypt">VNC kasutajanimi</string>
+    <string name="verification_code">Kinnituskood</string>
+    <string name="verification_code_message">Palun sisestage mitmefaktorilise autentimise kinnituskood</string>
+
+    <string name="view_only">Ainult vaatamise režiim</string>
+
+    <string name="vnc_server_empty">VNC-server või port on tühi. Ühendamine pole võimalik!</string>
+    <string name="vnc_server_empty_no_save">VNC-server või port on tühi. Ühendust ei saa salvestada!</string>
+
+    <string name="warning_cert_does_not_match">HOIATUS: Salvestatud x509 sertifikaat või edastatud allkiri ei vasta praegusele serveri sertifikaadile! See võib olla mees-keskel rünnak. Kui olete võtmemuutusest teadlik, võite jätkata. </string>
+    <string name="copy_logcat">📋 Kopeeri Logcat</string>
+    <string name="log_copied">Logcat kopeeriti lõikelauale. Nüüd saate selle kleepida meili või tugifoorumisse. Palun vaadake enne postitamist üle isiklikud andmed.</string>
+    <string name="info_set_touchpad_input_mode">Server teatab, et ei toeta kliendirežiimi hiire sisendit ja praegune hiire sisestusmeetod ei tööta õigesti. Kui see jätkub, veenduge, et spice tööriistad on virtuaalmasinas installitud, või lülituge menüüst simuleeritud puuteplaadi sisestusmeetodile.</string>
+    <string name="ssh_tunnel_settings">SSH-tunneli seaded</string>
+    <string name="vnc_connection_settings">VNC-ühenduse seaded</string>
+    <string name="show_advanced_settings">Näita täpsemaid seadeid</string>
+    <string name="use_no_compression_for_local_connections">Ilma tihenduseta (kohalikud ühendused, Hextile kodeering)</string>
+    <string name="rdp_connection_settings">RDP-ühenduse seaded</string>
+    <string name="local_device_tweaks">Kohaliku seadme kohandused</string>
+    <string name="spice_connection_settings">SPICE-ühenduse seaded</string>
+    <string name="ca_subject">Sisestage siin sertifikaadi teema nimi. Ei pruugi olla vajalik, kui sertifikaadi üldnimi (CN) vastab serveri hostimanusele.</string>
+    <string name="path_to_ca">Sisestage failitee (näiteks /sdcard/ca-cert.pem) ja puudutage Impordi sertifikaadi väljastaja laadimiseks.</string>
+    <string name="paste_ca">Sisestage siin sertifikaadi väljastaja, kui te ei impordi seda failina.</string>
+    <string name="cert_issuer">Sertifikaadi väljastaja</string>
+    <string name="cert_fingerprint">Sertifikaadi sõrmejälg</string>
+    <string name="error">Viga</string>
+    <string name="panning">Panoraamimine ekraanil</string>
+    <string name="copy_of">Koopia:</string>
+    <string name="ssh_key_generated">Uus võti loodi või imporditi edukalt. Nüüd saate puudutada nuppu \'Loo/ekspordi võti\', et jagada, kopeerida lõikelauale või eksportida avalik võti.</string>
+    <string name="cursor_force_local">"Kohalik"</string>
+    <string name="cursor_force_disable">"Keela"</string>
+    <string name="cursor_mode">"Kursori režiim:"</string>
+    <string name="rendering_mode">"Renderdamise režiim:"</string>
+    <string name="color_24_bit">"24-bitine värv (24 bpp)"</string>
+    <string name="color_256">"256 värvi (8 bpp)"</string>
+    <string name="color_64">"64 värvi (4 bpp)"</string>
+    <string name="color_8">"8 värvi (2 bpp)"</string>
+    <string name="color_greyscale">"Hallskaala (1 bpp)"</string>
+    <string name="color_black_and_white"><![CDATA["Must ja valge (1 bpp)"]]></string>
+    <string name="show">"Näita"</string>
+    <string name="hide">"Peida"</string>
+    <string name="search_connections">Otsi ühendusi</string>
+    <string name="user_not_specified">Kasutaja pole määratud</string>
+    <string name="enter_ssh_credentials">Palun sisestage SSH mandaadid</string>
+    <string name="enter_vnc_credentials">Palun sisestage VNC mandaadid</string>
+    <string name="enter_vnc_password">Palun sisestage VNC parool</string>
+    <string name="enter_rdp_credentials">Palun sisestage RDP mandaadid</string>
+    <string name="enter_gateway_credentials">Palun sisestage lüüsi mandaadid</string>
+    <string name="enter_spice_password">Palun sisestage SPICE parool</string>
+    <string name="enter_passphrase_title">Sisestage võtme paroolfraas</string>
+    <string name="enter_passphrase">Palun sisestage võtme paroolfraas</string>
+    <string name="ssh_server_needs_password_in_addition_to_key">Teie server vajab parooliga autentimist lisaks võtmega autentimisele.</string>
+    <string name="main_screen_help_text">"
+Rakenduse käivitamisel kuvatakse ekraan salvestatud ühendustega.
+
+Kui salvestatud ühendusi pole, on ekraani alumine osa tühi ja peate uue loomiseks vajutama plussnuppu.
+Sellelt ekraanilt saate juhtida ka konfiguratsiooni muid aspekte, puudutades tööriistariba
+või menüü muid valikuid ülaosas, näiteks vaikimisi seadete redigeerimiseks või seadete importimiseks ja eksportimiseks.
+
+Kui olete ühenduse salvestanud, saate kaugserveriga ühenduse luua seda üks kord puudutades. Samuti on teil võimalus see kustutada või redigeerida pikalt puudutades.
+
+Lõpuks saate kasutada otsinguvälju Otsi ühendusi, et leida ühendusi kiiresti kuvatud ühenduste filtri abil."</string>
+    <string name="opaque_connection_screen_help_text" tools:ignore="TypographyOther">"
+Kui lisate või redigeerite ühendust, kuvatakse ühenduse konfiguratsiooni leht.
+Siin saate seadistada uue Opaque ühenduse või valida olemasoleva.
+Ülaosas on nupp ühenduse salvestamiseks.
+Allpool konfigureerite ühendust.
+
+ - Ühenduse tüüp: Siin valite, millise virtualiseerimiskeskkonnaga ühendate.
+
+ - Serveri aadress: Serveri hostinimi või IP. Kui see kuulab mittestandardsel pordil, saate lisada kooloniga eraldatud pordi.
+
+ - Virtuaalmasina nimi: Saate määrata VM-i nime, nagu see ilmub teie virtualiseerimisplatvormil, või jätta selle välja tühjaks, et saada VM-ide või konteinerite loend valimiseks.
+
+ - Kasutaja: Sisestage kasutajanimi teie virtualiseerimisraamistikku autentimiseks.
+
+ - Parool: Kui soovite parooli salvestada, sisestage see siia, või jätke väli tühjaks, et seda iga kord küsitaks.
+
+ - Täpsemad seaded: Sellest jaotisest leiate kohaliku seadme, protokolli ja jõudluse optimeerimisi."
+    </string>
+    <string name="help">Abi ⓘ</string>
+    <string name="need_help">Kas vajate abi?</string>
+    <string name="support_forum">Tugifoorum ❓</string>
+    <string name="email_us">Saada meile e-kiri 📧</string>
+    <string name="report_bug">Teata veast 🐛</string>
+    <string name="download_from_server">Laadi alla serverist</string>
+    <string name="import_from_file">Impordi failist</string>
+    <string name="please_grant_permission_from_prefs">Võimalik, et peate andma rakendusele load seadete kaudu.</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="more_debug_logging">Rohkem silumislogimist</string>
+    <string name="prefer_sending_unicode">Unicode sisend (ainult Windows)</string>
+    <string name="hide_connection_thumbnails">Peida ühenduse pisipildid</string>
+    <string name="show_only_connection_nicknames">Näita ainult ühenduse hüüdnimesid</string>
+    <string name="love_our_work">Meeldib meie töö?</string>
+    <string name="rate_app">Hinda ⭐⭐⭐⭐⭐</string>
+    <string name="share_app">Jaga 🔗</string>
+    <string name="share_app_toast">Jagage linki rakendusele kõigi oma sõpradega sotsiaalmeedias!</string>
+    <string name="donate_app">Anneta ❤</string>
+    <string name="more_apps">Rohkem rakendusi 📱</string>
+    <string name="previous_versions">Varasemad versioonid ⍼</string>
+    <string name="keyboard_type">Tarkvaraklaviatuuri tüüp</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Vaikimisi (TYPE_NULL)</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Tekst/Numbrid ilma soovitusteta (VISIBLE_PASSWORD)</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Tekst soovitustega (TYPE_CLASS_TEXT)</string>
+    <string name="no_application_to_handle_vpn">See ühendus on seadistatud käivitama VPN-i välise rakenduse kaudu. Peate installima rakenduse nagu Morpheusly selle käivitamiseks.</string>
+    <string name="vnc_viewer_started">VNC-vaatur käivitati</string>
+    <string name="enable_gateway">Luba RDP Gateway</string>
+    <string name="scroll_speed">Puudutuskerimise kiirus</string>
+    <string name="desktop_scale_percentage">Kohandatud skaleerimisprotsent</string>
+    <string name="show_menu">Näita menüüd</string>
+    <string name="move_toolbar">Liiguta tööriistariba</string>
+</resources>

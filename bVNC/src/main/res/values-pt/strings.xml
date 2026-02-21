@@ -899,7 +899,7 @@ Abaixo está onde configura a sua ligação.
     <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Texto Com Sugestões (TYPE_CLASS_TEXT)</string>
     <string name="no_application_to_handle_vpn">Esta ligação está configurada para iniciar VPN através de uma aplicação externa. Precisa de instalar uma aplicação como o Morpheusly para a iniciar.</string>
     <string name="vnc_viewer_started">Visualizador VNC iniciado</string>
-    <string name="enable_gateway">Ativar Gateway</string>
+    <string name="enable_gateway">Ativar RDP Gateway</string>
     <string name="scroll_speed">Velocidade de Deslocamento Táctil</string>
     <string name="desktop_scale_percentage">Percentagem de Escala Personalizada</string>
     <string name="show_menu">Mostrar Menu</string>

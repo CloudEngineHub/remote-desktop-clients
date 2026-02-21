@@ -813,7 +813,7 @@ aSPICE對應的功能如下：
     <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">有文字提示功能 (TYPE_CLASS_TEXT)</string>
     <string name="no_application_to_handle_vpn">此連線設定為透過外部應用程式啟動VPN。 您需要安裝像Morpheusly這樣的應用程式才能啟動它。</string>
     <string name="vnc_viewer_started">VNC檢視器已啟動</string>
-    <string name="enable_gateway">啟用網關</string>
+    <string name="enable_gateway">"啟動 RDP Gateway "</string>
     <string name="scroll_speed">觸控捲動速度</string>
 
     <string name="scroll_wheel">滾輪</string>
