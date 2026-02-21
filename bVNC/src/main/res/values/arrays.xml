@@ -11,9 +11,9 @@
         <item>@string/pref_keyboard_type_VISIBLE_PASSWORD_value</item>
         <item>@string/pref_keyboard_type_TYPE_CLASS_TEXT_value</item>
     </array>
-    <string name="pref_keyboard_type_TYPE_NULL_value">0</string>
-    <string name="pref_keyboard_type_VISIBLE_PASSWORD_value">145</string>
-    <string name="pref_keyboard_type_TYPE_CLASS_TEXT_value">1</string>
+    <string name="pref_keyboard_type_TYPE_NULL_value" translatable="false">0</string>
+    <string name="pref_keyboard_type_VISIBLE_PASSWORD_value" translatable="false">145</string>
+    <string name="pref_keyboard_type_TYPE_CLASS_TEXT_value" translatable="false">1</string>
 
     <string-array name="defaultInputMethodValues">
         <item>TOUCH_ZOOM_MODE</item>          <!-- Must match TouchInputHandlerDirectSwipePan.ID -->

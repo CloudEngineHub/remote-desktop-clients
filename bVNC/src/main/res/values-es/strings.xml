@@ -5,8 +5,6 @@
     <string name="action_edit_default_settings">Editar la configuración predeterminada</string>
     <string name="action_export_settings">Exportar ajustes</string>
     <string name="action_delete_connection">Eliminar conexión</string>
-    <string name="opaque_app_name">Opaque</string>
-    <string name="opaque_app_name_beta">Opaque Beta</string>
     <string name="advanced_settings">Ajustes avanzados</string>
     <string name="audio">Audio</string>
     <string name="auto_rotation">Rotación de la pantalla mientras se está conectado</string>
@@ -22,8 +20,6 @@
     <string name="ca_file_error_reading">Error al leer el archivo CA Asegúrese de que sea legible.</string>
     <string name="ca_new_or_changed">Certificado de servidor nuevo o modificado</string>
     <string name="connection_type_text">Entorno de virtualización (RHEV/oVirt o Proxmox)</string>
-    <string name="connection_type_ovirt">oVirt/RHEV</string>
-    <string name="connection_type_pve">Proxmox VE</string>
     <string-array name="connection_types">
         <item>@string/connection_type_ovirt</item>
         <item>@string/connection_type_pve</item>
@@ -73,7 +69,7 @@
     <string name="error_vm_lookup_failed">No se pudo encontrar una máquina virtual con el nombre especificado asignado a su usuario. Por favor borre el nombre de la VM especificado para ver una lista de VM asignadas al usuario.</string>
     <string name="error_vv_download_timeout">Se agotó el tiempo de descarga del archivo vv.</string>
     <string name="message_please_wait">Por favor espera</string>
-    <string name="message_please_install_bvnc">Por favor instale &lt;a href="market://details?id=com.iiordanov.bVNC">bVNC&lt;/a> de Google Play para conectarse a la consola VNC de esta VM.</string>
+    <string name="message_please_install_bvnc">Por favor instale &lt;a href="market://details?id=com.iiordanov.bVNC"&gt;bVNC&lt;/a&gt; de Google Play para conectarse a la consola VNC de esta VM.</string>
     <string name="ssl_strict">Requiere que el nombre común coincida con el certificado (recomendado)</string>
     <string name="usb">USB (conecte primero el cable OTG)</string>
 
@@ -95,14 +91,10 @@
 
     <string name="alt_check">Alt</string>
 
-    <string name="ardp_app_name">aRDP Pro</string>
-
     <string name="arrow_down">Flecha hacia abajo</string>
     <string name="arrow_left">Flecha izquierda</string>
     <string name="arrow_right">Flecha derecha</string>
     <string name="arrow_up">Flecha hacia arriba</string>
-
-    <string name="aspice_app_name">aSPICE Pro</string>
 
     <string name="auto">Auto</string>
     <string name="auto_x_cancel">Cancelar</string>
@@ -135,14 +127,6 @@
     </string-array>
     <string name="auto_x_session_auto">Auto</string>
     <string name="auto_x_session_custom">Personalizado</string>
-    <string name="auto_x_session_gnome">GNOME</string>
-    <string name="auto_x_session_gnome_cl">GNOME Classic</string>
-    <string name="auto_x_session_kde">KDE</string>
-    <string name="auto_x_session_mate">MATE</string>
-    <string name="auto_x_session_trinity">Trinity</string>
-    <string name="auto_x_session_unity">Unity</string>
-    <string name="auto_x_session_unity_2d">Unity2D</string>
-    <string name="auto_x_session_xfce">Xfce</string>
     <string name="auto_x_title">Configure AutoX</string>
     <string-array name="auto_x_type">
         <!-- If adding selections, they need to be in sync with values
@@ -163,8 +147,6 @@
 
     <string name="button_send_text">Enviar texto</string>
     <string name="button_send_without_saving">Enviar texto/No lo guardes</string>
-
-    <string name="bvnc_app_name">bVNC Pro</string>
 
     <string name="center_mouse">Ratón @</string>
 
@@ -187,11 +169,8 @@
         <item>@string/connection_type_vnc_over_stunnel</item>
     </string-array>
     <string name="connection_type_caption">Tipo de conexión</string>
-    <string name="connection_type_rdp">RDP</string>
     <string name="connection_type_rdp_over_ssh">RDP sobre SSH</string>
-    <string name="connection_type_spice">SPICE</string>
     <string name="connection_type_spice_over_ssh">SPICE sobre SSH</string>
-    <string name="connection_type_ultravnc">UltraVNC</string>
     <string name="connection_type_vnc">Basic VNC</string>
     <string name="connection_type_vnc_over_ssh">VNC seguro a través de SSH</string>
     <string name="connection_type_vnc_over_ssl">VNC seguro a través de AnonTLS</string>
@@ -254,7 +233,7 @@
     <string name="error_x509_could_not_generate_signature">No se pudo generar la firma de certificado SHA1 o MD5. No se encontró ningún algoritmo SHA1/MD5.</string>
 
     <string name="export_settings">Exportar</string>
-    <string name="export_settings_path" />
+
 
     <string name="extra_keys_disable">Deshabilitar claves adicionales</string>
     <string name="extra_keys_enable">Habilitar claves adicionales</string>
@@ -263,17 +242,11 @@
 
     <string name="force">Bitmap de pantalla completa</string>
 
-    <string name="freeardp_app_name">aRDP Free</string>
-
-    <string name="freeaspice_app_name">aSPICE Free</string>
-
-    <string name="freebvnc_app_name">bVNC Free</string>
-
     <string name="immersive_mode_disable">Desactivar el modo inmersivo</string>
 
     <string name="import_export_settings">Configuración de importación/exportación</string>
     <string name="import_settings">Importar</string>
-    <string name="import_settings_file_url" />
+
 
     <string name="info">Info</string>
     <string name="info_cert_signatures">"La información del certificado es: "</string>
@@ -350,7 +323,7 @@ Todos los métodos de entrada:
 </string>
     <string name="intro_close">Cerrar</string>
     <string name="intro_dont_show">No vuelvas a mostrar</string>
-    <string name="intro_header" />
+
     <string name="intro_text">
 "Lista actual de características de bVNC:
 &lt;br&gt;
@@ -401,7 +374,7 @@ Problemas conocidos:
 &lt;br&gt;"
 </string>
     <string name="intro_title">bVNC: Intuitivo, cliente VNC seguro</string>
-    <string name="intro_version_text" />
+
 
     <string name="keep_password_button">Guardar</string>
     <string name="keep_screen_awake_enable">Mantener la pantalla activa</string>
@@ -760,7 +733,7 @@ Problemas conocidos:
 
  - Configuración de conexión SPICE:
    (a) Servidor/Puerto SPICE: Aquí es donde ingresa el nombre de host o la dirección IP y el puerto de la computadora que ejecuta el servidor SPICE con el que desea contactar. En el modo SPICE sobre SSH, esta dirección es como se ve desde el servidor SSH. Si el servidor SSH y el servidor SPICE son la misma computadora física, puede usar localhost. Los servidores SPICE suelen escuchar en el puerto 5900 y superior.
-   (d) Contraseña de SPICE: aquí es donde ingresa la contraseña establecida para proteger su sesión de SPICE. El almacenamiento seguro no se usa para las contraseñas (están en una base de datos), y la contraseña se almacenará solo si marca la casilla "Conservar". La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
+   (b) Contraseña de SPICE: aquí es donde ingresa la contraseña establecida para proteger su sesión de SPICE. El almacenamiento seguro no se usa para las contraseñas (están en una base de datos), y la contraseña se almacenará solo si marca la casilla "Conservar". La contraseña se completará en esta página si no ha salido de la aplicación desde la última vez que la ingresó.
 
  - Configuración avanzada: en esta sección encontrará cualquier dispositivo local o ajustes de rendimiento de SPICE
  - Ajustes del dispositivo local: ajustan el comportamiento de la aplicación en su dispositivo.
@@ -871,4 +844,48 @@ Debajo es donde configura su conexión.
     <string name="report_bug">Reportar un error</string>
     <string name="download_from_server">Descargar desde el servidor</string>
     <string name="import_from_file">Importar desde archivo</string>
+    <string name="audio_will_be_initialized">El audio se inicializará en aproximadamente 15 segundos; detenga cualquier reproducción de video o audio en ejecución antes de esa fecha.</string>
+    <string name="rdp_security_rdp">Seguridad RDP</string>
+    <string name="rdp_security_mode">Modo de seguridad</string>
+    <string name="local_clipboard_integration">Habilitar la integración del portapapeles local a remoto</string>
+    <string name="love_our_work">¿Te encanta nuestro trabajo?</string>
+    <string name="hide_connection_thumbnails">Ocultar miniaturas de conexión</string>
+    <string name="previous_versions">Versiones anteriores</string>
+    <string name="share_app_toast">¡Comparte un enlace a la aplicación con todos tus amigos en las redes sociales!</string>
+    <string name="keyboard_type">Tipo de teclado</string>
+    <string name="donate_app">Donar</string>
+    <string name="show_menu">Mostrar menú</string>
+    <string name="rdp_security_auto">Seguridad de negociación automática</string>
+    <string name="enable_gateway">Habilitar RDP Gateway</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Predeterminado (TYPE_NULL)</string>
+    <string name="need_help">¿Necesitas ayuda?</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Texto/Números Sin sugerencias (VISIBLE_PASSWORD)</string>
+    <string name="rate_app">Califica App</string>
+    <string name="vnc_viewer_started">Visor VNC iniciado</string>
+    <string name="enter_gateway_credentials">Por favor ingrese las credenciales de RDP Gateway</string>
+    <string name="rdp_security_nla">Autenticación a nivel de red (NLA)</string>
+    <string name="enter_password_auth_failed">La autenticación falló.</string>
+    <string name="scroll_speed">Velocidad de desplazamiento táctil</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Texto con sugerencias (TYPE_CLASS_TEXT)</string>
+    <string name="remote_clipboard_integration">Habilitar la integración remota al portapapeles local</string>
+    <string name="disable_pointer_offset_correction">Deshabilitar la corrección de desplazamiento del puntero</string>
+    <string name="move_toolbar">Mover barra de herramientas</string>
+    <string name="more_debug_logging">Más registros de depuración</string>
+    <string name="show_only_connection_nicknames">Mostrar solo apodos de conexión</string>
+    <string name="email_us">Envíenos un correo electrónico</string>
+    <string name="desktop_scale_percentage">Porcentaje de escala personalizado</string>
+    <string name="prefer_sending_unicode">Entrada Unicode (solo Windows)</string>
+    <string name="rdp_security_tls">Seguridad TLS</string>
+    <string name="toggle_keyboard">Alternar teclado</string>
+    <string name="error_uri_parse_error">No se puede analizar el URI de intención.</string>
+    <string name="please_grant_permission_from_prefs">Es posible que deba otorgar permisos a la aplicación a través de Configuración.</string>
+    <string name="scroll_wheel">Rueda de desplazamiento</string>
+    <string name="more_apps">Más aplicaciones</string>
+    <string name="share_app">Compartir</string>
+    <string name="action_rate_or_share_app">Obtenga ayuda, califique y comparta</string>
+    <string name="get_help">Obtener ayuda</string>
+    <string name="rdp_adv_gfx">RDP Gfx</string>
+    <string name="audio_initialized">Audio inicializado</string>
+    <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
+    <string name="no_application_to_handle_vpn">Esta conexión está configurada para iniciar VPN a través de una aplicación externa.</string>
 </resources>

@@ -9,8 +9,6 @@
     <string name="action_delete_connection">接続削除</string>
     <string name="action_rate_or_share_app">ヘルプ、評価、シェア</string>
     <string name="get_help">ヘルプ</string>
-    <string name="opaque_app_name">不透明</string>
-    <string name="opaque_app_name_beta">不透明なベータ</string>
     <string name="advanced_settings">高度な設定</string>
     <string name="audio">オーディオ</string>
     <string name="auto_rotation">接続中の画面の回転</string>
@@ -26,8 +24,6 @@
     <string name="ca_file_error_reading">CAファイルの読み取り中にエラーが発生しました。読みやすいことを確認してください。</string>
     <string name="ca_new_or_changed">新規または変更されたサーバー証明書</string>
     <string name="connection_type_text">仮想化環境（RHEV / oVirtまたはProxmox）</string>
-    <string name="connection_type_ovirt">oVirt/RHEV</string>
-    <string name="connection_type_pve">Proxmox VE</string>
     <string-array name="connection_types">
         <item>@string/connection_type_ovirt</item>
         <item>@string/connection_type_pve</item>
@@ -98,12 +94,10 @@
     <string name="address_caption_ssh">SSHサーバー</string>
     <string name="address_caption_ssh_hint">SSHサーバー</string>
     <string name="alt_check">Alt</string>
-    <string name="ardp_app_name">aRDP Pro</string>
     <string name="arrow_down">下矢印</string>
     <string name="arrow_left">左矢印</string>
     <string name="arrow_right">右矢印</string>
     <string name="arrow_up">上矢印</string>
-    <string name="aspice_app_name">aSPICE Pro</string>
     <string name="auto">自動</string>
     <string name="auto_x_cancel">キャンセル</string>
     <string name="auto_x_caption">bVNCは、既存のものを自動検索し、Linux/UNIXシステム上で、Xセッションを新規作成します(NXと類似)。検索には x11vncを、セッション作成には Xvfb, Xvnc, Xdummyが必要です。接続にお困りの場合、AutoX詳細設定にて、特定のリモートセッションタイプを選択してください。</string>
@@ -135,14 +129,6 @@
     </string-array>
     <string name="auto_x_session_auto">自動</string>
     <string name="auto_x_session_custom">カスタム</string>
-    <string name="auto_x_session_gnome">GNOME</string>
-    <string name="auto_x_session_gnome_cl">GNOME クラシック</string>
-    <string name="auto_x_session_kde">KDE</string>
-    <string name="auto_x_session_mate">MATE</string>
-    <string name="auto_x_session_trinity">Trinity</string>
-    <string name="auto_x_session_unity">Unity</string>
-    <string name="auto_x_session_unity_2d">Unity2D</string>
-    <string name="auto_x_session_xfce">Xfce</string>
     <string name="auto_x_title">AutoX設定</string>
     <string-array name="auto_x_type">
         <!-- If adding selections, they need to be in sync with values
@@ -162,7 +148,6 @@
     <string name="auto_x_xvnc">Xvncで検索、或いは作成</string>
     <string name="button_send_text">テキスト送信</string>
     <string name="button_send_without_saving">テキスト送信/保存しない</string>
-    <string name="bvnc_app_name">bVNC Pro</string>
     <string name="center_mouse">マウス@</string>
     <string name="close">閉じる</string>
     <string name="color_format_caption">カラーモード</string>
@@ -182,11 +167,8 @@
         <item>@string/connection_type_vnc_over_stunnel</item>
     </string-array>
     <string name="connection_type_caption">接続タイプ</string>
-    <string name="connection_type_rdp">RDP</string>
     <string name="connection_type_rdp_over_ssh">SSH経由のRDP</string>
-    <string name="connection_type_spice">SPICE</string>
     <string name="connection_type_spice_over_ssh">SSH経由のSPICE</string>
-    <string name="connection_type_ultravnc">UltraVNC</string>
     <string name="connection_type_vnc">ベーシックVNC</string>
     <string name="connection_type_vnc_over_ssh">SSH経由の安全なVNC</string>
     <string name="connection_type_vnc_over_ssl">AnonTLS経由の安全なVNC</string>
@@ -240,18 +222,15 @@
     <string name="error_x509_could_not_generate_encoding">証明書の暗号化ができません。</string>
     <string name="error_x509_could_not_generate_signature">SHA1/MDS署名の証明書が作成できません。SHA1/MDSのアルゴリズムが見つかりません。</string>
     <string name="export_settings">エクスポート</string>
-    <string name="export_settings_path" />
+
     <string name="extra_keys_disable">特殊キーを無効にする</string>
     <string name="extra_keys_enable">特殊キーを有効にする</string>
     <string name="fit_to_screen">画面サイズに合わせる</string>
     <string name="force">全画面ビットマップ</string>
-    <string name="freeardp_app_name">aRDP Free</string>
-    <string name="freeaspice_app_name">aSPICE Free</string>
-    <string name="freebvnc_app_name">bVNC Free</string>
     <string name="immersive_mode_disable">没入モードを無効にする</string>
     <string name="import_export_settings">インポート/エクスポート設定</string>
     <string name="import_settings">インポート</string>
-    <string name="import_settings_file_url" />
+
     <string name="info">情報</string>
     <string name="info_cert_signatures">"証明書情報："</string>
     <string name="info_cert_signatures_identical">\n\n中間者攻撃対策として、サーバー証明書と情報が一致しているか確認可能です。</string>
@@ -326,7 +305,7 @@
   </string>
     <string name="intro_close">閉じる</string>
     <string name="intro_dont_show">次回から非表示</string>
-    <string name="intro_header" />
+
     <string name="intro_text">
 bVNCの対応機能は以下の通り：
 &lt;br&gt;
@@ -375,7 +354,7 @@ bVNCの対応機能は以下の通り：
 &lt;br&gt;
   </string>
     <string name="intro_title">bVNC: 直観的で、安全なVNCクライアント</string>
-    <string name="intro_version_text" />
+
     <string name="keep_password_button">保存</string>
     <string name="keep_screen_awake_enable">スリープモードを無効にする</string>
     <string name="keys_caption">キー</string>
@@ -400,11 +379,11 @@ bVNCの対応機能は以下の通り：
 
  （b）暗号化されたSSHトンネルを介して接続するSSHを介したセキュアなVNC。 SSHDサービスとVNCサーバーを実行する必要があります。 VNCサーバーがインターネットからの直接接続を受け入れない限り、最初に接続するときにサーバー証明書の署名を確認する限り、この接続タイプには既知の脆弱性はありません。
 
-（c）UltraVNC。WindowsログオンおよびUltraVNCリピーターオプションを提供します。 Windows Logonを使用しても、8文字のパスワード制限はありませんが、このモードでは暗号化が提供されないため、セッションはスニッフィングに対して脆弱です。
+ （c）UltraVNC。WindowsログオンおよびUltraVNCリピーターオプションを提供します。 Windows Logonを使用しても、8文字のパスワード制限はありませんが、このモードでは暗号化が提供されないため、セッションはスニッフィングに対して脆弱です。
 
  （d）AnonTLSを介したセキュアなVNC。これは、stunnelと同等の接続を介した通常のVNCです。 stunnelを実行するか、AnonTLSをすぐにサポートするVinoのようなVNCサーバーを使用する必要があります。このモードではセッションの暗号化が可能ですが、8文字のパスワード制限があり、man-in-the-middle攻撃を防ぐことはできません。
 
-（e）x509証明書とセッション暗号化を使用するVeNCryptを介したセキュアなVNC。サーバー構成によっては、8文字の制限なしでユーザー/パスワードのクレデンシャルを使用できます。このモードは、man-in-the-middle攻撃を防ぎます。セッションのプライバシーを提供するだけでなく。 x11vncやTigerVNCなどのサーバーはこのモードをサポートしており、SSH経由のVNCと同じくらい安全です。
+ （e）x509証明書とセッション暗号化を使用するVeNCryptを介したセキュアなVNC。サーバー構成によっては、8文字の制限なしでユーザー/パスワードのクレデンシャルを使用できます。このモードは、man-in-the-middle攻撃を防ぎます。セッションのプライバシーを提供するだけでなく。 x11vncやTigerVNCなどのサーバーはこのモードをサポートしており、SSH経由のVNCと同じくらい安全です。
 
  -タイトル：作成する各接続には、リストで簡単に識別できるニックネームを付けることができます。
 
@@ -427,7 +406,7 @@ bVNCの対応機能は以下の通り：
 
  （b）VNCユーザー：WindowsログオンモードのUltraVNC、またはVeNCryptを介したSecure VNCで使用できます。ここで、Windows/UNIXアカウントのユーザー名を入力します。
 
-（c）VNCパスワード：VNCサーバー構成でパスワードが必要な場合は、ここにそのパスワードを入力します。 Windowsログオン/VeNCryptモードのUltraVNCで、Windows/UNIXアカウントのパスワードをここに入力します。パスワードには安全なストレージは使用されず、[保持]チェックボックスをオンにした場合にのみパスワードが保存されます。最後に入力してからアプリケーションを終了していない場合は、このページにパスワードが入力されます。
+ （c）VNCパスワード：VNCサーバー構成でパスワードが必要な場合は、ここにそのパスワードを入力します。 Windowsログオン/VeNCryptモードのUltraVNCで、Windows/UNIXアカウントのパスワードをここに入力します。パスワードには安全なストレージは使用されず、[保持]チェックボックスをオンにした場合にのみパスワードが保存されます。最後に入力してからアプリケーションを終了していない場合は、このページにパスワードが入力されます。
 
 -カラーモード：クライアントはいくつかのカラーモードをサポートしています。より多くの色のモードは、より広い帯域幅とデバイスでのより多くのCPU計算を犠牲にして、より良い視覚体験を提供します。一部のVNCサーバーは、すべての色深度をサポートしていません（たとえば、OS/Xリモートデスクトップには24ビットカラーが必要です）。接続に問題がある場合は、別の色深度を試してください。
 
@@ -618,33 +597,6 @@ aRDP対応予定機能：
  （a）矢印に十字キーを使用する：必要に応じて、Bluetoothキーボードの十字キーまたは画面キーボードの矢印を使用して、矢印をRDPサーバーに送信できます。
  （b）十字キーの回転：Bluetoothキーボードとペアリングされた電話では、サーバーに正しい方向を送信するために、キーボードの十字キーを反時計回りに回転させる必要がある場合があります。
  （c）ローカルマウスポインター：ポインターが表示されていない場合は、これを選択して、アプリによってポインターが強制的に描画されるようにします。"</string>
-    <string name="rdp_main_screen_help_text" tools:ignore="TypographyOther">
-"aRDP起動時、接続設定画面が表示されます。ここでは、新規RDP接続設定や、既存接続の選択が可能です。ページは2つのセクションに分かれており、画面上部では、過去の接続設定がプルダウンメニューから表示されます。aRDPの初回実行時は、新規設定画面のみが表示されます。プルダウンメニューの隣にある接続スイッチを押下すると、選択中の設定でRDPクライアントが開始されます。接続スイッチ以下にて接続設定を行います。
-
-・接続タイプ：使用するRDP接続タイプを以下より選択してください。
-   (a) RDP：RDPプロトコルでコンピュータに直接接続する。
-   (b) SSH経由のRDP：SSHサーバー起動中のコンピュータを介してトンネル接続する。
-
-・タイトル：作成した接続に名前をつけることが可能です。
-
-・SSHトンネル設定：SSH経由のRDPモード限定
-   (a) SSHサーバー/ポート：SSHサーバーのIPアドレスとポート番号。デフォルトポート番号は22。
-   (b) ユーザー名/パスワード：SSHサーバーのアカウント情報(ユーザー名/パスワード)。aRDPを中止しない限り、入力したパスワードは入力されたままになる。
-   (c) キーの管理/キーの使用：公開鍵/秘密鍵の管理用スイッチ。認証方法をパスワードの代わりに鍵の使用にするかどうかのチェックボックス。鍵ペア作成後にクリップポードにコピーを実行した場合、RDPサーバーへの接続後に公開鍵の貼り付けが可能。(クリップボードはサーバーに同期される)
-
-・RDP接続設定：
-   (a) RDPサーバー/ポート：RDPサーバーを稼動させているコンピュータのホスト名、或いはIPアドレスとポート番号を入力する。SSH経由のRDPモードの場合、このIPアドレスはSSHサーバーからも見ることができる。SSHサーバーとRDPサーバーが同一のコンピュータである場合、localhostが使用可能。RDPサーバーは一般的にポート3389から始まる。
-   (b) RDPユーザー：Windows/UNIXアカウントのユーザー名を入力する。
-   (c) RDPドメイン：アカウントのドメイン名を入力する。
-   (d) RDPパスワード：Windows/UNIXアカウントのパスワードを入力する。パスワード用のセキュアストレージは使用されない(データベースに格納される）。「保存」にチェックを入れた場合に限り、パスワードは保存される。 aRDPを中止しない限り、入力したパスワードは入力されたままになる。
-
-・詳細設定：ここでは、デスクトップ解像度のカスタマイズ設定、或いはRDPパフォーマンスの微調整を行う。
-
-・ローカル機器微調整：ご使用の端末機器でのaRDP動作調整を行う。
-   (a) 矢印にD-Padを使用：RDPサーバーに矢印を送る場合、BluetoothキーボードのD-Pad、或いはオンスクリーンキーボードの矢印が使用可能。
-   (b) D-Padの回転：Bluetoothキーボードとペアリング済みのスマホの場合、正しい方向をサーバーに送信する為にキーボードのD-Padを反時計方向に回転させる必要がある。
-   (c) ローカルマウスポインタ：マウスポインタが表示されない場合、本機能を使用することにより、aRDPによってマウス位置表示が可能。"
-  </string>
     <string name="rdp_password_hint">RDPパスワード</string>
     <string name="rdp_server_empty">RDPサーバー或いはポートが空欄です。接続できません！</string>
     <string name="rdp_username_hint">RDPユーザー名</string>
@@ -762,38 +714,13 @@ aSPICEで対応済み機能は以下の通り：
 
 -SPICE接続設定：
  （a）SPICEサーバー/ポート：ここに、接続するSPICEサーバーを実行しているコンピューターのホスト名またはIPアドレスとポートを入力します。 SPICE over SSHモードでは、このアドレスはSSHサーバーから見たものです。 SSHサーバーとSPICEサーバーが同じ物理コンピューターである場合は、localhostを使用できます。 SPICEサーバーは通常、ポート5900以降でリッスンします。
- （d）SPICEパスワード：ここに、SPICEセッションを保護するために設定されたパスワードを入力します。パスワードには安全なストレージは使用されません（パスワードはデータベースにあります）。パスワードは、[保持]チェックボックスをオンにした場合にのみ保存されます。最後にアプリを入力してからアプリを終了していない場合は、このページにパスワードが入力されます。
+ （b）SPICEパスワード：ここに、SPICEセッションを保護するために設定されたパスワードを入力します。パスワードには安全なストレージは使用されません（パスワードはデータベースにあります）。パスワードは、[保持]チェックボックスをオンにした場合にのみ保存されます。最後にアプリを入力してからアプリを終了していない場合は、このページにパスワードが入力されます。
 
  -詳細設定：このセクションでは、ローカルデバイスまたはSPICEのパフォーマンスの微調整を確認できます
  -ローカルデバイスの微調整：これらは、デバイス上のアプリの動作を調整します。
  （a）矢印に十字キーを使用する：必要に応じて、Bluetoothキーボードの十字キーまたは画面キーボードの矢印を使用して、矢印をSPICEサーバーに送信できます。
  （b）十字キーの回転：Bluetoothキーボードとペアリングされた電話では、サーバーに正しい方向を送信するために、キーボードの十字キーを反時計回りに回転させる必要がある場合があります。
  （c）ローカルマウスポインター：ポインターが表示されていない場合は、これを選択して、アプリによってポインターが強制的に描画されるようにします。"</string>
-    <string name="spice_main_screen_help_text" tools:ignore="TypographyOther">
-"aSPICE起動時、接続設定画面が表示されます。ここでは、新規SPICE接続設定や、既存接続の選択が可能です。ページは2つのセクションに分かれており、画面上部では、過去の接続設定がプルダウンメニューから表示されます。aSPICEの初回実行時は、新規設定画面のみが表示されます。プルダウンメニューの隣にある接続スイッチを押下すると、選択中の設定でSPICEクライアントが開始されます。接続スイッチ以下にて接続設定を行います。
-
-・接続タイプ：使用するSPICE接続タイプを以下より選択してください。
-　　(a) SPICE：SPICEプロトコルでコンピュータに直接接続する。
-　　(b) SSH経由のSPICE：SSHサーバー起動中のコンピュータを介してトンネル接続する。
-
-・タイトル：作成した接続に名前をつけることが可能です。
-
-・SSHトンネル設定：SSH経由のSPICEモード限定
-　　(a) SSHサーバー/ポート：SSHサーバーのIPアドレスとポート番号。デフォルトポート番号は22。
-　　(b) ユーザー名/パスワード：SSHサーバーのアカウント情報(ユーザー名/パスワード)。aSPICEを中止しない限り、入力したパスワードは入力されたままになる。
-　　(c) キーの管理/キーの使用：公開鍵/秘密鍵の管理用スイッチ。認証方法をパスワードの代わりに鍵の使用にするかどうかのチェックボックス。鍵ペア作成後にクリップポードにコピーを実行した場合、SPICEサーバーへの接続後に公開鍵の貼り付けが可能。(クリップボードはサーバーに同期される)
- 
-・SPICE接続設定：
-　　(a) SPICEサーバー/ポート：SPICEサーバーを稼動させているコンピュータのホスト名、或いはIPアドレスとポート番号を入力する。SSH経由のSPICEモードの場合、このIPアドレスはSSHサーバーからも見ることができる。SSHサーバーとSPICEサーバーが同一のコンピュータである場合、localhostが使用可能。SPICEサーバーは一般的にポート5900から始まる。
-　　(d) SPICEパスワード：SPICEセッションの保護用にパスワードを設定する。パスワード用のセキュアストレージは使用されない(データベースに格納される）。「保存」にチェックを入れた場合に限り、パスワードは保存される。 aSPICEを中止しない限り、入力したパスワードは入力されたままになる。
- 
-・詳細設定：ここでは、ローカル機器やSPICEパフォーマンスの微調整が可能。
-
-・ローカル機器微調整：ご使用の端末機器でのaSPICE動作調整を行う。
-　　(a) 矢印にD-Padを使用：SPICEサーバーに矢印を送る場合、BluetoothキーボードのD-Pad、或いはオンスクリーンキーボードの矢印が使用可能。
-　　(b) D-Padの回転：Bluetoothキーボードとペアリング済みの端末機器の場合、正しい方向をサーバーに送信する為にキーボードのD-Padを反時計方向に回転させる必要がある。
-　　(c)　ローカルマウスポインタ：マウスポインタが表示されない場合、本機能を使用することにより、aSPICEによってマウス位置表示が可能。"
-  </string>
     <string name="spice_password_hint">SPICEパスワード</string>
     <string name="spice_server_empty">SPICEサーバー或いはポートが空欄です。接続できません！</string>
     <string name="spice_tls_port_hint">TLSポート</string>
@@ -906,4 +833,15 @@ aSPICEで対応済み機能は以下の通り：
     <string name="vnc_viewer_started">VNCビューワーが開始しました</string>
     <string name="enable_gateway">ゲートウェイを有効にする</string>
     <string name="scroll_speed">タッチパッドスクロール速度</string>
+
+    <string name="rdp_security_rdp">RDPセキュリティ</string>
+    <string name="rdp_security_nla">ネットワークレベルの認証</string>
+    <string name="move_toolbar">ツールバーの移動</string>
+    <string name="rdp_security_mode">セキュリティモード</string>
+    <string name="desktop_scale_percentage">カスタムスケーリングパーセンテージ</string>
+    <string name="error_uri_parse_error">インテント URI を解析できません。URIの形式を確認してください。詳細については、デバイス logcat を参照することもできます。</string>
+    <string name="show_menu">メニューを表示</string>
+    <string name="rdp_security_tls">TLSセキュリティ</string>
+    <string name="scroll_wheel">スクロールホイール</string>
+    <string name="rdp_security_auto">自動ネゴシエーションセキュリティ</string>
 </resources>

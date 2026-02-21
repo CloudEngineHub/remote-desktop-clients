@@ -180,7 +180,7 @@ public class IntroTextDialog extends Dialog {
     private void linksToProApps(Context context, StringBuilder sb) {
         if (Utils.isSpice(context)) {
             sb.append("<a href=\"");
-            sb.append(Utils.getDonationOpaque();
+            sb.append(Utils.getDonationOpaque());
             sb.append("\">");
             sb.append(getContext().getResources().getString(R.string.ad_donate_spice_text1a));
             sb.append("</a>");

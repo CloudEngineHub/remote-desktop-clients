@@ -9,8 +9,6 @@
     <string name="action_delete_connection">删除连接设定</string>
     <string name="action_rate_or_share_app">帮助、评价、分享</string>
     <string name="get_help">帮助</string>
-    <string name="opaque_app_name">Opaque</string>
-    <string name="opaque_app_name_beta">Opaque Beta</string>
     <string name="advanced_settings">进阶设定</string>
     <string name="audio">音频</string>
     <string name="auto_rotation">连接时画面回转</string>
@@ -26,8 +24,6 @@
     <string name="ca_file_error_reading">读取CA文件时出错。请确认它是否可读取的。</string>
     <string name="ca_new_or_changed">新增或变更服务器证书</string>
     <string name="connection_type_text">虚拟化环境（RHEV/oVirt或Proxmox）</string>
-    <string name="connection_type_ovirt">oVirt/RHEV</string>
-    <string name="connection_type_pve">Proxmox虚拟环境</string>
     <string-array name="connection_types">
         <item>@string/connection_type_ovirt</item>
         <item>@string/connection_type_pve</item>
@@ -97,12 +93,10 @@
     <string name="address_caption_ssh">SSH服务器</string>
     <string name="address_caption_ssh_hint">SSH服务器</string>
     <string name="alt_check">Alt</string>
-    <string name="ardp_app_name">aRDP Pro</string>
     <string name="arrow_down">向下箭头</string>
     <string name="arrow_left">向左箭头</string>
     <string name="arrow_right">向右箭头</string>
     <string name="arrow_up">向上箭头</string>
-    <string name="aspice_app_name">aSPICE Pro</string>
     <string name="auto">自动</string>
     <string name="auto_x_cancel">取消</string>
     <string name="auto_x_caption">bVNC在Linux/UNIX系统（类似于NX）上自动搜索现有的并创建新的X会话。搜索需要x11vnc，创建会话需要Xvfb、Xvnc或Xdummy。如果连接有问题，请尝试在AutoX高级设置中选择特定的远程会话类型。</string>
@@ -134,14 +128,6 @@
     </string-array>
     <string name="auto_x_session_auto">自动</string>
     <string name="auto_x_session_custom">自订</string>
-    <string name="auto_x_session_gnome">GNOME</string>
-    <string name="auto_x_session_gnome_cl">GNOME经典</string>
-    <string name="auto_x_session_kde">KDE</string>
-    <string name="auto_x_session_mate">MATE</string>
-    <string name="auto_x_session_trinity">Trinity</string>
-    <string name="auto_x_session_unity">Unity</string>
-    <string name="auto_x_session_unity_2d">Unity2D</string>
-    <string name="auto_x_session_xfce">Xfce</string>
     <string name="auto_x_title">AutoX设定</string>
     <string-array name="auto_x_type">
         <!-- If adding selections, they need to be in sync with values
@@ -161,7 +147,6 @@
     <string name="auto_x_xvnc">使用Xvnc搜索或创建</string>
     <string name="button_send_text">发送文字</string>
     <string name="button_send_without_saving">发送文字/不保存</string>
-    <string name="bvnc_app_name">bVNC Pro</string>
     <string name="center_mouse">鼠标@</string>
     <string name="close">关闭</string>
     <string name="color_format_caption">彩色模式</string>
@@ -181,11 +166,8 @@
         <item>@string/connection_type_vnc_over_stunnel</item>
     </string-array>
     <string name="connection_type_caption">连接类型</string>
-    <string name="connection_type_rdp">RDP</string>
     <string name="connection_type_rdp_over_ssh">通过SSH的RDP</string>
-    <string name="connection_type_spice">SPICE</string>
     <string name="connection_type_spice_over_ssh">通过SSH的SPICE</string>
-    <string name="connection_type_ultravnc">UltraVNC</string>
     <string name="connection_type_vnc">基本VNC</string>
     <string name="connection_type_vnc_over_ssh">通过SSH的安全VNC</string>
     <string name="connection_type_vnc_over_ssl">通过AnonTLS的安全VNC</string>
@@ -239,18 +221,15 @@
     <string name="error_x509_could_not_generate_encoding">无法生成证书编码。</string>
     <string name="error_x509_could_not_generate_signature">无法生成证书的SHA1或MD5签名。找不到SHA1 / MD5算法。</string>
     <string name="export_settings">导出</string>
-    <string name="export_settings_path" />
+
     <string name="extra_keys_disable">使特殊键无效</string>
     <string name="extra_keys_enable">使特殊键有效</string>
     <string name="fit_to_screen">适应于屏幕</string>
     <string name="force">全屏位图</string>
-    <string name="freeardp_app_name">aRDP Free</string>
-    <string name="freeaspice_app_name">aSPICE Free</string>
-    <string name="freebvnc_app_name">bVNC Free</string>
     <string name="immersive_mode_disable">禁用沉浸模式</string>
     <string name="import_export_settings">导入／导出设定</string>
     <string name="import_settings">导入</string>
-    <string name="import_settings_file_url" />
+
     <string name="info">信息</string>
     <string name="info_cert_signatures">"证书信息是："</string>
     <string name="info_cert_signatures_identical">\n\n您可以确认信息与服务器证书匹配，以防止中间人攻击。</string>
@@ -324,7 +303,7 @@
   -发送文字：在屏幕键盘上输入文字，或使用菜单-&gt;更多-&gt;发送文字"</string>
     <string name="intro_close">关闭</string>
     <string name="intro_dont_show">不再显示</string>
-    <string name="intro_header" />
+
     <string name="intro_text">
 bVNC对应的功能如下：
 &lt;br&gt;
@@ -375,7 +354,7 @@ bVNC对应的功能如下：
 &lt;br&gt;
   </string>
     <string name="intro_title">bVNC：又直观又安全的VNC客户端</string>
-    <string name="intro_version_text" />
+
     <string name="keep_password_button">保存</string>
     <string name="keep_screen_awake_enable">使休眠模式无效</string>
     <string name="keys_caption">键</string>
@@ -600,32 +579,6 @@ aRDP对应预定的功能：
  （b）旋转D-Pad：与蓝牙键盘配对的手机可能需要逆时针旋转键盘的D-pad，才能将正确的方向发送到服务器。
 
  （c）本地鼠标指针：如果鼠标指针隐藏的话，勾选此选项将使应用程序显示鼠标位置。"</string>
-    <string name="rdp_main_screen_help_text">
-"首次启动aRDP时连接设定画面会显示出来。在此可以设置新的RDP连接设定或选择现有的RDP连接。该页面分为2个部分，顶部有下拉菜单显示之前创建的连接设定。首次启动aRDP时只能创建新的连接。下拉菜单旁边有连接按钮，按下它就按照当前的设定启动RDP客户端。在连接按钮之下可设定连接。
-
--连接类型：在此处选择RDP连接类型。可用的连接类型如下：
-  （a）RDP：通过RDP通讯协议直接连接计算机。
-  （b）通过SSH的RDP：通过运行SSH服务器的计算机进行隧道连接。
-
--标题：您创建的每个连接都可以有一个昵称，以便在列表中轻松识别它。
-
--SSH隧道设置：在SSH模式的RDP中可用。
-  （a）SSH服务器/端口：将通过隧道建立连接的SSH服务器的地址和端口。 默认端口是22。
-  （b）用户名/密码：SSH服务器上帐户的用户名和密码。 未退出aRDP，密码就保留在画面上。
-  （c）管理密钥/使用密钥：用于管理公钥／密钥的按钮，以及验证方法是否从密码改为密钥的选项。如果在生成密钥对后使用\"复制到剪贴板\"按钮的话，连接到RDP服务器后可以粘贴公钥（剪贴板同步到服务器）。
-
--RDP连接设置：
-  （a）RDP服务器／端口：在此输入运行RDP服务器的计算机的主机名或IP地址与端口号。在通过SSH模式的RDP中，SSH服务器也咖已看到此IP地址。如果SSH服务器与RDP服务器在同一台计算机上，就可以使用localhost。RDP服务器通常用端口3389侦听（第一个RDP屏幕，屏幕：0）。
-  （b）RDP用户：在具有Windows登录模式的UltraRDP中可用，或通过VeNCrypt的安全RDP中可用。在此输入Windows / UNIX帐户用户名。
-  （c）RDP密码：如果您的RDP服务器设置需要密码，在此输入该密码。具有Windows登录或VeNCrypt模式的UltraRDP的话，在此输入Windows / UNIX帐户密码。 密码不使用安全存储，只有选中\"保持\"选项，才会存储密码。未退出aRDP，密码就保留在画面上。
-
--详细设定：在此进行桌面分辨率的自定义设定或者RDP性能微调。
-
--本地设备调整：在此调整aRDP在您的设备上的动作。
-  （a）D-Pad用于箭头：想要将箭头发送到RDP服务器时，可以使用蓝牙键盘的D-Pad或屏幕键盘上的箭头。
-  （b）旋转D-Pad：与Bluetooth键盘配对的手机可能需要逆时针旋转键盘的D-pad，才能将正确的方向发送到服务器。
-  （c）本地鼠标指针：如果鼠标指针隐藏的话，勾选此选项将使aRDP显示鼠标位置。"
-  </string>
     <string name="rdp_password_hint">RDP密码</string>
     <string name="rdp_server_empty">RDP服务器或端口是空着。无法连接！</string>
     <string name="rdp_username_hint">RDP用户名</string>
@@ -751,31 +704,6 @@ aSPICE对应的功能如下：
  （b）旋转D-Pad：与蓝牙键盘配对的装置可能需要逆时针旋转键盘的D-pad，才能将正确的方向发送到服务器。
 
  （c）本地鼠标指针：如果鼠标指针隐藏的话，勾选此选项将使应用程序显示鼠标位置。"</string>
-    <string name="spice_main_screen_help_text">
-"首次启动aSPICE时连接设定画面会显示出来。在此可以设置新的SPICE连接设定或选择现有的SPICE连接。该页面分为2个部分，顶部有下拉菜单显示之前创建的连接设定。首次启动aSPICE时只能创建新的连接。下拉菜单旁边有连接按钮，按下它就按照当前的设定启动SPICE客户端。在连接按钮之下可设定连接。
-
--连接类型：在此处选择SPICE连接类型。可用的连接类型如下：
-  （a）SPICE：通过SPICE通讯协议直接连接计算机。
-  （b）通过SSH的SPICE：通过运行SSH服务器的计算机进行隧道连接。
-
--标题：您创建的每个连接都可以有一个昵称，以便在列表中轻松识别它。
-
--SSH隧道设置：在SSH模式的SPICE中可用。
-  （a）SSH服务器/端口：将通过隧道建立连接的SSH服务器的地址和端口。 默认端口是22。
-  （b）用户名/密码：SSH服务器上帐户的用户名和密码。 未退出aSPICE，密码就保留在画面上。
-  （c）管理密钥/使用密钥：用于管理公钥／密钥的按钮，以及验证方法是否从密码改为密钥的选项。如果在生成密钥对后使用\"复制到剪贴板\"按钮的话，连接到SPICE服务器后可以粘贴公钥（剪贴板同步到服务器）。
-
--SPICE连接设置：
-  （a）SPICE服务器／端口：在此输入运行SPICE服务器的计算机的主机名或IP地址与端口号。在通过SSH模式的SPICE中，SSH服务器也咖已看到此IP地址。如果SSH服务器与SPICE服务器在同一台计算机上，就可以使用localhost。SPICE服务器通常用端口5900侦听（第一个SPICE屏幕，屏幕：0）。
-  （c）SPICE密码：为了保护SPICE会话设定密码。密码不使用安全存储（储存在数据库里），只有选中\"保持\"选项，才会存储密码。未退出aSPICE，密码就保留在画面上。
-
--详细设定：在此进行桌面分辨率的自定义设定或者SPICE性能微调。
-
--本地设备调整：在此调整aSPICE在您的设备上的动作。
-  （a）D-Pad用于箭头：想要将箭头发送到SPICE服务器时，可以使用蓝牙键盘的D-Pad或屏幕键盘上的箭头。
-  （b）旋转D-Pad：与Bluetooth键盘配对的装置可能需要逆时针旋转键盘的D-pad，才能将正确的方向发送到服务器。
-  （c）本地鼠标指针：如果鼠标指针隐藏的话，勾选此选项将使aSPICE显示鼠标位置。"
-  </string>
     <string name="spice_password_hint">SPICE密码</string>
     <string name="spice_server_empty">SPICE服务器或端口是空着。无法连接！</string>
     <string name="spice_tls_port_hint">TLS端口</string>
@@ -886,4 +814,15 @@ aSPICE对应的功能如下：
     <string name="vnc_viewer_started">VNC查看器已启动</string>
     <string name="enable_gateway">启用网关</string>
     <string name="scroll_speed">触控滚动速度</string>
+
+    <string name="scroll_wheel">滚轮</string>
+    <string name="rdp_security_auto">自动协商安全</string>
+    <string name="error_uri_parse_error">无法解析 Intent URI。请检查 URI 格式。您还可以查看设备 logcat 了解更多详细信息。</string>
+    <string name="move_toolbar">移动工具栏</string>
+    <string name="rdp_security_nla">网络级身份验证</string>
+    <string name="rdp_security_mode">安全模式</string>
+    <string name="rdp_security_rdp">RDP 安全</string>
+    <string name="rdp_security_tls">传输层安全 (TLS) 安全</string>
+    <string name="desktop_scale_percentage">自定义缩放百分比</string>
+    <string name="show_menu">显示菜单</string>
 </resources>

@@ -5,8 +5,6 @@
     <string name="action_edit_default_settings">Editar configurações padrão</string>
     <string name="action_export_settings">Exportar configurações</string>
     <string name="action_delete_connection">Excluir a conexão</string>
-    <string name="opaque_app_name">Opaque</string>
-    <string name="opaque_app_name_beta">Opaque Beta</string>
     <string name="advanced_settings">Configurações avançadas</string>
     <string name="audio">Áudio</string>
     <string name="auto_rotation">Girar a tela enquanto conectado</string>
@@ -22,8 +20,6 @@
     <string name="ca_file_error_reading">Erro na leitura do arquivo CA. Por favor, assegure-se de que ele seja legível.</string>
     <string name="ca_new_or_changed">Certificado de servidor novo ou alterado</string>
     <string name="connection_type_text">Ambiente de virtualização (RHEV/oVirt ou Proxmox)</string>
-    <string name="connection_type_ovirt">oVirt/RHEV</string>
-    <string name="connection_type_pve">Proxmox VE</string>
     <string-array name="connection_types">
         <item>@string/connection_type_ovirt</item>
         <item>@string/connection_type_pve</item>
@@ -97,14 +93,10 @@
 
     <string name="alt_check">Alt</string>
 
-    <string name="ardp_app_name">aRDP Pro</string>
-
     <string name="arrow_down">Seta para baixo</string>
     <string name="arrow_left">Seta esquerda</string>
     <string name="arrow_right">Seta direita</string>
     <string name="arrow_up">Seta para cima</string>
-
-    <string name="aspice_app_name">aSPICE Pro</string>
 
     <string name="auto">Auto</string>
     <string name="auto_x_cancel">Cancelar</string>
@@ -137,14 +129,6 @@
     </string-array>
     <string name="auto_x_session_auto">Auto</string>
     <string name="auto_x_session_custom">Personalizado</string>
-    <string name="auto_x_session_gnome">GNOME</string>
-    <string name="auto_x_session_gnome_cl">GNOME Classic</string>
-    <string name="auto_x_session_kde">KDE</string>
-    <string name="auto_x_session_mate">MATE</string>
-    <string name="auto_x_session_trinity">Trinity</string>
-    <string name="auto_x_session_unity">Unity</string>
-    <string name="auto_x_session_unity_2d">Unity2D</string>
-    <string name="auto_x_session_xfce">Xfce</string>
     <string name="auto_x_title">Configurar AutoX</string>
     <string-array name="auto_x_type">
         <!-- If adding selections, they need to be in sync with values
@@ -165,8 +149,6 @@
 
     <string name="button_send_text">Enviar texto</string>
     <string name="button_send_without_saving">Enviar texto/não salvar</string>
-
-    <string name="bvnc_app_name">bVNC Pro</string>
 
     <string name="center_mouse">Mouse @</string>
 
@@ -189,11 +171,8 @@
         <item>@string/connection_type_vnc_over_stunnel</item>
     </string-array>
     <string name="connection_type_caption">Tipo de conexão</string>
-    <string name="connection_type_rdp">RDP</string>
     <string name="connection_type_rdp_over_ssh">RDP sobre SSH</string>
-    <string name="connection_type_spice">SPICE</string>
     <string name="connection_type_spice_over_ssh">SPICE sobre SSH</string>
-    <string name="connection_type_ultravnc">UltraVNC</string>
     <string name="connection_type_vnc">VNC básico</string>
     <string name="connection_type_vnc_over_ssh">VNC sobre SSH seguro</string>
     <string name="connection_type_vnc_over_ssl">VNC sobre AnonTLS seguro</string>
@@ -256,7 +235,7 @@
     <string name="error_x509_could_not_generate_signature">Não foi possível gerar a assinatura do certificado SHA1 ou MD5. Não foi encontrado nenhum algoritmo SHA1/MD5.</string>
 
     <string name="export_settings">Exportar</string>
-    <string name="export_settings_path" />
+
 
     <string name="extra_keys_disable">Desativar chaves extras</string>
     <string name="extra_keys_enable">Ativar chaves extras</string>
@@ -265,17 +244,11 @@
 
     <string name="force">Bitmap de tela completa</string>
 
-    <string name="freeardp_app_name">aRDP Free</string>
-
-    <string name="freeaspice_app_name">aSPICE Free</string>
-
-    <string name="freebvnc_app_name">bVNC Free</string>
-
     <string name="immersive_mode_disable">Desativar modo imersivo</string>
 
     <string name="import_export_settings">Importar/Exportar configurações</string>
     <string name="import_settings">Importar</string>
-    <string name="import_settings_file_url" />
+
 
     <string name="info">Info</string>
     <string name="info_cert_signatures">"As informações do certificado são: "</string>
@@ -351,7 +324,7 @@ Todos os métodos de entrada:
   - Enviar texto: Ou digite no teclado na tela, ou use Menu-&gt;Mais-&gt;Enviar texto".</string>
     <string name="intro_close">Fechar</string>
     <string name="intro_dont_show">Não voltar a mostrar</string>
-    <string name="intro_header" />
+
     <string name="intro_text">
 "Lista atual de funcionalidades de bVNC:
 &lt;br&gt;
@@ -402,7 +375,7 @@ Problemas conhecidos:
 &lt;br&gt;"
 </string>
     <string name="intro_title">bVNC: Cliente de VNC intuitivo e seguro</string>
-    <string name="intro_version_text" />
+
 
     <string name="keep_password_button">Manter</string>
     <string name="keep_screen_awake_enable">Mantenha a tela ativa</string>
@@ -772,7 +745,7 @@ Problemas conhecidos:
 
  - Configurações de conexão SPICE:
       (a) Servidor/Porta de SPICE: Aqui é onde você digita o nome do host ou endereço de IP e a porta do computador com o servidor de SPICE ao qual você deseja se contatar. No modo SPICE sobre SSH, este endereço é visto como do Servidor de SSH. Se o servidor de SSH e o servidor de SPICE forem o mesmo computador físico, você pode usar o localhost. Os servidores de SPICE normalmente escutam na porta 5900 e acima.
-      (d) Senha de SPICE: Aqui é onde você digita a senha para proteger sua sessão de SPICE. O armazenamento seguro não é usado para senhas (elas estão em um banco de dados), e a senha será armazenada somente se você marcar a caixa "Manter". A senha será preenchida nesta página se você não tiver desistido do aplicativo desde a última vez que o inseriu.
+      (b) Senha de SPICE: Aqui é onde você digita a senha para proteger sua sessão de SPICE. O armazenamento seguro não é usado para senhas (elas estão em um banco de dados), e a senha será armazenada somente se você marcar a caixa "Manter". A senha será preenchida nesta página se você não tiver desistido do aplicativo desde a última vez que o inseriu.
 
  - Configurações avançadas: Nesta seção você encontrará qualquer dispositivo local ou ajustes de desempenho de SPICE
  - Ajustes locais de dispositivos: Ajustam o comportamento do aplicativo no seu dispositivo.
@@ -887,4 +860,43 @@ Abaixo, é onde você configura sua conexão.
     <string name="rdp_adv_gfx">RDP Gfx</string>
     <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
     <string name="more_debug_logging">Mais registros de depuração</string>
+
+    <string name="action_rate_or_share_app">⭐ Get Help, Rate, Share</string>
+    <string name="love_our_work">Love our work?</string>
+    <string name="enable_gateway">Enable Gateway</string>
+    <string name="enter_gateway_credentials">Please enter Gateway credentials</string>
+    <string name="show_only_connection_nicknames">Show Only Connection Nicknames</string>
+    <string name="share_app_toast">Share a link to the app with all your friends on social media!</string>
+    <string name="audio_initialized">Audio initialized</string>
+    <string name="share_app">Share 🔗</string>
+    <string name="vnc_viewer_started">VNC Viewer started</string>
+    <string name="disable_pointer_offset_correction">Disable pointer offset correction</string>
+    <string name="rdp_security_auto">Auto-negotiate Security</string>
+    <string name="rdp_security_mode">Security Mode</string>
+    <string name="need_help">Need some help?</string>
+    <string name="pref_keyboard_type_label_VISIBLE_PASSWORD">Text/Numbers No Suggestions (VISIBLE_PASSWORD)</string>
+    <string name="error_uri_parse_error">Unable to parse Intent URI. Please check the URI format. You can also see device logcat for more details.</string>
+    <string name="donate_app">Donate ❤</string>
+    <string name="previous_versions">Previous Versions ⍼</string>
+    <string name="scroll_wheel">Scroll Wheel</string>
+    <string name="scroll_speed">Touch Scroll Speed</string>
+    <string name="more_apps">More Apps 📱</string>
+    <string name="pref_keyboard_type_label_TYPE_NULL">Default (TYPE_NULL)</string>
+    <string name="email_us">Email Us 📧</string>
+    <string name="rdp_security_tls">TLS Security</string>
+    <string name="rdp_security_nla">Network Level Authentication</string>
+    <string name="move_toolbar">Move Toolbar</string>
+    <string name="get_help">Get Help</string>
+    <string name="rdp_security_rdp">RDP Security</string>
+    <string name="local_clipboard_integration">Enable Local to Remote Clipboard Integration</string>
+    <string name="show_menu">Show Menu</string>
+    <string name="hide_connection_thumbnails">Hide Connection Thumbnails</string>
+    <string name="rate_app">Rate ⭐⭐⭐⭐⭐</string>
+    <string name="no_application_to_handle_vpn">This connection is set to launch VPN via an external app. You need to install an app like Morpheusly to launch it.</string>
+    <string name="audio_will_be_initialized">Audio will be initialized in about 15 seconds, please stop any running video or audio playback before then</string>
+    <string name="pref_keyboard_type_label_TYPE_CLASS_TEXT">Text With Suggestions (TYPE_CLASS_TEXT)</string>
+    <string name="keyboard_type">Software Keyboard Type</string>
+    <string name="desktop_scale_percentage">Custom Scaling Percentage</string>
+    <string name="prefer_sending_unicode">Unicode input (Windows only)</string>
+    <string name="remote_clipboard_integration">Enable Remote to Local Clipboard Integration</string>
 </resources>
