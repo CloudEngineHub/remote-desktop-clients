@@ -903,4 +903,5 @@ En dessous se trouve la configuration de votre connexion.
     <string name="desktop_scale_percentage">Pourcentage de mise à l\'échelle personnalisé</string>
     <string name="show_menu">Afficher le menu</string>
     <string name="move_toolbar">Déplacer la barre d\'outils</string>
+    <string name="rdp_adv_glyph_cache">Activer le cache de glyphes</string>
 </resources>

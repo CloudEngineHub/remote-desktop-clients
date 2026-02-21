@@ -899,4 +899,5 @@ Abaixo, é onde você configura sua conexão.
     <string name="desktop_scale_percentage">Custom Scaling Percentage</string>
     <string name="prefer_sending_unicode">Unicode input (Windows only)</string>
     <string name="remote_clipboard_integration">Enable Remote to Local Clipboard Integration</string>
+    <string name="rdp_adv_glyph_cache">Ativar cache de glifos</string>
 </resources>

@@ -729,4 +729,5 @@ Nếu bạn đang muốn tăng hiệu suất nhanh chóng, hãy thử đặt ch�
 - Bitmap tự động/toàn màn hình: Máy khách VNC sử dụng bitmap để thể hiện màn hình từ xa. Đối với các màn hình từ xa rất lớn, đặc biệt là ở chế độ vừa với màn hình, bạn có thể gặp phải các hiện tượng hình ảnh lạ khi ở chế độ vừa với màn hình, do giới hạn bộ nhớ trên mỗi quá trình. Nếu điều đó xảy ra, hãy thử kiểm tra tùy chọn này. Hãy nhớ rằng việc chọn tùy chọn có thể khiến ứng dụng thoát khỏi kết nối.
 
 - Repeater: Chỉ có ở chế độ UltraVNC. QUAN TRỌNG: Nếu bạn có bộ lặp UltraVNC, hãy nhập địa chỉ và cổng của nó bên ngoài hộp thoại \'UltraVNC Repeater\' và nhập địa chỉ và cổng của máy chủ VNC thực tế bên trong hộp thoại \'UltraVNC Repeater\'. Phân tách địa chỉ và cổng của máy chủ VNC bằng dấu hai chấm, ví dụ:192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Bật bộ nhớ đệm Glyph</string>
 </resources>

@@ -904,4 +904,5 @@ Sen alla konfiguroit yhteytesi.
     <string name="desktop_scale_percentage">Mukautettu skaalausprossentti</string>
     <string name="show_menu">Näytä valikko</string>
     <string name="move_toolbar">Siirrä työkalupalkki</string>
+    <string name="rdp_adv_glyph_cache">Ota käyttöön glyfikätkö</string>
 </resources>

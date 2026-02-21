@@ -904,4 +904,5 @@ Sa ibaba nito ay kung saan ninyo iko-configure ang inyong koneksyon.
     <string name="desktop_scale_percentage">Custom na Scaling Percentage</string>
     <string name="show_menu">Ipakita ang Menu</string>
     <string name="move_toolbar">Ilipat ang Toolbar</string>
+    <string name="rdp_adv_glyph_cache">I-enable ang Glyph Cache</string>
 </resources>

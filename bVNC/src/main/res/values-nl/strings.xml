@@ -826,4 +826,5 @@ Daaronder configureert u uw verbinding.
     <string name="desktop_scale_percentage">Aangepast schalingspercentage</string>
     <string name="show_menu">Menu tonen</string>
     <string name="move_toolbar">Werkbalk verplaatsen</string>
+    <string name="rdp_adv_glyph_cache">Glyph-cache inschakelen</string>
 </resources>

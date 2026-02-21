@@ -904,4 +904,5 @@ Allpool konfigureerite ühendust.
     <string name="desktop_scale_percentage">Kohandatud skaleerimisprotsent</string>
     <string name="show_menu">Näita menüüd</string>
     <string name="move_toolbar">Liiguta tööriistariba</string>
+    <string name="rdp_adv_glyph_cache">Luba glüüfide vahemälu</string>
 </resources>

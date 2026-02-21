@@ -30,7 +30,7 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
     public static final String TAG = "AbstractConnectionBean";
 
     public static final String GEN_TABLE_NAME = "CONNECTION_BEAN";
-    public static final int GEN_COUNT = 94;
+    public static final int GEN_COUNT = 95;
 
     // Field constants
     public static final String GEN_FIELD__ID = "_id";
@@ -226,6 +226,8 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
     public static final int GEN_ID_DESKTOPSCALEPERCENTAGE = 92;
     public static final String GEN_FIELD_RDPSECURITY = "RDPSECURITY";
     public static final int GEN_ID_RDPSECURITY = 93;
+    public static final String GEN_FIELD_ENABLEGLYPHCACHE = "ENABLEGLYPHCACHE";
+    public static final int GEN_ID_ENABLEGLYPHCACHE = 94;
 
     // SQL Command for creating the table
     public static String GEN_CREATE = "CREATE TABLE CONNECTION_BEAN (" +
@@ -322,7 +324,8 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
             "RDPGATEWAYPASSWORD TEXT," +
             "KEEPRDPGATEWAYPASSWORD INTEGER," +
             "DESKTOPSCALEPERCENTAGE INTEGER," +
-            "RDPSECURITY INTEGER" +
+            "RDPSECURITY INTEGER," +
+            "ENABLEGLYPHCACHE BOOLEAN" +
             ")";
 
     // Members corresponding to defined fields
@@ -424,6 +427,7 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
     private boolean gen_keepRdpGatewayPassword;
     private int gen_desktopScalePercentage;
     private int gen_rdpSecurity;
+    private boolean gen_enableGlyphCache;
 
     public String Gen_tableName() {
         return GEN_TABLE_NAME;
@@ -1186,6 +1190,16 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
         this.gen_rdpSecurity = rdpSecurity;
     }
 
+    @Override
+    public boolean getEnableGlyphCache() {
+        return gen_enableGlyphCache;
+    }
+
+    @Override
+    public void setEnableGlyphCache(boolean enableGlyphCache) {
+        this.gen_enableGlyphCache = enableGlyphCache;
+    }
+
     public android.content.ContentValues Gen_getValues() {
         android.content.ContentValues values = new android.content.ContentValues();
         values.put(GEN_FIELD__ID, Long.toString(this.gen__Id));
@@ -1287,6 +1301,7 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
         values.put(GEN_FIELD_KEEPRDPGATEWAYPASSWORD, (this.gen_keepRdpGatewayPassword));
         values.put(GEN_FIELD_DESKTOPSCALEPERCENTAGE, (this.gen_desktopScalePercentage));
         values.put(GEN_FIELD_RDPSECURITY, (this.gen_rdpSecurity));
+        values.put(GEN_FIELD_ENABLEGLYPHCACHE, (this.gen_enableGlyphCache));
 
         return values;
     }
@@ -1402,6 +1417,7 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
         result[91] = cursor.getColumnIndex(GEN_FIELD_KEEPRDPGATEWAYPASSWORD);
         result[92] = cursor.getColumnIndex(GEN_FIELD_DESKTOPSCALEPERCENTAGE);
         result[93] = cursor.getColumnIndex(GEN_FIELD_RDPSECURITY);
+        result[94] = cursor.getColumnIndex(GEN_FIELD_ENABLEGLYPHCACHE);
 
         return result;
     }
@@ -1696,6 +1712,9 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
         if (columnIndices[GEN_ID_RDPSECURITY] >= 0 && !cursor.isNull(columnIndices[GEN_ID_RDPSECURITY])) {
             gen_rdpSecurity = cursor.getInt(columnIndices[GEN_ID_RDPSECURITY]);
         }
+        if (columnIndices[GEN_ID_ENABLEGLYPHCACHE] >= 0 && !cursor.isNull(columnIndices[GEN_ID_ENABLEGLYPHCACHE])) {
+            gen_enableGlyphCache = cursor.getInt(columnIndices[GEN_ID_ENABLEGLYPHCACHE]) != 0;
+        }
     }
 
     /**
@@ -1801,6 +1820,7 @@ public abstract class AbstractConnectionBean extends com.antlersoft.android.dbim
         gen_keepRdpGatewayPassword = values.getAsBoolean(GEN_FIELD_KEEPRDPGATEWAYPASSWORD);
         gen_desktopScalePercentage = values.getAsInteger(GEN_FIELD_DESKTOPSCALEPERCENTAGE);
         gen_rdpSecurity = values.getAsInteger(GEN_FIELD_RDPSECURITY);
+        gen_enableGlyphCache = values.getAsBoolean(GEN_FIELD_ENABLEGLYPHCACHE);
     }
 
     /**

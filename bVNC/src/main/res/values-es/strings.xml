@@ -888,4 +888,5 @@ Debajo es donde configura su conexión.
     <string name="audio_initialized">Audio inicializado</string>
     <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
     <string name="no_application_to_handle_vpn">Esta conexión está configurada para iniciar VPN a través de una aplicación externa.</string>
+    <string name="rdp_adv_glyph_cache">Habilitar caché de glifos</string>
 </resources>

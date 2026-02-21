@@ -826,4 +826,5 @@ Nedanför konfigurerar du din anslutning.
     <string name="desktop_scale_percentage">Anpassad skalningsprocent</string>
     <string name="show_menu">Visa meny</string>
     <string name="move_toolbar">Flytta verktygsfält</string>
+    <string name="rdp_adv_glyph_cache">Aktivera glyph-cache</string>
 </resources>

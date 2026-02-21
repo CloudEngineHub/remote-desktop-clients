@@ -694,4 +694,5 @@ Fyrirhugaðir eiginleikar:
     <string name="error_failed_to_obtain_file">Ekki tókst að finna skrá. Vinsamlegast hlaðið því niður aftur, en í þetta skiptið, reyndu að opna það frá tilkynningasvæðinu eða beint úr vafranum ef mögulegt er.</string>
     <string name="error_pve_timeout_communicating">Tímamörk í samskiptum við Proxmox sýndarumhverfi.</string>
     <string name="connection_type_spice_over_ssh">KRYDD yfir SSH</string>
+    <string name="rdp_adv_glyph_cache">Virkja leturstafsminni</string>
 </resources>

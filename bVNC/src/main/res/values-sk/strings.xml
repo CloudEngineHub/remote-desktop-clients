@@ -729,4 +729,5 @@ Ak hľadáte rýchle zvýšenie výkonu, skúste nastaviť režim Farba na niž�
 - Automatická/Celá obrazovka Bitmap: Klient VNC používa bitovú mapu na zobrazenie vzdialeného displeja. Pri veľmi veľkých vzdialených displejoch, najmä v režime prispôsobenia obrazovke, môžete v režime prispôsobenia obrazovke zaznamenať zvláštne vizuálne artefakty z dôvodu obmedzení pamäte na jednotlivé procesy. Ak sa tak stane, skúste zaškrtnúť túto možnosť. Majte na pamäti, že začiarknutie tejto možnosti môže spôsobiť ukončenie aplikácie pri pripojení.
 
 - Repeater: K dispozícii iba v režime UltraVNC. DÔLEŽITÉ: Ak máte opakovač UltraVNC, zadajte jeho adresu a port mimo dialógového okna \'UltraVNC Repeater\' a zadajte adresu a port skutočného servera VNC do dialógového okna \'UltraVNC Repeater\'. Adresu VNC servera a port oddeľte dvojbodkou, napr.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Povoliť vyrovnávaciu pamäť glyfov</string>
 </resources>

@@ -826,4 +826,5 @@
     <string name="desktop_scale_percentage">Προσαρμοσμένο Ποσοστό Κλιμάκωσης</string>
     <string name="show_menu">Εμφάνιση Μενού</string>
     <string name="move_toolbar">Μετακίνηση Γραμμής Εργαλείων</string>
+    <string name="rdp_adv_glyph_cache">Ενεργοποίηση προσωρινής μνήμης γλυφών</string>
 </resources>

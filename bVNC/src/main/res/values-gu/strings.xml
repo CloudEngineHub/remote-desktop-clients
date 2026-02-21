@@ -821,4 +821,5 @@ connection ઉમેરો/edit ઉપર, connection configuration page.
     <string name="desktop_scale_percentage">Custom Scaling Percentage</string>
     <string name="show_menu">Menu બતાવો</string>
     <string name="move_toolbar">Toolbar ખસેડો</string>
+    <string name="rdp_adv_glyph_cache">ગ્લિફ કેશ સક્ષમ કરો</string>
 </resources>

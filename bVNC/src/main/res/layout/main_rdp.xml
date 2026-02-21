@@ -650,6 +650,14 @@
                 android:text="@string/rdp_adv_gfxh264"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
+            <CheckBox
+                android:id="@+id/checkboxEnableGlyphCache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/rdp_adv_glyph_cache"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

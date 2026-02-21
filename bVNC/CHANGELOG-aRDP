@@ -1,3 +1,7 @@
+v6.2.6
+- Localized the app into most supported languages
+- Ensured all strings are present in existing localizations
+- Improved messaging
 v6.2.5
 - Vastly lowered bandwidth usage for Windows hosts and Gfx H264 codec
 v6.2.3

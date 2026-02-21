@@ -1008,6 +1008,15 @@ public class ConnectionSettings extends AbstractConnectionBean implements Serial
     }
 
     @Override
+    public boolean getEnableGlyphCache() {
+        return false;
+    }
+
+    @Override
+    public void setEnableGlyphCache(boolean enableGlyphCache) {
+    }
+
+    @Override
     public int getRdpColor() {
         return 0;
     }

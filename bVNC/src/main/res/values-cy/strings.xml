@@ -904,4 +904,5 @@ O dan hynny mae lle rydych chi\'n ffurfweddu eich cysylltiad.
     <string name="desktop_scale_percentage">Canran Sgalu Arferol</string>
     <string name="show_menu">Dangos Dewislen</string>
     <string name="move_toolbar">Symud y Bar Offer</string>
+    <string name="rdp_adv_glyph_cache">Galluogi Storfa Glyffau</string>
 </resources>

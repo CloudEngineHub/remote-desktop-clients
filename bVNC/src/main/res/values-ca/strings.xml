@@ -903,4 +903,5 @@ A continuació és on configureu la connexió.
     <string name="desktop_scale_percentage">Percentatge d\'escala personalitzat</string>
     <string name="show_menu">Mostra el menú</string>
     <string name="move_toolbar">Mou la barra d\'eines</string>
+    <string name="rdp_adv_glyph_cache">Activa la memòria cau de glifs</string>
 </resources>

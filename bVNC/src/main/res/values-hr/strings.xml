@@ -904,4 +904,5 @@ Ispod toga je mjesto gdje konfigurirate svoju vezu.
     <string name="desktop_scale_percentage">Prilagođeni postotak skaliranja</string>
     <string name="show_menu">Prikaži izbornik</string>
     <string name="move_toolbar">Premjesti alatnu traku</string>
+    <string name="rdp_adv_glyph_cache">Omogući predmemoriju glifova</string>
 </resources>

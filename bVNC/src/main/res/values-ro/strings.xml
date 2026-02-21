@@ -824,4 +824,5 @@ Mai jos este locul unde va configurati conexiunea.
     <string name="desktop_scale_percentage">Procent de Scalare Personalizat</string>
     <string name="show_menu">Afiseaza Meniul</string>
     <string name="move_toolbar">Muta Bara de Instrumente</string>
+    <string name="rdp_adv_glyph_cache">Activare cache glife</string>
 </resources>

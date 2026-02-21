@@ -826,4 +826,5 @@ aSPICE對應的功能如下：
     <string name="rdp_security_tls">傳輸層安全性 (TLS) 安全</string>
     <string name="desktop_scale_percentage">自訂縮放百分比</string>
     <string name="show_menu">顯示選單</string>
+    <string name="rdp_adv_glyph_cache">啟用字形快取</string>
 </resources>

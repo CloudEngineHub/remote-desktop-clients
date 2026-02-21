@@ -824,4 +824,5 @@ Ngezansi kungalapho ulungisa khona uxhumano lwakho.
     <string name="desktop_scale_percentage">Iphesenti Lokuskala Ngokwezifiso</string>
     <string name="show_menu">Bonisa Imenyu</string>
     <string name="move_toolbar">Hambisa Ibha Yamathuluzi</string>
+    <string name="rdp_adv_glyph_cache">Nika amandla i-Glyph Cache</string>
 </resources>

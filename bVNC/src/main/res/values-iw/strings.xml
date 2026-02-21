@@ -694,4 +694,5 @@
     <string name="error_failed_to_obtain_file">לא הצליח למצוא את הקובץ.אנא הורד אותו שוב, אך הפעם, נסה לפתוח אותו מאזור ההודעות או ישירות מהדפדפן במידת האפשר.</string>
     <string name="error_pve_timeout_communicating">פסק זמן לתקשורת עם הסביבה הווירטואלית של Proxmox.</string>
     <string name="connection_type_spice_over_ssh">SPICE מעל SSH</string>
+    <string name="rdp_adv_glyph_cache">הפעל מטמון גליפים</string>
 </resources>

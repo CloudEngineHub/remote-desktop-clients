@@ -694,4 +694,5 @@ ASPICE خصوصیات کی موجودہ فہرست میں شامل ہیں:
     <string name="error_failed_to_obtain_file">فائل تلاش کرنے میں ناکام۔براہ کرم اسے دوبارہ ڈاؤن لوڈ کریں، لیکن اس بار، اسے نوٹیفیکیشن ایریا سے کھولنے کی کوشش کریں یا اگر ممکن ہو تو براہ راست براؤزر سے۔</string>
     <string name="error_pve_timeout_communicating">Proxmox ورچوئل ماحولیات کے ساتھ بات چیت کا ٹائم آؤٹ۔</string>
     <string name="connection_type_spice_over_ssh">SSH پر مسالا</string>
+    <string name="rdp_adv_glyph_cache">گلیف کیشے کو فعال کریں</string>
 </resources>

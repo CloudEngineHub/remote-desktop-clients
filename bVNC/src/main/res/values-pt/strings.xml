@@ -904,4 +904,5 @@ Abaixo está onde configura a sua ligação.
     <string name="desktop_scale_percentage">Percentagem de Escala Personalizada</string>
     <string name="show_menu">Mostrar Menu</string>
     <string name="move_toolbar">Mover Barra de Ferramentas</string>
+    <string name="rdp_adv_glyph_cache">Ativar cache de glifos</string>
 </resources>

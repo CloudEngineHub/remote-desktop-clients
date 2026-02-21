@@ -824,4 +824,5 @@ Under det konfigurerer du tilkoblingen din.
     <string name="desktop_scale_percentage">Tilpasset skaleringsprosent</string>
     <string name="show_menu">Vis meny</string>
     <string name="move_toolbar">Flytt verktoylinjen</string>
+    <string name="rdp_adv_glyph_cache">Aktiver glyph-hurtigbuffer</string>
 </resources>

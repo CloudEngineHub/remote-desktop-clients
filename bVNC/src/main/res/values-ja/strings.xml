@@ -844,4 +844,5 @@ aSPICEで対応済み機能は以下の通り：
     <string name="rdp_security_tls">TLSセキュリティ</string>
     <string name="scroll_wheel">スクロールホイール</string>
     <string name="rdp_security_auto">自動ネゴシエーションセキュリティ</string>
+    <string name="rdp_adv_glyph_cache">グリフキャッシュを有効にする</string>
 </resources>

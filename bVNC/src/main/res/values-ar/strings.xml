@@ -903,4 +903,5 @@
     <string name="desktop_scale_percentage">نسبة التحجيم المخصصة</string>
     <string name="show_menu">إظهار القائمة</string>
     <string name="move_toolbar">تحريك شريط الأدوات</string>
+    <string name="rdp_adv_glyph_cache">تمكين ذاكرة التخزين المؤقت للحروف</string>
 </resources>

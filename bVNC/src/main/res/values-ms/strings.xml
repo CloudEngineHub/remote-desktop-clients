@@ -729,4 +729,5 @@ Jika anda sedang mencari peningkatan prestasi pantas, cuba tetapkan mod Warna ke
 - Peta Bit Auto/Skrin Penuh: Pelanggan VNC menggunakan peta bit untuk mewakili paparan jauh. Untuk paparan jauh yang sangat besar, terutamanya dalam mod muat ke skrin, anda mungkin mengalami artifak visual yang aneh apabila dalam mod muat ke skrin, disebabkan oleh had memori setiap proses. Jika itu berlaku, cuba semak pilihan ini. Perlu diingat bahawa menyemak pilihan boleh menyebabkan aplikasi berhenti semasa sambungan.
 
 - Pengulang: Hanya tersedia dalam mod UltraVNC. PENTING: Jika anda mempunyai pengulang UltraVNC, masukkan alamat dan portnya di luar dialog \'UltraVNC Repeater\' dan masukkan alamat dan port pelayan VNC sebenar di dalam Dialog \'UltraVNC Repeater\'. Asingkan alamat dan port pelayan VNC dengan titik bertindih, mis.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Dayakan Cache Glif</string>
 </resources>

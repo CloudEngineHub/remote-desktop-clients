@@ -419,6 +419,10 @@ public interface Connection {
 
     void setEnableGfxH264(boolean enableGfxH264);
 
+    boolean getEnableGlyphCache();
+
+    void setEnableGlyphCache(boolean enableGlyphCache);
+
     boolean getUseLastPositionToolbar();
 
     void setUseLastPositionToolbar(boolean useLastPositionToolbar);

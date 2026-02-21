@@ -20,6 +20,8 @@
 
 package com.iiordanov.bVNC;
 
+import static com.iiordanov.bVNC.Constants.ENABLE_GLYPH_CACHE_DEFAULT;
+
 import android.content.Context;
 import android.util.Log;
 
@@ -56,7 +58,8 @@ public class Database extends SQLiteOpenHelper {
     static final int DBV_2_2_0 = 525;
     static final int DBV_2_2_1 = 561;
     static final int DBV_2_2_2 = 602;
-    static final int CURRVERS = DBV_2_2_2;
+    static final int DBV_2_2_3 = 626;
+    static final int CURRVERS = DBV_2_2_3;
     private static final String dbName = "VncDatabase";
     private static String password = "";
 
@@ -72,6 +75,8 @@ public class Database extends SQLiteOpenHelper {
     public static void setPassword(String newPassword) {
         Database.password = newPassword;
     }
+
+    private String boolToString(boolean value) { return value ? "TRUE" : "FALSE"; }
 
     /* (non-Javadoc)
      * @see net.sqlcipher.database.SQLiteOpenHelper#onCreate(net.sqlcipher.database.SQLiteDatabase)
@@ -452,6 +457,15 @@ public class Database extends SQLiteOpenHelper {
                             + Constants.DEFAULT_RDP_SECURITY_AUTO_NEGOTIATE
             );
             oldVersion = DBV_2_2_2;
+        }
+        if (oldVersion == DBV_2_2_2) {
+            Log.i(TAG, "Doing upgrade from 602 to 626");
+            db.execSQL(
+                    "ALTER TABLE " + AbstractConnectionBean.GEN_TABLE_NAME + " ADD COLUMN "
+                            + AbstractConnectionBean.GEN_FIELD_ENABLEGLYPHCACHE
+                            + " BOOLEAN DEFAULT " + boolToString(ENABLE_GLYPH_CACHE_DEFAULT)
+            );
+            oldVersion = DBV_2_2_3;
         }
     }
 

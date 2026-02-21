@@ -72,6 +72,7 @@ public class aRDP extends MainConfiguration {
     private CheckBox checkboxVisualStyles;
     private CheckBox checkboxEnableGfx;
     private CheckBox checkboxEnableGfxH264;
+    private CheckBox checkboxEnableGlyphCache;
     private CheckBox checkboxPreferSendingUnicode;
     private Spinner spinnerRdpColor;
     private Spinner spinnerRdpSecurity;
@@ -144,6 +145,7 @@ public class aRDP extends MainConfiguration {
         checkboxVisualStyles = findViewById(R.id.checkboxVisualStyles);
         checkboxEnableGfx = findViewById(R.id.checkboxEnableGfx);
         checkboxEnableGfxH264 = findViewById(R.id.checkboxEnableGfxH264);
+        checkboxEnableGlyphCache = findViewById(R.id.checkboxEnableGlyphCache);
         checkboxPreferSendingUnicode = findViewById(R.id.checkboxPreferSendingUnicode);
     }
 
@@ -259,6 +261,7 @@ public class aRDP extends MainConfiguration {
         checkboxVisualStyles.setChecked(selected.getVisualStyles());
         checkboxEnableGfx.setChecked(selected.getEnableGfx());
         checkboxEnableGfxH264.setChecked(selected.getEnableGfxH264());
+        checkboxEnableGlyphCache.setChecked(selected.getEnableGlyphCache());
         checkboxPreferSendingUnicode.setChecked(selected.getPreferSendingUnicode());
     }
 
@@ -307,6 +310,7 @@ public class aRDP extends MainConfiguration {
         selected.setVisualStyles(checkboxVisualStyles.isChecked());
         selected.setEnableGfx(checkboxEnableGfx.isChecked());
         selected.setEnableGfxH264(checkboxEnableGfxH264.isChecked());
+        selected.setEnableGlyphCache(checkboxEnableGlyphCache.isChecked());
         selected.setPreferSendingUnicode(checkboxPreferSendingUnicode.isChecked());
     }
 

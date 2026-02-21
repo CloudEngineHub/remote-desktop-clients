@@ -20,6 +20,8 @@
 
 package com.iiordanov.bVNC;
 
+import static com.iiordanov.bVNC.Constants.ENABLE_GLYPH_CACHE_DEFAULT;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -175,6 +177,7 @@ public class ConnectionBean extends AbstractConnectionBean implements Comparable
 
         setRdpGatewayPort(Constants.DEFAULT_RDP_GATEWAY_PORT);
         setDesktopScalePercentage(Constants.DEFAULT_DESKTOP_SCALE_PERCENTAGE);
+        setEnableGlyphCache(ENABLE_GLYPH_CACHE_DEFAULT);
     }
 
     private static String getDefaultInputMode(Context context) {

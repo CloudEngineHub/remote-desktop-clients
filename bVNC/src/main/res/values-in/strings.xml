@@ -904,4 +904,5 @@ Di bawahnya adalah tempat Anda mengonfigurasi koneksi Anda.
     <string name="desktop_scale_percentage">Persentase Skala Kustom</string>
     <string name="show_menu">Tampilkan Menu</string>
     <string name="move_toolbar">Pindahkan Bilah Alat</string>
+    <string name="rdp_adv_glyph_cache">Aktifkan Cache Glyph</string>
 </resources>

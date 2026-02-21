@@ -798,4 +798,5 @@ Jeśli szukasz szybkiego zwiększenia wydajności, spróbuj ustawić tryb Kolor 
 - Mapa bitowa automatyczna/pełnoekranowa: Klient VNC używa mapy bitowej do reprezentowania zdalnego wyświetlacza. W przypadku bardzo dużych zdalnych wyświetlaczy, szczególnie w trybie dopasowania do ekranu, w trybie dopasowania do ekranu mogą wystąpić dziwne artefakty wizualne ze względu na ograniczenia pamięci poszczególnych procesów. Jeśli tak się stanie, spróbuj zaznaczyć tę opcję. Należy pamiętać, że zaznaczenie tej opcji może spowodować zamknięcie aplikacji po nawiązaniu połączenia.
 
 - Repeater: Dostępne tylko w trybie UltraVNC. WAŻNE: Jeśli posiadasz wzmacniacz UltraVNC, wprowadź jego adres i port poza oknem dialogowym \'UltraVNC Repeater\' oraz wprowadź adres i port rzeczywistego serwera VNC w oknie dialogowym \'UltraVNC Repeater\'. Adres i port serwera VNC oddziel dwukropkiem, np.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Włącz pamięć podręczną glifów</string>
 </resources>

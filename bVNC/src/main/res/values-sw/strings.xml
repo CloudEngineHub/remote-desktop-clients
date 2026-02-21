@@ -729,4 +729,5 @@ Ikiwa unatafuta nyongeza ya haraka ya utendakazi, jaribu kuweka modi ya Rangi kw
 - Ramani ya Bitma ya Skrini Otomatiki: Kiteja cha VNC hutumia ramani-bit ili kuwakilisha onyesho la mbali. Kwa maonyesho makubwa sana ya mbali, hasa katika hali ya kufaa-kwa-skrini, unaweza kupata vizalia vya programu vya ajabu vya kuonekana ukiwa katika hali ya kufaa-kwa-skrini, kutokana na mapungufu ya kumbukumbu kwa kila mchakato. Ikiwa hii itatokea, jaribu kuangalia chaguo hili. Kumbuka kwamba kuangalia chaguo kunaweza kusababisha programu kuacha kwenye muunganisho.
 
 - Repeater: Inapatikana tu katika hali ya UltraVNC. MUHIMU: Ikiwa una kirudia cha UltraVNC, weka anwani na mlango wake nje ya kidirisha cha \'UltraVNC Repeater\' na uweke anwani na mlango wa seva halisi ya VNC ndani ya Kidirisha cha \'UltraVNC Repeater\'. Tenganisha anwani na mlango wa seva ya VNC kwa koloni, k.m.192.168.0.100:5900.</string>
+    <string name="rdp_adv_glyph_cache">Washa Hifadhi ya Glyph</string>
 </resources>

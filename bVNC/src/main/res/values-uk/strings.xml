@@ -694,4 +694,5 @@
     <string name="error_failed_to_obtain_file">Не вдалося знайти файл. Будь ласка, завантажте його знову, але цього разу спробуйте відкрити його з області сповіщень або безпосередньо з веб-переглядача, якщо це можливо.</string>
     <string name="error_pve_timeout_communicating">Час очікування зв’язку з віртуальним середовищем Proxmox.</string>
     <string name="connection_type_spice_over_ssh">SPICE через SSH</string>
+    <string name="rdp_adv_glyph_cache">Увімкнути кеш гліфів</string>
 </resources>

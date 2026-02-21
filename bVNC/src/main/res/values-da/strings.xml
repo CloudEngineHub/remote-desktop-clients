@@ -904,4 +904,5 @@ Nedenfor konfigurerer du din forbindelse.
     <string name="desktop_scale_percentage">Brugerdefineret skalerings-procent</string>
     <string name="show_menu">Vis menu</string>
     <string name="move_toolbar">Flyt værktøjslinje</string>
+    <string name="rdp_adv_glyph_cache">Aktivér glyph-cache</string>
 </resources>

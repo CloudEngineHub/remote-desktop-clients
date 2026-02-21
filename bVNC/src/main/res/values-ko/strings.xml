@@ -825,4 +825,5 @@ aSPICEで의 대응 기능는 이하와 같다 :
     <string name="scroll_wheel">스크롤 휠</string>
     <string name="rdp_security_mode">보안 모드</string>
     <string name="rdp_security_nla">네트워크 수준 인증</string>
+    <string name="rdp_adv_glyph_cache">글리프 캐시 활성화</string>
 </resources>
